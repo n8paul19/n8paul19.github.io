@@ -77,10 +77,10 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : '_include/img/slider-images/image01.jpg', title : '<div class="slide-content">Capturing a Masterpiece</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image02.jpg', title : '<div class="slide-content">Home Sweet Home</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image03.jpg', title : '<div class="slide-content">Brilliant Exteriors</div>', thumb : '', url : ''},
-											{image : '_include/img/slider-images/image04.jpg', title : '<div class="slide-content">Professional, Everytime</div>', thumb : '', url : ''}  
+											{image : 'include/img/slider-images/image01.jpg', title : '<div class="slide-content">Capturing a Masterpiece</div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/image02.jpg', title : '<div class="slide-content">Home Sweet Home</div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/image03.jpg', title : '<div class="slide-content">Brilliant Exteriors</div>', thumb : '', url : ''},
+											{image : 'include/img/slider-images/image04.jpg', title : '<div class="slide-content">Professional, Everytime</div>', thumb : '', url : ''}  
 									],
 									
 		// Theme Options			   
