@@ -409,6 +409,7 @@
 			background-image: url(../img/filter-icon_@2x.png);
 			background-size: 16px 16px;
 			text-indent: -9999em;
+			background-repeat: no-repeat;
 		}
 	}
 
