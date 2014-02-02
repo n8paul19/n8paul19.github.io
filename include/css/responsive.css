@@ -395,10 +395,10 @@
   	only screen and (min-device-pixel-ratio: 2),
   	only screen and (min-resolution: 2dppx) {
 		
-		header #logo a {
+		/*header #logo a {
 			background-image: url(../img/logo_@2x.png);
 			background-size: 96px 30px;
-		}
+		}*/
 		
 		.menu-nav {
 			background-image: url(../img/menu-mobile_@2x.png);
@@ -408,6 +408,7 @@
 		.type-work {
 			background-image: url(../img/filter-icon_@2x.png);
 			background-size: 16px 16px;
+			text-indent: -9999em;
 		}
 	}
 
