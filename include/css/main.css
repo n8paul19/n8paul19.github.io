@@ -25,7 +25,7 @@ html, hmtl a{
 
 body{
 	/*background:#2F3238;*/
-	background:#444; 
+	background:#343743; 
 	color:#8B8B8B;
 	font-weight:300;
 	font-size:16px;
@@ -35,7 +35,7 @@ body{
 
 
 a{
-	color:#EEA12D;
+	color:#47ae9e;
 	text-decoration: none;
 	cursor: pointer;
 	
@@ -105,7 +105,7 @@ hr {
 }
 
 .color-text {
-    color: #EEA12D;
+    color: #47ae9e;
 }
 
 .through{
@@ -308,7 +308,6 @@ h3.spec {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #363636;
 	opacity: 0.3;
 	filter: alpha(opacity=30);
 	z-index: 0;
@@ -360,7 +359,7 @@ h3.spec {
 #home-slider .control-nav {
 	position: absolute;
 	width: 100%;
-	background: #444;
+	background: #343743;
 	height: 50px;
 	bottom: 0;
 	z-index: 2;
@@ -369,7 +368,7 @@ h3.spec {
 #home-slider #nextslide,
 #home-slider #prevslide {
 	background-image: none;
-	background-color: #363636;
+	background-color: #343743;
 	display: inline-block;
 	margin: 0;
 	position: relative;
@@ -397,7 +396,7 @@ h3.spec {
 
 #home-slider #nextslide:hover,
 #home-slider #prevslide:hover {
-	background-color:#EEA12D;
+	background-color:#47ae9e;
 }
 
 #home-slider #nextslide i,
@@ -455,11 +454,11 @@ h3.spec {
 
 #home-slider ul#slide-list li.current-slide a,
 #home-slider ul#slide-list li.current-slide a:hover {
-	background-color:#EEA12D;
+	background-color:#47ae9e;
 }
 
 #home-slider #nextsection {
-	background-color: #363636;
+	background-color: #343743;
 	margin: 0;
 	position: relative;
 	float:right;
@@ -473,7 +472,7 @@ h3.spec {
 }
 
 #home-slider #nextsection:hover {
-	background-color:#EEA12D;
+	background-color:#47ae9e;
 }
 
 #home-slider #nextsection i {
@@ -504,7 +503,7 @@ header .sticky-nav {
 	position: relative;
 	width: 100%;
 	height: 60px;
-	background: #363636;
+	background: #343743;
 	z-index: 1001;
 	
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
@@ -519,20 +518,25 @@ header .sticky-nav.stuck {
 	z-index: 1001;
 }
 
+.logo {
+	position: fixed;
+	height:200px;
+}
+
 header #logo {
 	color: #FFFFFF;
 	float: left;
-	padding: 15px 0;
+	padding: 10px 0;
 	margin-left: 20px;
 }
 
 header #logo a {
 /*	background: url(../img/logo.png) no-repeat;
-	width: 96px;
-	height: 30px;
-	text-indent: -9999px; */
-	background: url(../img/fotohaus-icon.svg);
-	background-size: 25px;
+	*/width: 150px;
+	height: 37px;
+	text-indent: -9999px;
+	background: url(../img/foto-haus-logotype.svg);
+	background-size: 150px 37px;
 	background-repeat: no-repeat;
 	padding-left: 32px;
 	background-position: left 1px;
@@ -547,13 +551,11 @@ header #logo a {
 }
 
 header #logo a:hover {
-	background: url(../img/fotohaus-icon-wht.svg);
-	background-size: 25px;
-	background-repeat: no-repeat;
-	padding-left: 32px;
+/*	background: url(../img/fotohaus-icon-wht.svg);
+*/padding-left: 32px;
 	background-position: left 1px;
-	/*opacity: 0.65;
-	filter: alpha(opacity=65);	*/
+	opacity: 0.65;
+	filter: alpha(opacity=65);	
 }
 
 nav#menu {
@@ -588,7 +590,7 @@ nav#menu #menu-nav li a {
 
 nav#menu #menu-nav li.current a,
 nav#menu #menu-nav li a:hover {
-	color: #EEA12D;
+	color: #47ae9e;
 }
 
 
@@ -638,7 +640,7 @@ nav#menu #menu-nav li a:hover {
 	display: none;
 	text-align: center;
 	width: 100%;
-	background: #363636;	
+	background: #343743;	
 	border-bottom: 1px solid #444;
 	position: relative;
 	float: left;
@@ -663,14 +665,18 @@ nav#menu #menu-nav li a:hover {
 ================================================== */
 
 .page {
-	background: #444;
+	background: #fafae8;
 	padding: 100px 0;
 	position: relative;
 	z-index: 99;
 }
 
+.page h1, .page h2, .page h3, .page h4, .page h5 {
+	color:#4c4f5e;
+}
+
 .page-alternate {
-	background: #363636;
+	background: #4c4f5e;
 	padding: 100px 0;
 	position: relative;
 	z-index: 99;
@@ -697,7 +703,6 @@ nav#menu #menu-nav li a:hover {
 ================================================== */
 
 .type-work {
-	color: #FFFFFF;
 	font-size: 24px;
 	font-weight: 300;
 	margin-bottom: 30px;
@@ -727,9 +732,11 @@ nav#menu #menu-nav li a:hover {
 }
 
 .work-nav #filters li a.selected {
-	color: #EEA12D;
+	color: #47ae9e;
 }
-
+.fancybox-title {
+	display: none;
+}
 #thumbs {
 	margin: 0;
 	padding: 0;	
@@ -787,7 +794,7 @@ nav#menu #menu-nav li a:hover {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #EEA12D;
+	background: #47ae9e;
 	
 	opacity: 0.80;
 	filter: alpha(opacity=80);
@@ -867,7 +874,7 @@ nav#menu #menu-nav li a:hover {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #EEA12D;
+	background: #47ae9e;
 	
 	opacity: 0.80;
 	filter: alpha(opacity=80);
@@ -969,7 +976,7 @@ nav#menu #menu-nav li a:hover {
 	-moz-box-shadow: none;
 	box-shadow: none;
 	
-	background: #363636;
+	background: #343743;
     color: #FFFFFF;
     font-size: 16px;
     height: auto;
@@ -995,7 +1002,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 #contact-form .submit {
-    background: #333;
+    background: #343743;
     color: #777;
     cursor: pointer;
     display: inline-block;
@@ -1015,7 +1022,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 #contact-form .submit:hover {
-    background: #EEA12D;
+    background: #47ae9e;
     color: #FFFFFF;
 }
 
@@ -1098,7 +1105,7 @@ nav#menu #menu-nav li a:hover {
 	width: 70px;
 	height: 70px;
 
-	background: #363636;
+	background: #343743;
 	
 	-webkit-transition: all 400ms ease-out 0s;	
 	   -moz-transition: all 400ms ease-out 0s;
@@ -1136,7 +1143,7 @@ nav#menu #menu-nav li a:hover {
 
 #social ul li:hover a,
 #social ul li.active a {
-	background-color: #EEA12D;	
+	background-color: #47ae9e;	
 	
 	-webkit-transform: rotateY(0deg);
 	   -moz-transform: rotateY(0deg);
@@ -1166,7 +1173,7 @@ footer {
 	position: relative;
 	width: 100%;
 	height: auto;
-	background: #363636;
+	background: #343743;
 	text-align: center;
 	z-index: 99;
 }
@@ -1201,7 +1208,7 @@ footer .credits {
 }
 
 #back-to-top:hover {
-	background-color:#EEA12D;
+	background-color:#47ae9e;
 }
 
 #back-to-top i {
@@ -1225,7 +1232,7 @@ footer .credits {
 
 #jpreOverlay,
 #jSplash {
-	background-color: #444;
+	background-color: #343743;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -1277,7 +1284,7 @@ footer .credits {
 	margin: -50px 0 0 -50px;
 	width: 100px;
 	height: 100px;
-	background: #EEA12D;
+	background: #47ae9e;
 	-webkit-border-radius: 999px;
 	-moz-border-radius: 999px;
 	border-radius: 999px;
