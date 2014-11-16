@@ -302,6 +302,7 @@ h3.spec {
 	position: relative;
 	overflow: hidden;
 	height: 100%;
+	text-align: center; 
 }
 
 #home-slider .overlay { 
@@ -363,6 +364,7 @@ h3.spec {
 	height: 50px;
 	bottom: 0;
 	z-index: 2;
+	text-align: left;
 }
 
 #home-slider #nextslide,
@@ -496,7 +498,8 @@ h3.spec {
 
 header {
 	width: 100%;
-	z-index: 99;
+	z-index: 999;
+	position: fixed;
 }
 
 header .sticky-nav {
@@ -511,7 +514,7 @@ header .sticky-nav {
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 
-header .sticky-nav.stuck {
+header .sticky-nav/*.stuck */{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -519,8 +522,12 @@ header .sticky-nav.stuck {
 }
 
 .logo {
-	position: fixed;
-	height:200px;
+	max-height:200px;
+	margin: 20% auto;
+	float: none;
+	display: inline-block;
+	text-align: center;
+
 }
 
 header #logo {
@@ -591,6 +598,12 @@ nav#menu #menu-nav li a {
 nav#menu #menu-nav li.current a,
 nav#menu #menu-nav li a:hover {
 	color: #47ae9e;
+}
+
+nav#menu li a span {
+	font-size: 2.5em;
+	vertical-align: sub;
+	margin-right:.2em;
 }
 
 
