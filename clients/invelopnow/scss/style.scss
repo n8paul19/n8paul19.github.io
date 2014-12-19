@@ -1,0 +1,275 @@
+$link-color: #009FE1;
+$dark-blue: #23364B;
+$lite-grey: #E8E8E8;
+$grey: #AFA6A4;
+
+@import "reset.scss";
+@import "grid.scss";
+@import "typography.scss";
+@import "grid.scss";
+@import "buttons.scss";
+@import "slick.scss";
+
+
+body {
+	background: $lite-grey;
+}
+a {
+	color:$link-color;
+	text-decoration:none;
+}
+img {
+	width: 100%;
+}
+header {
+	text-align:right;
+	display:block;
+	height:65px;
+	background:white;
+	position: fixed;
+	width:100%;
+	z-index:100;
+	
+		a {
+			color:$link-color;
+			text-decoration: none;
+			padding:15px;
+		}
+
+		.logo {
+			float: left;
+			margin-top: -13px;
+			text-indent: -9999em;
+			background: url(../images/invelop-logo.jpg);
+			height: 48px;
+			width: 150px;
+			background-size: 150px 48px;
+			text-align: left;
+		}
+
+		nav {
+			margin-top:20px;
+		}
+}
+.wrapper, section {
+	width:100%; 
+	display:inline-block;
+	// background:white;
+}
+
+.wrapper {
+		@include column(12);
+	}
+
+section, footer {
+	height:auto;
+	width: 100%;
+	// position:relative;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	z-index: -1;
+
+	.bg {
+		// position: absolute;
+		width: 100%;
+		height: 700px;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	.message {
+			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+
+			h2 {
+				padding-top:160px;
+				font-weight: 200;
+				color:white;
+
+				span {
+					font-size: 52px; 
+					font-weight: bold;
+					display: block;
+				}
+
+			}
+		}
+}
+section.hero-home {
+
+	.bg {
+		background: url(../images/showcase/interior_002.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-attachment:fixed;
+	}
+		
+}
+
+section.hero-services {
+
+	.bg {
+		background: url(../images/25_berrywood_58.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-attachment:fixed;
+	}
+}
+section.threed-showcase {
+	text-align: center;
+	
+	article {
+		@include column(12);
+		margin:0;
+
+		div {
+			width: 100%;	
+		}
+	}
+	
+	&.threed-showcase {
+		background:$dark-blue;
+		padding: 60px 0;
+
+		h2 {
+			color:white;
+			font-weight: 100;
+			margin: 20px 0 40px;
+		}
+	}
+	.threed-message {
+		@include column(6);
+		@include push(3);
+		@include pull(3);
+		// margin-top:20px;
+		color:rgba(255, 255, 255, 0.5);
+	}
+}
+
+section.arial-showcase {
+
+	.bg {
+		background: url(http://nebula.wsimg.com/355692f30e2116da364ad0d5c7030dd4?AccessKeyId=882927CA32A58CCD921C&disposition=0&alloworigin=1);
+		background-position: center center;
+		background-size: cover;
+		background-attachment:fixed;
+	}
+	.message {
+		background: rgba(0,0,0,.4);
+		height: 100%;
+		width: 100%;
+		max-width: auto;
+		max-width: none;
+
+		h2 {
+			margin: 0;
+			padding:120px;
+		}
+
+	}
+}
+
+section.fixed-showcase {
+
+	.bg {
+		background: url(http://static.squarespace.com/static/52f50c98e4b08f72cd95680a/52f50cd2e4b013e3f941ac32/52f68ee1e4b0e482df7a677b/1391890151833/151_E_58_39E_LVRM_SBoardman.jpg?format=1500w);
+		background-position: center center;
+		background-size: cover;
+		background-attachment:fixed;
+	}
+
+}
+.video-player {
+    // position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-player iframe {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+section.contact-tease {
+	height:300px;
+	text-align: center;
+	background: url(http://subtlepatterns.com/patterns/greyzz.png);
+	background-repeat:repeat;
+
+			h2 {
+				padding-top:100px;
+			}
+}
+
+footer {
+	text-align:left;
+	height:300px;
+
+	.alpha {
+		@include column(5);
+		text-align: left;
+		padding-top:40px;
+	}
+	.beta {
+		@include column(3);
+		padding-top:40px;
+	}
+	.gamma {
+		@include column(2);
+		padding-top:40px;
+
+		.btn {
+			text-align: center;
+			margin-top:5px;
+			display: block;
+		}
+	}
+	.omega {
+		@include column(12);
+		padding-top:20px;
+	}
+}
+section.hero-about {
+	height:120px;
+	text-align:left;
+.bg {
+		background: url(../images/101H.jpg);
+		background-size:cover;
+		background-position: center bottom;
+	}
+}
+section.about-content {
+
+	.alpha {
+		@include column(5);
+		@include push(2);
+	}
+}
+
+@media screen and (min-width: 720px) {
+	section.threed-showcase {
+		article {
+			@include column(4);
+
+		}
+	}
+	.wrapper {
+		@include column(10);
+		@include push(1);
+	}
+	section {
+			height:700px;
+	}
+	footer {
+		// .beta {
+		// 	@include push(2);
+		// }	
+	}
+}

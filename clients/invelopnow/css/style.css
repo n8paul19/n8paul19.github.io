@@ -1,0 +1,509 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  width: 100%;
+  *zoom: 1; }
+  body:before, body:after {
+    content: "";
+    display: table; }
+  body:after {
+    clear: both; }
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased; }
+
+h1 {
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: 600; }
+
+h2 {
+  font-size: 26px;
+  line-height: 1.4;
+  font-weight: 600; }
+
+h3 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600; }
+
+h4, h5, h6 {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 900; }
+
+p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5; }
+
+body {
+  width: 100%;
+  *zoom: 1; }
+  body:before, body:after {
+    content: "";
+    display: table; }
+  body:after {
+    clear: both; }
+
+.btn {
+  padding: 8px 13px 9px;
+  border-radius: 5px; }
+
+.btn-primary {
+  background: #009FE1;
+  color: white; }
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-loading .slick-list {
+    background: #fff url("./../images/ajax-loader.gif") center center no-repeat; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("../fonts/slick.eot");
+  src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick.woff") format("woff"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none; }
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 1; }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 0.25; }
+
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev {
+  left: 0; }
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  .slick-prev:before {
+    content: "←"; }
+    [dir="rtl"] .slick-prev:before {
+      content: "→"; }
+
+.slick-next {
+  right: 0; }
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  .slick-next:before {
+    content: "→"; }
+    [dir="rtl"] .slick-next:before {
+      content: "←"; }
+
+/* Dots */
+.slick-slider {
+  margin-bottom: 30px; }
+
+.slick-dots {
+  position: absolute;
+  bottom: 10%;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%; }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0;
+      font-size: 0;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "•";
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: black;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    .slick-dots li.slick-active button:before {
+      color: black;
+      opacity: 0.75; }
+
+body {
+  background: #E8E8E8; }
+
+a {
+  color: #009FE1;
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+header {
+  text-align: right;
+  display: block;
+  height: 65px;
+  background: white;
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+  header a {
+    color: #009FE1;
+    text-decoration: none;
+    padding: 15px; }
+  header .logo {
+    float: left;
+    margin-top: -13px;
+    text-indent: -9999em;
+    background: url(../images/invelop-logo.jpg);
+    height: 48px;
+    width: 150px;
+    background-size: 150px 48px;
+    text-align: left; }
+  header nav {
+    margin-top: 20px; }
+
+.wrapper, section {
+  width: 100%;
+  display: inline-block; }
+
+.wrapper {
+  display: inline;
+  float: left;
+  width: 97.9166666667%;
+  margin: 0 1.0416666667%; }
+
+section, footer {
+  height: auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  z-index: -1; }
+  section .bg, footer .bg {
+    width: 100%;
+    height: 700px;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  section .message, footer .message {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+    section .message h2, footer .message h2 {
+      padding-top: 160px;
+      font-weight: 200;
+      color: white; }
+      section .message h2 span, footer .message h2 span {
+        font-size: 52px;
+        font-weight: bold;
+        display: block; }
+
+section.hero-home .bg {
+  background: url(../images/showcase/interior_002.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+section.hero-services .bg {
+  background: url(../images/25_berrywood_58.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+section.threed-showcase {
+  text-align: center; }
+  section.threed-showcase article {
+    display: inline;
+    float: left;
+    width: 97.9166666667%;
+    margin: 0 1.0416666667%;
+    margin: 0; }
+    section.threed-showcase article div {
+      width: 100%; }
+  section.threed-showcase.threed-showcase {
+    background: #23364B;
+    padding: 60px 0; }
+    section.threed-showcase.threed-showcase h2 {
+      color: white;
+      font-weight: 100;
+      margin: 20px 0 40px; }
+  section.threed-showcase .threed-message {
+    display: inline;
+    float: left;
+    width: 47.9166666667%;
+    margin: 0 1.0416666667%;
+    margin-left: 26.0416666667%;
+    margin-right: 26.0416666667%;
+    color: rgba(255, 255, 255, 0.5); }
+
+section.arial-showcase .bg {
+  background: url(http://nebula.wsimg.com/355692f30e2116da364ad0d5c7030dd4?AccessKeyId=882927CA32A58CCD921C&disposition=0&alloworigin=1);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+section.arial-showcase .message {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  max-width: auto;
+  max-width: none; }
+  section.arial-showcase .message h2 {
+    margin: 0;
+    padding: 120px; }
+
+section.fixed-showcase .bg {
+  background: url(http://static.squarespace.com/static/52f50c98e4b08f72cd95680a/52f50cd2e4b013e3f941ac32/52f68ee1e4b0e482df7a677b/1391890151833/151_E_58_39E_LVRM_SBoardman.jpg?format=1500w);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.video-player {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+.video-player iframe {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%; }
+
+section.contact-tease {
+  height: 300px;
+  text-align: center;
+  background: url(http://subtlepatterns.com/patterns/greyzz.png);
+  background-repeat: repeat; }
+  section.contact-tease h2 {
+    padding-top: 100px; }
+
+footer {
+  text-align: left;
+  height: 300px; }
+  footer .alpha {
+    display: inline;
+    float: left;
+    width: 39.5833333333%;
+    margin: 0 1.0416666667%;
+    text-align: left;
+    padding-top: 40px; }
+  footer .beta {
+    display: inline;
+    float: left;
+    width: 22.9166666667%;
+    margin: 0 1.0416666667%;
+    padding-top: 40px; }
+  footer .gamma {
+    display: inline;
+    float: left;
+    width: 14.5833333333%;
+    margin: 0 1.0416666667%;
+    padding-top: 40px; }
+    footer .gamma .btn {
+      text-align: center;
+      margin-top: 5px;
+      display: block; }
+  footer .omega {
+    display: inline;
+    float: left;
+    width: 97.9166666667%;
+    margin: 0 1.0416666667%;
+    padding-top: 20px; }
+
+section.hero-about {
+  height: 120px;
+  text-align: left; }
+  section.hero-about .bg {
+    background: url(../images/101H.jpg);
+    background-size: cover;
+    background-position: center bottom; }
+
+section.about-content .alpha {
+  display: inline;
+  float: left;
+  width: 39.5833333333%;
+  margin: 0 1.0416666667%;
+  margin-left: 17.7083333333%; }
+
+@media screen and (min-width: 720px) {
+  section.threed-showcase article {
+    display: inline;
+    float: left;
+    width: 31.25%;
+    margin: 0 1.0416666667%; }
+
+  .wrapper {
+    display: inline;
+    float: left;
+    width: 81.25%;
+    margin: 0 1.0416666667%;
+    margin-left: 9.375%; }
+
+  section {
+    height: 700px; } }
