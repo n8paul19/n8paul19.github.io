@@ -92,12 +92,16 @@ body {
     clear: both; }
 
 .btn {
-  padding: 8px 13px 9px;
-  border-radius: 5px; }
+  padding: 8px 13px 9px; }
 
 .btn-primary {
-  background: #009FE1;
-  color: white; }
+  background: #0094b5;
+  border-bottom: 3px solid #00738c;
+  color: white;
+  transition: all 500ms ease; }
+  .btn-primary:hover {
+    background: #00738c;
+    border-bottom: 3px solid #005365; }
 
 /* Slider */
 .slick-slider {
@@ -183,8 +187,6 @@ body {
 .slick-next {
   position: absolute;
   display: block;
-  height: 20px;
-  width: 20px;
   line-height: 0;
   font-size: 0;
   cursor: pointer;
@@ -211,7 +213,7 @@ body {
 
 .slick-prev:before, .slick-next:before {
   font-family: "slick";
-  font-size: 20px;
+  font-size: 70px;
   line-height: 1;
   color: white;
   opacity: 0.75;
@@ -240,7 +242,8 @@ body {
 
 /* Dots */
 .slick-slider {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  height: 100%; }
 
 .slick-dots {
   position: absolute;
@@ -282,22 +285,23 @@ body {
         width: 20px;
         height: 20px;
         font-family: "slick";
-        font-size: 6px;
+        font-size: 15px;
         line-height: 20px;
         text-align: center;
-        color: black;
+        color: white;
         opacity: 0.25;
         -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale; }
+        -moz-osx-font-smoothing: grayscale;
+        text-shadow: 0 0 8px #000; }
     .slick-dots li.slick-active button:before {
-      color: black;
+      color: white;
       opacity: 0.75; }
 
 body {
   background: #E8E8E8; }
 
 a {
-  color: #009FE1;
+  color: #0094b5;
   text-decoration: none; }
 
 img {
@@ -310,9 +314,10 @@ header {
   background: white;
   position: fixed;
   width: 100%;
-  z-index: 100; }
+  z-index: 110;
+  top: 0; }
   header a {
-    color: #009FE1;
+    color: #0094b5;
     text-decoration: none;
     padding: 15px; }
   header .logo {
@@ -327,9 +332,24 @@ header {
   header nav {
     margin-top: 20px; }
 
+.nav-facebook {
+  background: url(../images/icon-facebook.svg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  padding: 15px 22px;
+  margin-right: 5px;
+  background-position: center; }
+
+.nav-twitter {
+  background: url(../images/icon-twitter.svg);
+  background-repeat: no-repeat;
+  padding: 15px 22px;
+  margin-right: 10px;
+  background-size: 30px;
+  background-position: center; }
+
 .wrapper, section {
-  width: 100%;
-  display: inline-block; }
+  width: 100%; }
 
 .wrapper {
   display: inline;
@@ -364,20 +384,121 @@ section, footer {
         font-weight: bold;
         display: block; }
 
-section.hero-home .bg {
-  background: url(../images/showcase/interior_002.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed; }
+section.home-slider {
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  background: white;
+  height: 900px; }
 
-section.hero-services .bg {
-  background: url(../images/25_berrywood_58.jpg);
-  background-position: center center;
+div.slider-message {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 100; }
+  div.slider-message div {
+    position: absolute;
+    top: 260px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto; }
+    div.slider-message div h2 {
+      color: white;
+      font-size: 42px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      line-height: 1.2;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); }
+      div.slider-message div h2 span {
+        display: block;
+        font-weight: 900;
+        font-size: 62px; }
+  div.slider-message a.btn-slider-button {
+    color: white;
+    border: 1px solid white;
+    margin: 25px auto; }
+
+#video_cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 2; }
+
+#the_video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
   background-size: cover;
-  background-attachment: fixed; }
+  overflow: hidden;
+  z-index: 1; }
+
+#video_overlay {
+  height: auto;
+  margin: auto;
+  max-width: 940px;
+  position: absolute;
+  top: 165px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99; }
+
+section.hero-home {
+  min-height: 900px; }
+  section.hero-home .bg {
+    background: url(../images/showcase/interior_002.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; }
+
+section.home-lead {
+  z-index: 80;
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 80px 0; }
+  section.home-lead article {
+    display: inline;
+    float: left;
+    width: 81.25%;
+    margin: 0 1.0416666667%;
+    margin-left: 9.375%; }
+  section.home-lead h1 {
+    margin-bottom: 20px; }
+  section.home-lead div {
+    display: inline;
+    float: left;
+    width: 31.25%;
+    margin: 0 1.0416666667%; }
+  section.home-lead p {
+    display: inline;
+    float: left;
+    width: 47.9166666667%;
+    margin: 0 1.0416666667%;
+    margin-left: 26.0416666667%;
+    margin-top: 30px; }
+
+section.hero-services {
+  z-index: 20; }
+  section.hero-services .bg {
+    background: url(../images/25_berrywood_58.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; }
 
 section.threed-showcase {
-  text-align: center; }
+  text-align: center;
+  z-index: 30;
+  position: relative; }
   section.threed-showcase article {
     display: inline;
     float: left;
@@ -387,7 +508,7 @@ section.threed-showcase {
     section.threed-showcase article div {
       width: 100%; }
   section.threed-showcase.threed-showcase {
-    background: #23364B;
+    background: #23364b;
     padding: 60px 0; }
     section.threed-showcase.threed-showcase h2 {
       color: white;
@@ -402,50 +523,47 @@ section.threed-showcase {
     margin-right: 26.0416666667%;
     color: rgba(255, 255, 255, 0.5); }
 
-section.arial-showcase .bg {
-  background: url(http://nebula.wsimg.com/355692f30e2116da364ad0d5c7030dd4?AccessKeyId=882927CA32A58CCD921C&disposition=0&alloworigin=1);
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed; }
-section.arial-showcase .message {
-  background: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  width: 100%;
-  max-width: auto;
-  max-width: none; }
-  section.arial-showcase .message h2 {
-    margin: 0;
-    padding: 120px; }
+section.arial-showcase {
+  z-index: 40; }
+  section.arial-showcase .bg {
+    background: url(http://nebula.wsimg.com/355692f30e2116da364ad0d5c7030dd4?AccessKeyId=882927CA32A58CCD921C&disposition=0&alloworigin=1);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; }
+  section.arial-showcase .message {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    max-width: auto;
+    max-width: none; }
+    section.arial-showcase .message h2 {
+      margin: 0;
+      padding: 120px; }
 
-section.fixed-showcase .bg {
-  background: url(http://static.squarespace.com/static/52f50c98e4b08f72cd95680a/52f50cd2e4b013e3f941ac32/52f68ee1e4b0e482df7a677b/1391890151833/151_E_58_39E_LVRM_SBoardman.jpg?format=1500w);
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed; }
-
-.video-player {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%; }
-
-.video-player iframe {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%; }
+section.fixed-showcase {
+  z-index: 50; }
+  section.fixed-showcase .bg {
+    background: url(http://static.squarespace.com/static/52f50c98e4b08f72cd95680a/52f50cd2e4b013e3f941ac32/52f68ee1e4b0e482df7a677b/1391890151833/151_E_58_39E_LVRM_SBoardman.jpg?format=1500w);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; }
 
 section.contact-tease {
   height: 300px;
   text-align: center;
   background: url(http://subtlepatterns.com/patterns/greyzz.png);
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  z-index: 20;
+  position: relative; }
   section.contact-tease h2 {
     padding-top: 100px; }
 
 footer {
   text-align: left;
-  height: 300px; }
+  height: 300px;
+  z-index: 20;
+  position: relative;
+  background: white; }
   footer .alpha {
     display: inline;
     float: left;

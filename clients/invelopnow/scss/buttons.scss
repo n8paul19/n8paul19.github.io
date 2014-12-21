@@ -1,9 +1,16 @@
 .btn {
 	padding:8px 13px 9px;
-	border-radius:5px;
 }
 
 .btn-primary {
 	background:$link-color;
+	border-bottom:3px solid $dark-blue;
 	color:white;
+	transition: all 500ms ease;
+
+		&:hover {
+			background: $dark-blue;
+			border-bottom:3px solid $darkest-blue;
+		}
+
 	}

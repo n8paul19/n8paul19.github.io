@@ -6,12 +6,12 @@ $slick-font-path: "../fonts/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
 $slick-arrow-color: white !default;
-$slick-dot-color: black !default;
+$slick-dot-color: white !default;
 $slick-dot-color-active: $slick-dot-color !default;
 $slick-prev-character: '\2190' !default;
 $slick-next-character: '\2192' !default;
 $slick-dot-character: '\2022' !default;
-$slick-dot-size: 6px !default;
+$slick-dot-size: 15px !default;
 $slick-opacity-default: .75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: .25 !default;
@@ -155,8 +155,8 @@ $slick-opacity-not-active: .25 !default;
 .slick-next {
     position: absolute;
     display: block;
-    height: 20px;
-    width: 20px;
+    // height: 20px;
+    // width: 20px;
     line-height: 0;
     font-size: 0;
     cursor: pointer;
@@ -181,7 +181,7 @@ $slick-opacity-not-active: .25 !default;
 }
 .slick-prev:before, .slick-next:before {
     font-family: $slick-font-family;
-    font-size: 20px;
+    font-size: 70px;
     line-height: 1;
     color: $slick-arrow-color;
     opacity: $slick-opacity-default;
@@ -219,6 +219,7 @@ $slick-opacity-not-active: .25 !default;
 
 .slick-slider {
     margin-bottom: 30px;
+    height:100%;
 }
 .slick-dots {
     position: absolute;
@@ -273,6 +274,7 @@ $slick-opacity-not-active: .25 !default;
                 opacity: $slick-opacity-not-active;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
+                text-shadow: 0 0 8px #000;
             }
 
         }
