@@ -13,8 +13,10 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/bigvideo.css">
+    <script src="js/modernizr.custom.js"></script>
   </head>
   <body>
+    <div class="container">
     <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -24,13 +26,14 @@
           <a href="index.html" class="logo">Invelop</a>
 					<a href="" class="nav-facebook"></a>
 					<a href="" class="nav-twitter"></a>
-          <a href="">Services</a>
+          <a href="services.html">Services</a>
           <a href="">About</a>
           <a href="contact.html">Contact Us</a>
+          <button id="trigger-overlay" type="button">Open Overlay</button>
         </nav>
       </div>
     </header>
-		<section class="hero-home">
+    <section class="hero-home">
 			<div class="home-hero-video">
 				<div class="slider-message slider-message-1">
 					<div>
@@ -165,6 +168,33 @@
       </div>
     </div>
   </footer>
+</div>
+<div class="overlay overlay-contentscale">
+      <button type="button" class="overlay-close">Close</button>
+      Contact Us
+     <form>
+      <feildset>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="name" id="name" class="input" required>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" id="email" class="input" required>
+      </div>
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="number" name="phone" id="phone" class="input" required>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea name="message" id="message" cols="30" rows="5" class="" required="" data-error=" "></textarea>
+      </div>
+      <input type="submit" class="btnSubmit set-right" value="SEND" id="sendButton" style="opacity: 1;">
+      <input type="hidden" name="form_send" value="1">
+    </feildset>
+    </form>
+  </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/main-min.js"></script>
