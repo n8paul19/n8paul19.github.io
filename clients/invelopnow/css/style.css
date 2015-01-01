@@ -1387,7 +1387,7 @@ img {
 header, footer {
   text-align: right;
   display: block;
-  height: 65px;
+  height: 110px;
   background: white;
   position: fixed;
   width: 100%;
@@ -1399,14 +1399,14 @@ header, footer {
     text-decoration: none;
     padding: 15px; }
   header .logo, footer .logo {
+    width: 240px;
+    height: auto; }
+  header video.logo-loop, footer video.logo-loop {
+    background: #fff !important;
     float: left;
-    margin-top: -13px;
-    text-indent: -9999em;
-    background: url(../images/invelop-logo.jpg);
-    height: 48px;
-    width: 150px;
-    background-size: 150px 48px;
-    text-align: left; }
+    margin-top: -20px; }
+    header video.logo-loop source, footer video.logo-loop source {
+      background: white; }
   header nav, footer nav {
     margin-top: 20px; }
 

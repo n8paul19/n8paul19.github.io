@@ -30,7 +30,7 @@ img {
 header, footer {
 	text-align:right;
 	display:block;
-	height:65px;
+	height:110px;
 	background:white;
 	position: fixed;
 	width:100%;
@@ -44,15 +44,35 @@ header, footer {
 		padding:15px;
 	}
 
+	// .logo {
+	// 	display: none;
+	// 	float: left;
+	// 	margin-top: -13px;
+	// 	text-indent: -9999em;
+	// 	background: url(../images/invelop-logo.jpg);
+	// 	height: 48px;
+	// 	width: 150px;
+	// 	background-size: 150px 48px;
+	// 	text-align: left;
+	// }
+
 	.logo {
+		width:240px;
+		height:auto;
+
+	}
+
+	video.logo-loop {
+		background: #fff !important;
+		// background-size: 290px 92px;
+		// background-repeat: no-repeat;
+		// background-position: center;
 		float: left;
-		margin-top: -13px;
-		text-indent: -9999em;
-		background: url(../images/invelop-logo.jpg);
-		height: 48px;
-		width: 150px;
-		background-size: 150px 48px;
-		text-align: left;
+		margin-top: -20px;
+
+		source {
+			background: white;
+		}
 	}
 
 	nav {
