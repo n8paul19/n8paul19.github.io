@@ -42,6 +42,7 @@ header, footer {
 		color:$link-color;
 		text-decoration: none;
 		padding:15px;
+		font-size: 18px;
 	}
 
 	// .logo {
@@ -62,6 +63,11 @@ header, footer {
 
 	}
 
+	.nav-logo {
+		display: block;
+		float:left;
+	}
+
 	video.logo-loop {
 		background: #fff !important;
 		// background-size: 290px 92px;
@@ -76,7 +82,19 @@ header, footer {
 	}
 
 	nav {
-		margin-top:20px;
+		margin-top:15px;
+	}
+
+	.social {
+		margin-top: 15px;
+
+			a {
+				color:$grey;
+
+					span {
+						font-size: 16px;
+					}
+			}
 	}
 }
 
@@ -113,7 +131,7 @@ section, footer {
 		margin-right: auto;
 		text-align: center;
 
-		h2 {
+		h1 {
 			padding-top:160px;
 			font-weight: 200;
 			color:white;
@@ -263,23 +281,60 @@ section.home-lead {
 
 section.services {
 	padding-top:160px;
-	background:#f3f5f8;
+	background:#f3f5f8 url(../images/bg-grey.jpg) repeat;
 	text-align: center;
+	color:white;
 
 	h1 {
-		
 		margin-bottom: 25px;
 		font-weight: 100;
 		font-size: 42px;
 	}
 
 	.alpha {
-		@include column(10);
-		@include push(1);
+		@include column(8);
+		@include push(2);
+
+		p {
+			text-align: left;
+		}
 	}
 
-	.lead {
-		font-size: 130%;
+}
+
+section.services-subpages {
+	// padding-top:110px;
+
+	.wrapper {
+		margin-bottom: 40px;
+	}
+
+	.gamma {
+		padding:60px;
+		background: url(../images/bg-grey.jpg) repeat;
+		color:white;
+		text-align: center;
+		margin-bottom:40px;
+
+		h3 {
+			margin-top: 100px;
+			font-weight: 100;
+		}
+
+		h1 {
+			font-size:50px;
+			font-weight: 900;
+		}
+	}	
+
+	.alpha {
+		@include column(9);
+		border-right:1px solid $lite-grey;
+		padding-right:9.375%;
+	}
+	menu {
+		@include column(3);
+		// @include push(1);
 	}
 }
 section.threed-showcase {
@@ -411,7 +466,7 @@ footer {
 		float: left;
 		padding:50px 0;
 		text-align: center;
-		margin-top:30px;
+		
 
 		.icon-mail {
 			font-size: 24px;
