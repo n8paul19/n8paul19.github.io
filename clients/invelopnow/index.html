@@ -179,65 +179,28 @@
      </div> -->
      <img src="https://service.ringcentral.com/picture/dot.gif" width="1" height="1"/><div style="cursor:pointer; display:inline-block;" onclick='var wind = window; var winop = wind.open; winop("https://service.ringcentral.com/ringme/?uc=51FF96BB6504D67DC58F3B5C7354A17C736857569956,0,,1,0&s=no&v=2&s_=1210", "Callback_RingMe", "resizable=no,width=650,height=460"); return false;'><span class="icon-mobile"></span> RingMe</div>
      
-     <form action="/blog/uploads/contact-form/" id="contact-form" class="form-horizontal" role="form" method="post">
-            <div class="form-group">
-                <label for="name" class="col-lg-2 control-label">Nome</label>
-                <div class="col-lg-10">
-                    <input type="text" class="form-control" id="form-name" name="form-name" placeholder="Nome" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="email" class="col-lg-2 control-label">Email</label>
-                <div class="col-lg-10">
-                    <input type="email" class="form-control" id="form-email" name="form-email" placeholder="Email" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="tel" class="col-lg-2 control-label">Telefone</label>
-                <div class="col-lg-10">
-                    <input type="tel" class="form-control" id="form-tel" name="form-tel" placeholder="Telefone">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="assunto" class="col-lg-2 control-label">Assunto</label>
-                <div class="col-lg-10">
-                    <input type="text" class="form-control" id="form-assunto" name="form-assunto" placeholder="Assunto" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="mensagem" class="col-lg-2 control-label">Mensagem</label>
-                <div class="col-lg-10">
-                    <textarea class="form-control" rows="3" id="form-mensagem" name="form-mensagem" placeholder="Mensagem" required></textarea>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-lg-offset-2 col-lg-10">
-                    <button type="submit" class="btn btn-default">Enviar</button>
-                </div>
-            </div>
-        </form>
-     <form>
+     <form method="post" action="contactengine.php">
       <feildset>
         <div class="field-wrapper">
-          <label for="fname">Your Name</label>
-          <input name="fname" placeholder="First and Last Name " />
+          <label for="name">Your Name</label>
+          <input name="Name" id="Name" placeholder="First and Last Name " />
         </div>
 
         <div class="field-wrapper">
-          <label for="lname">Your Email</label>
-          <input name="email" placeholder="Email" />
+          <label for="email">Your Email</label>
+          <input name="email" id="Email" placeholder="Email" />
         </div>
 
         <div class="field-wrapper">
-          <label for="phone">Your Number</label>
-          <input name="phone" placeholder="Phone Number" />
+          <label for="tel">Your Number</label>
+          <input name="tel" id="Tel" placeholder="Phone Number" />
         </div>
 
         <div class="field-wrapper">
           <label for="message">Your Message</label>
-          <textarea rows="4" cols="50"input name="message" placeholder="Send us a note"></textarea>
+          <textarea rows="4" cols="50"input name="message" id="Message" placeholder="Send us a note"></textarea>
         </div>
-        <a href="" class="btn btn-primary btn-contact">Send</a>
+        <input type="submit" name="submit" value="Submit" class="submit-button" />
       </feildset>
     </form>
   </div>
