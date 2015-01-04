@@ -1,0 +1,10 @@
+section.fixed-showcase {
+	z-index:50;
+	.bg {
+		background: url(http://static.squarespace.com/static/52f50c98e4b08f72cd95680a/52f50cd2e4b013e3f941ac32/52f68ee1e4b0e482df7a677b/1391890151833/151_E_58_39E_LVRM_SBoardman.jpg?format=1500w);
+		background-position: center center;
+		background-size: cover;
+		background-attachment:fixed;
+	}
+
+}

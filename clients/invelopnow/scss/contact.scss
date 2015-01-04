@@ -1,0 +1,97 @@
+section.contact-form {
+	@include column(6);
+	@include push(3);
+	margin-top:6%;
+
+	h2 {
+		font-size: 52px;
+		font-weight: 100;
+		color:white;
+		margin-bottom: 25px;
+	}
+
+}
+
+.field-wrapper {
+	position:relative;
+	margin-bottom:40px;
+
+
+}
+input, textarea {
+	font-size: 22px;
+	padding:7px;
+	width: 100%;
+	background:transparent;
+	border:none;
+	border-bottom:2px solid rgba(255, 255, 255, .5);
+	color:white;
+	font-family: 'Open Sans';
+
+
+
+	&:focus {
+		outline: none;
+		border-bottom: 2px solid white;
+	}
+	.btn-contact {
+		/* border-radius: 50%; */
+		font-size: 32px;
+		width: 100%;
+		padding: 15px 0 20px;
+		font-weight: 100;
+		font-family: 'Open Sans';
+		cursor: pointer;
+	}
+	input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+		background:rgb(23, 156, 186);
+	}
+	::-webkit-input-placeholder {
+		color: rgba(255, 255, 255, .5);
+		font-size:15px; 
+		font-weight: 100;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		color: rgba(255, 255, 255, .5);
+		font-size:15px; 
+		font-weight: 100;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+		color: rgba(255, 255, 255, .5);
+		font-size:15px; 
+		font-weight: 100; 
+	}
+
+	:-ms-input-placeholder {  
+		color: rgba(255, 255, 255, .5);
+		font-size:15px; 
+		font-weight: 100; 
+	}
+	
+}
+
+.contact-phone {
+	margin-bottom: 20px;
+	color:white;
+	font-size: 22px;
+}
+
+label {
+	position:absolute;
+	top:-13px;
+	left:0;
+	font-size:14px;
+	color:rgba(255, 255, 255, .5);
+	transition: all 0.1s linear;
+	opacity:0;
+	font-weight:100;
+}
+label.on {
+	color:white;
+}
+label.show {
+	top:-18px;
+	opacity:1;
+}

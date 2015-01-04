@@ -1,0 +1,67 @@
+// section.hero-about {
+// 	height:120px;
+// 	text-align:left;
+// 	.bg {
+// 		background: url(../images/101H.jpg);
+// 		background-size:cover;
+// 		background-position: center bottom;
+// 	}
+// }
+
+
+// section.about-content {
+// 	.alpha {
+// 		@include column(5);
+// 		@include push(2);
+// 	}
+// }
+
+section.about {
+	.alpha {
+		text-align: center;
+		margin-bottom: 40px;
+		background: url(../images/101H.jpg);
+		background-size:cover;
+		color:white;
+		padding:40px 0;
+
+		h1 {
+			font-weight: 100;
+			font-size: 32px;
+			line-height: 1;
+			text-shadow: 0 0 8px $darkest-blue;
+
+			span {
+				font-weight: 900;
+				display: block;
+			}
+		}
+	}
+	.gamma {
+		@include column(11);
+		@include push(.5);
+		@include pull(.5);
+		margin-bottom:40px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+
+	@media screen and (min-width: 820px) {
+		padding-top:110px;
+
+		.alpha {
+			h1 {
+				font-size: 52px;
+			}
+		}
+
+		.gamma {
+			@include column(8);
+			@include push(2);
+		}
+	}
+}

@@ -1,0 +1,77 @@
+/*
+Error: Undefined mixin 'column'.
+        on line 94 of /Users/paulna/Sites/n8paul19.github.io/clients/invelopnow/scss/home.scss, in `column'
+        from line 94 of /Users/paulna/Sites/n8paul19.github.io/clients/invelopnow/scss/home.scss
+
+89: 	h1 {
+90: 		margin-bottom:40px;
+91: 	}
+92: 	
+93: 	div {
+94: 		@include column(4);
+95: 
+96: 		span {
+97: 			font-size: 65px;
+98: 			color:$darkest-blue;
+99: 		}
+
+Backtrace:
+/Users/paulna/Sites/n8paul19.github.io/clients/invelopnow/scss/home.scss:94:in `column'
+/Users/paulna/Sites/n8paul19.github.io/clients/invelopnow/scss/home.scss:94
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:98:in `block in with_mixin'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:98:in `with_mixin'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/engine.rb:268:in `render'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:404:in `run'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/bin/scss:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'column'.\A         on line 94 of /Users/paulna/Sites/n8paul19.github.io/clients/invelopnow/scss/home.scss, in `column'\A         from line 94 of /Users/paulna/Sites/n8paul19.github.io/clients/invelopnow/scss/home.scss\A \A 89: 	h1 {\A 90: 		margin-bottom:40px;\A 91: 	}\A 92: 	\A 93: 	div {\A 94: 		@include column(4);\A 95: \A 96: 		span {\A 97: 			font-size: 65px;\A 98: 			color:$darkest-blue;\A 99: 		}"; }

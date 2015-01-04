@@ -1,0 +1,100 @@
+header {
+	text-align:right;
+	display:block;
+	height:180px;
+	background:white;
+	position: relative;
+	width:100%;
+	z-index:110;
+	top:0;
+	box-shadow: 0 0 3px rgba(0,0,0,.1);
+
+	a {
+		color:$link-color;
+		text-decoration: none;
+		padding:15px;
+		font-size: 18px;
+	}
+
+	// .logo {
+	// 	display: none;
+	// 	float: left;
+	// 	margin-top: -13px;
+	// 	text-indent: -9999em;
+	// 	background: url(../images/invelop-logo.jpg);
+	// 	height: 48px;
+	// 	width: 150px;
+	// 	background-size: 150px 48px;
+	// 	text-align: left;
+	// }
+
+	.logo {
+		width:240px;
+		height:auto;
+
+	}
+
+	.nav-logo {
+		display: block;
+		float:left;
+		width: 100%;
+	}
+
+	video.logo-loop {
+		background: #fff !important;
+		margin-top: -20px;
+		width: 100%;
+		max-width:400px;
+		height:auto;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	nav {
+		@include column(12);
+		margin-top:15px;
+		text-align: center;
+	}
+
+	.social {
+		@include column(12);
+		text-align:center;
+		
+		a {
+			color:$grey;
+			padding: 15px 10px;
+
+			span {
+				font-size: 16px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 820px) {
+	
+		height:110px;
+		position:fixed;
+
+		.nav-logo {
+			@include column(6);
+		}
+
+		.social {
+			@include column(6);
+			text-align:right;
+			margin-top: 15px;
+			float: right;
+
+			a {
+				padding: 15px;
+			}		
+		}
+		nav {
+			@include column(6);
+			float: right;
+			margin-top:15px;
+			text-align: right;
+		}
+	}
+}

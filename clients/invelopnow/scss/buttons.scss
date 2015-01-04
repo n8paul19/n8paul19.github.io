@@ -1,13 +1,14 @@
 .btn {
 	padding:8px 13px 9px;
+	cursor:pointer;
+	transition: all 500ms ease;
 }
 
 .btn-primary {
 	background:$primary-color;
 	border-bottom:3px solid $dark-blue;
 	color:white;
-	transition: all 500ms ease;
-
+	
 		&:hover {
 			background: $dark-blue;
 			border-bottom:3px solid $darkest-blue;

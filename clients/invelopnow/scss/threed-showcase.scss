@@ -1,0 +1,50 @@
+section.threed-showcase {
+	text-align: center;
+	z-index:30;
+	position:relative;
+	background:#162c37;
+		padding: 60px 0;
+		float: left;
+	article {
+		@include column(10);
+		margin:0;
+		@include push(1);
+		@include pull(1);
+		
+
+		div {
+			width: 100%;
+
+			iframe {
+				height:250px;
+			}
+		}
+	}
+
+		h2 {
+			color:white;
+			font-weight: 100;
+			margin: 20px 0 40px;
+		}
+	.threed-message {
+		@include column(12);
+		// margin-top:20px;
+		color:rgba(255, 255, 255, 0.5);
+	}
+}
+
+@media screen and (min-width: 820px) {
+
+	section.threed-showcase {
+		article {
+			@include column(4);
+
+		}
+
+		.threed-message {
+			@include column(6);
+			@include push(3);
+			@include pull(3);
+		}
+	}
+}
