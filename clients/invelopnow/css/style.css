@@ -1426,6 +1426,48 @@ section, footer {
         font-weight: bold;
         display: block; }
 
+input, textarea {
+  font-size: 22px;
+  padding: 7px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  font-family: 'Open Sans';
+  border-radius: none; }
+  input:focus, textarea:focus {
+    outline: none;
+    border-bottom: 2px solid white; }
+  input .btn-contact, textarea .btn-contact {
+    /* border-radius: 50%; */
+    font-size: 32px;
+    width: 100%;
+    padding: 15px 0 20px;
+    font-weight: 100;
+    font-family: 'Open Sans';
+    cursor: pointer; }
+  input input:-webkit-autofill, input textarea:-webkit-autofill, input select:-webkit-autofill, textarea input:-webkit-autofill, textarea textarea:-webkit-autofill, textarea select:-webkit-autofill {
+    background: #179cba; }
+  input ::-webkit-input-placeholder, textarea ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-weight: 100; }
+  input :-moz-placeholder, textarea :-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-weight: 100; }
+  input ::-moz-placeholder, textarea ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-weight: 100; }
+  input :-ms-input-placeholder, textarea :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-weight: 100; }
+
 @media screen and (min-width: 980px) {
   .wrapper {
     display: inline;
@@ -1589,18 +1631,20 @@ section.home-lead {
   text-align: center;
   padding: 40px 0; }
   section.home-lead h1 {
-    margin-bottom: 40px; }
+    margin-bottom: 20px;
+    font-size: 28px; }
   section.home-lead div {
     display: inline;
     float: left;
     width: 31.25%;
     margin: 0 1.0416666667%; }
     section.home-lead div span {
-      font-size: 65px;
+      font-size: 35px;
       color: #162c37; }
     section.home-lead div h3 {
       color: #162c37;
-      margin-top: 15px; }
+      margin-top: 15px;
+      font-size: 16px; }
   section.home-lead p {
     display: inline;
     float: left;
@@ -1622,6 +1666,9 @@ section.home-lead {
 
   section.home-lead {
     padding: 80px 0; }
+    section.home-lead h1 {
+      margin-bottom: 40px;
+      font-size: 32px; }
     section.home-lead article {
       display: inline;
       float: left;
@@ -1633,6 +1680,10 @@ section.home-lead {
       float: left;
       width: 22.9166666667%;
       margin: 0 1.0416666667%; }
+      section.home-lead div span {
+        font-size: 65px; }
+      section.home-lead div h3 {
+        font-size: 20px; }
     section.home-lead .alpha {
       margin-left: 13.5416666667%; }
     section.home-lead p {
@@ -1929,79 +1980,57 @@ section.about p {
 section.contact-form {
   display: inline;
   float: left;
-  width: 47.9166666667%;
+  width: 89.5833333333%;
   margin: 0 1.0416666667%;
-  margin-left: 26.0416666667%;
-  margin-top: 6%; }
+  margin: 6%;
+  margin-left: 3.125%;
+  margin-right: 3.125%; }
   section.contact-form h2 {
-    font-size: 52px;
-    font-weight: 100;
-    color: white;
-    margin-bottom: 25px; }
-
-.field-wrapper {
-  position: relative;
-  margin-bottom: 40px; }
-
-input, textarea {
-  font-size: 22px;
-  padding: 7px;
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  color: white;
-  font-family: 'Open Sans'; }
-  input:focus, textarea:focus {
-    outline: none;
-    border-bottom: 2px solid white; }
-  input .btn-contact, textarea .btn-contact {
-    /* border-radius: 50%; */
     font-size: 32px;
-    width: 100%;
-    padding: 15px 0 20px;
     font-weight: 100;
+    color: white; }
+  section.contact-form .field-wrapper {
+    position: relative;
+    margin-bottom: 40px; }
+  section.contact-form .contact-phone {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 22px; }
+  section.contact-form label {
+    position: absolute;
+    top: -13px;
+    left: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.1s linear;
+    opacity: 0;
+    font-weight: 100; }
+  section.contact-form label.on {
+    color: white; }
+  section.contact-form label.show {
+    top: -18px;
+    opacity: 1; }
+  section.contact-form button.submit-button {
+    background-color: #62bd17;
+    border-color: #0e79a0;
+    padding: 20px 20px 30px;
+    display: inline;
+    font-size: 32px;
+    color: white;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #00afef;
     font-family: 'Open Sans';
-    cursor: pointer; }
-  input input:-webkit-autofill, input textarea:-webkit-autofill, input select:-webkit-autofill, textarea input:-webkit-autofill, textarea textarea:-webkit-autofill, textarea select:-webkit-autofill {
-    background: #179cba; }
-  input ::-webkit-input-placeholder, textarea ::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 15px;
-    font-weight: 100; }
-  input :-moz-placeholder, textarea :-moz-placeholder {
-    /* Firefox 18- */
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 15px;
-    font-weight: 100; }
-  input ::-moz-placeholder, textarea ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 15px;
-    font-weight: 100; }
-  input :-ms-input-placeholder, textarea :-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 15px;
-    font-weight: 100; }
-
-.contact-phone {
-  margin-bottom: 20px;
-  color: white;
-  font-size: 22px; }
-
-label {
-  position: absolute;
-  top: -13px;
-  left: 0;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
-  transition: all 0.1s linear;
-  opacity: 0;
-  font-weight: 100; }
-
-label.on {
-  color: white; }
-
-label.show {
-  top: -18px;
-  opacity: 1; }
+    font-weight: 200; }
+    section.contact-form button.submit-button span {
+      margin-right: 5px; }
+  @media screen and (min-width: 820px) {
+    section.contact-form {
+      display: inline;
+      float: left;
+      width: 47.9166666667%;
+      margin: 0 1.0416666667%;
+      margin-left: 13.5416666667%;
+      margin-right: 13.5416666667%; }
+      section.contact-form h2 {
+        font-size: 52px; } }

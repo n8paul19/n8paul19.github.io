@@ -87,19 +87,21 @@ section.home-lead {
 		// @include push(1);
 	}
 	h1 {
-		margin-bottom:40px;
+		margin-bottom:20px;
+		font-size: 28px;
 	}
 	
 	div {
 		@include column(4);
 
 		span {
-			font-size: 65px;
+			font-size: 35px;
 			color:$darkest-blue;
 		}
 		h3 {
 			color:$darkest-blue;
 			margin-top:15px;
+			font-size: 16px;
 		}
 	}
 	
@@ -135,12 +137,25 @@ section.home-lead {
 	section.home-lead {
 		padding:80px 0;
 
+		h1 {
+			margin-bottom:40px;
+			font-size: 32px;
+		}
+
 		article {
 			@include column(10);
 			@include push(1);
 		}
 		div {
 			@include column(3);
+
+			span {
+				font-size: 65px;
+			}
+
+			h3 {
+				font-size: 20px;
+			}
 		}
 		.alpha {
 			@include push(1.5);

@@ -1,48 +1,13 @@
 @media screen and (min-width: 980px) {
-
 	.wrapper {
 		@include column(10);
 		@include push(1);
 	}
 }
 
-
-@media screen and (min-width: 820px) {
-
-	section.threed-showcase {
-		article {
-			@include column(4);
-
-		}
-
-		.threed-message {
-			@include column(6);
-			@include push(3);
-			@include pull(3);
-		}
-	}
-	
+@media screen and (min-width: 820px) {	
 	section {
 		min-height:700px;
 		height:100%;
-	}
-	section.home-slider {
-		height:900px
-	}
-	footer {
-			.email-signup {
-
-			input {
-				@include column(6);
-				margin-left:auto;
-				margin-right:auto;
-				float:none;
-				margin-bottom: 15px;
-			}
-			.btn {
-				width: 150px;
-				float:none;
-			}
-		}
 	}
 }
