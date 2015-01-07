@@ -10,7 +10,7 @@ section.threed-showcase {
 		margin:0;
 		@include push(1);
 		@include pull(1);
-		
+
 
 		div {
 			width: 100%;
@@ -29,7 +29,7 @@ section.threed-showcase {
 	.threed-message {
 		@include column(12);
 		// margin-top:20px;
-		color:rgba(255, 255, 255, 0.5);
+		color:rgba(255, 255, 255, 1);
 	}
 }
 

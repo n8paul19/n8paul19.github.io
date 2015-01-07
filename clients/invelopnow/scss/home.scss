@@ -60,6 +60,7 @@ div.slider-message {
 	width: 100%;
 	height: 100%;
 	padding: 0;
+	background-image: url(../images/invelop-video-bg.jpg);
 	background-size: cover;
 	overflow: hidden;
 	z-index: 1;
@@ -78,7 +79,7 @@ div.slider-message {
 section.home-lead {
 	z-index: 80;
 	position: relative;
-	background: rgba(255, 255, 255, .9);
+	background: rgba(227, 231, 238, .9);
 	text-align:center;
 	padding:40px 0;
 
@@ -90,7 +91,7 @@ section.home-lead {
 		margin-bottom:20px;
 		font-size: 28px;
 	}
-	
+
 	div {
 		@include column(4);
 
@@ -104,7 +105,7 @@ section.home-lead {
 			font-size: 16px;
 		}
 	}
-	
+
 	p {
 		@include column(12);
 		margin-top:20px;
@@ -116,7 +117,7 @@ section.home-lead {
 
 	section.hero-home {
 
-		min-height:900px;	
+		min-height:900px;
 	}
 
 	div.slider-message {
@@ -126,7 +127,7 @@ section.home-lead {
 
 			h2 {
 				font-size: 42px;
-				
+
 				span {
 					font-size:62px;
 				}

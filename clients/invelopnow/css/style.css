@@ -79,11 +79,8 @@ h4, h5, h6 {
 
 p {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5; }
-
-p.lead {
-  font-size: 130%; }
 
 body {
   width: 100%;
@@ -1503,11 +1500,11 @@ header {
     width: 100%; }
   header video.logo-loop {
     background: #fff !important;
-    margin-top: -20px;
+    margin-top: -8px;
     width: 100%;
-    max-width: 400px;
+    max-width: 360px;
     height: auto;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
     display: block; }
   header nav {
@@ -1609,6 +1606,7 @@ div.slider-message {
   width: 100%;
   height: 100%;
   padding: 0;
+  background-image: url(../images/invelop-video-bg.jpg);
   background-size: cover;
   overflow: hidden;
   z-index: 1; }
@@ -1627,7 +1625,7 @@ div.slider-message {
 section.home-lead {
   z-index: 80;
   position: relative;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(227, 231, 238, 0.9);
   text-align: center;
   padding: 40px 0; }
   section.home-lead h1 {
@@ -1817,7 +1815,7 @@ section.threed-showcase {
     float: left;
     width: 97.9166666667%;
     margin: 0 1.0416666667%;
-    color: rgba(255, 255, 255, 0.5); }
+    color: white; }
 
 @media screen and (min-width: 820px) {
   section.threed-showcase article {
