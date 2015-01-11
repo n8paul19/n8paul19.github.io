@@ -20,6 +20,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/contact.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contact.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/contactengine.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -350,7 +359,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 42300,
+		"initialSize": 13029,
 		"inputAbbreviatedPath": "\/images\/invelop-logo.jpg",
 		"outputAbbreviatedPath": "\/images\/invelop-logo.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1072,11 +1081,20 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/style-guide.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/style-guide.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Nathan & Kristina Paul",
+"lastSavedByUser": "Nathan A. Paul",
 "manualImportLinks": {
 	"\/js\/main.js": [
 		{

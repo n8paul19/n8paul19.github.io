@@ -1823,6 +1823,8 @@ section.threed-showcase {
     float: left;
     width: 31.25%;
     margin: 0 1.0416666667%; }
+    section.threed-showcase article div iframe {
+      height: 320px; }
   section.threed-showcase .threed-message {
     display: inline;
     float: left;

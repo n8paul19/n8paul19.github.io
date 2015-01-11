@@ -22,7 +22,7 @@
     <!-- header -->
     <header>
       <div class="wrapper">
-        <a class="nav-logo" href="index.html">
+        <a class="nav-logo" href="/">
             <video class="logo-loop" width="480" height="100" autoplay="autoplay" preload="none"poster="images/invelop-logo.jpg" loop>
               <source src="images/invelop-logo.mov" type="video/mov" />
               <source src="images/invelop-logo.ogg" type="video/ogg" />
@@ -54,19 +54,23 @@
         
         <div class="gamma">
 
-        <p class="lead">We've recieved your message and will be in touch right away.</p></div>
+        <p class="lead">We've received your message and will be in touch right away.</p></div>
       </div>
     </section>
 <!-- FOOTER -->
 <footer>
-  <div class="email-signup">
-    <span class="icon-mail"></span>
-    <h3>Sign up for Invelop’s Newsletter</h3>
-    <div class="field-wrapper">
-      <label for="fname">You're gonna love it!</label>
-      <input name="fname" placeholder="Enter your email address " />
-    </div>
-    <p>We don’t share email addresses and you can unsubscribe at any time.</p>
+  <div id="mc_embed_signup" class="email-signup">
+    <form action="//invelopnow.us9.list-manage.com/subscribe/post?u=778993d3c4f211e0340bdcb71&amp;id=1f07ac002b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <span class="icon-mail"></span>
+      <h3>Sign up for Invelop’s Newsletter</h3>
+      <div id="mc_embed_signup_scroll" class="field-wrapper">
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_778993d3c4f211e0340bdcb71_1f07ac002b" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+        <p>We don’t share email addresses and you can unsubscribe at any time.</p>
+      </div>
+    </form>
   </div>
   <div class="footer-bottom">
     <p>@2015 Invelop LLC •  All Rights Reserved</p>
@@ -76,42 +80,42 @@
 <!-- Overlay -->
 <div class="overlay overlay-contentscale">
   <button type="button" class="overlay-close">Close</button>
-  
+
   <section class="contact-form">
     <div class="wrapper">
       <h2>Contact Us</h2>
       <div class="contact-phone">
-       <span class="icon-mobile"></span> 314.555.5555
+       <img src="https://service.ringcentral.com/picture/dot.gif" width="1" height="1"/><div style="cursor:pointer; display:inline-block;" onclick='var wind = window; var winop = wind.open; winop("https://service.ringcentral.com/ringme/?uc=51FF96BB6504D67DC58F3B5C7354A17C736857569956,0,,1,0&s=no&v=2&s_=1210", "Callback_RingMe", "resizable=no,width=650,height=460"); return false;'><span class="icon-mobile"></span> RingMe Now</div>
      </div>
-     <div class="contact-social">
-     </div>
-     
-     <form>
+
+     <form method="post" action="contactengine.php">
       <feildset>
         <div class="field-wrapper">
-          <label for="fname">Your Name</label>
-          <input name="fname" placeholder="First and Last Name " />
+          <label for="name">Your Name</label>
+          <input name="Name" id="Name" placeholder="First and Last Name " />
         </div>
 
         <div class="field-wrapper">
-          <label for="lname">Your Email</label>
-          <input name="email" placeholder="Email" />
+          <label for="email">Your Email</label>
+          <input name="email" id="Email" placeholder="Email" />
         </div>
 
         <div class="field-wrapper">
-          <label for="phone">Your Number</label>
-          <input name="phone" placeholder="Phone Number" />
+          <label for="tel">Your Number</label>
+          <input name="tel" id="Tel" placeholder="Phone Number" />
         </div>
 
         <div class="field-wrapper">
           <label for="message">Your Message</label>
-          <textarea rows="4" cols="50"input name="message" placeholder="Send us a note"></textarea>
+          <textarea rows="4" cols="50"input name="message" id="Message" placeholder="Send us a note"></textarea>
         </div>
-        <a href="" class="btn btn-primary btn-contact">Send</a>
+        <button type="submit" class="btn submit-button">
+          <span class="icon-paperplane"></span> Send
+        </button>
       </feildset>
     </form>
   </div>
-  
+
 </section>
 </div>
 </div><!-- /container -->

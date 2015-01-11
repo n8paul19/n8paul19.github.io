@@ -39,6 +39,10 @@ section.threed-showcase {
 		article {
 			@include column(4);
 
+			div iframe {
+				height:320px;
+			}
+
 		}
 
 		.threed-message {
