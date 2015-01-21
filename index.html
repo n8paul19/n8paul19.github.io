@@ -9,12 +9,38 @@
   <title>Kraft Design Co.</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://kraftdesign.co/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://kraftdesign.co/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://kraftdesign.co/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://kraftdesign.co/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://kraftdesign.co/img/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://kraftdesign.co/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://kraftdesign.co/img/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://kraftdesign.co/img/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="http://kraftdesign.co/img/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="http://kraftdesign.co/img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="http://kraftdesign.co/img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="http://kraftdesign.co/img/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="http://kraftdesign.co/img/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="Kraft Design Co."/>
+  <meta name="msapplication-TileColor" content="#404B6B" />
+  <meta name="msapplication-TileImage" content="http://kraftdesign.co/img/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="http://kraftdesign.co/img/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="http://kraftdesign.co/img/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="http://kraftdesign.co/img/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="http://kraftdesign.co/img/mstile-310x310.png" />
+
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
   <header>
-    <nav>
-      <a href="/" class="icon-kraft-logo" alt="Kraft Design Co."></a>
+    <a href="/" class="kraft-logo" alt="Kraft Design Co."></a>
+    <button type="button" class="js-menu-trigger sliding-menu-button">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/menu-white.png" alt="Menu Icon">
+    </button>
+    <div class="js-menu-screen sliding-menu-fade-screen"></div>
+    <nav class="js-menu sliding-menu-content">
+      
       <ol>
         <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
@@ -53,7 +79,14 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-
+  <script>
+  $(document).ready(function(){
+  $('.js-menu-trigger,.js-menu-screen').on('click touchstart',function (e) {
+    $('.js-menu,.js-menu-screen').toggleClass('is-visible');
+    e.preventDefault();
+  });
+  });
+  </script>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

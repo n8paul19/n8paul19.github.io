@@ -6,6 +6,7 @@ $kraft-purple: rgb(108,125,171);
 @import "icons.scss";
 @import "typography.scss";
 @import "buttons.scss";
+
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 
 body {
@@ -34,18 +35,29 @@ header {
 	margin:0;
 	// text-align: right;
 
-		nav {
-			@include outer-container;
-			padding:15px 0;
-		}
+		// nav {
+		// 	@include outer-container;
+		// 	padding:15px 0;
+		// }
 }
-
-.icon-kraft-logo {
-	  color: rgba(255, 255, 255, .5);
-	  color: $kraft-purple;
-	  text-decoration: none;
-	  font-size: 1.5em;
-	  width: 270px;
+.kraft-logo {
+	background: url(../img/kraft-logo-hr.svg) no-repeat;
+	width:100%;
+	max-width: 170px;
+	height:55px;
+	display:block;
+	float:left;
+	@include transition(all 500ms ease);
+}
+@media screen and (min-width: 620px) {
+.kraft-logo {
+	background: url(../img/kraft-logo.svg) no-repeat;
+	width:100%;
+	max-width: 270px;
+	height:26px;
+	display:block;
+	float:left;
+}
 }
 
 ol {
@@ -94,4 +106,10 @@ footer {
 		@include outer-container;
 		padding:25px 0;
 	}
+}
+.sliding-menu-button {
+	display:none;
+}
+@media screen and (max-width: 620px) {
+@import "sliding-menu.scss";
 }

@@ -1262,23 +1262,26 @@ header {
   width: 100%;
   padding: 20px;
   margin: 0; }
-  header nav {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px 0; }
-    header nav:after {
-      content: "";
-      display: table;
-      clear: both; }
 
-.icon-kraft-logo {
-  color: rgba(255, 255, 255, 0.5);
-  color: #6c7dab;
-  text-decoration: none;
-  font-size: 1.5em;
-  width: 270px; }
+.kraft-logo {
+  background: url(../img/kraft-logo-hr.svg) no-repeat;
+  width: 100%;
+  max-width: 170px;
+  height: 55px;
+  display: block;
+  float: left;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  transition: all 500ms ease; }
 
+@media screen and (min-width: 620px) {
+  .kraft-logo {
+    background: url(../img/kraft-logo.svg) no-repeat;
+    width: 100%;
+    max-width: 270px;
+    height: 26px;
+    display: block;
+    float: left; } }
 ol {
   float: right;
   margin: 0; }
@@ -1326,3 +1329,98 @@ footer {
       content: "";
       display: table;
       clear: both; }
+
+.sliding-menu-button {
+  display: none; }
+
+@media screen and (max-width: 620px) {
+  .sliding-menu-content {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: auto;
+    height: 100%;
+    width: 220px;
+    -webkit-transform: translateX(220px);
+    -moz-transform: translateX(220px);
+    -ms-transform: translateX(220px);
+    -o-transform: translateX(220px);
+    transform: translateX(220px);
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+    background: #404040;
+    z-index: 999999;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; }
+    .sliding-menu-content ol {
+      padding: 0;
+      margin: 0; }
+    .sliding-menu-content li {
+      list-style: none; }
+    .sliding-menu-content a {
+      text-decoration: none; }
+    .sliding-menu-content li a {
+      border-bottom: 1px solid #333;
+      color: #fff;
+      display: block;
+      font-weight: bold;
+      padding: 1em; }
+      .sliding-menu-content li a:focus {
+        background-color: #4d4d4d; }
+      .sliding-menu-content li a:hover {
+        background-color: #477DCA;
+        color: #fff; }
+    .sliding-menu-content.is-visible {
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0); }
+
+  .sliding-menu-fade-screen {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s;
+    background: black;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999998; }
+    .sliding-menu-fade-screen.is-visible {
+      opacity: 0.4;
+      visibility: visible; }
+
+  .sliding-menu-button {
+    background-color: #6c7dab;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 7px 18px;
+    text-decoration: none;
+    background-clip: padding-box;
+    padding: 10px 16px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    float: right; }
+    .sliding-menu-button:hover:not(:disabled) {
+      background-color: #7889b8;
+      cursor: pointer; }
+    .sliding-menu-button:active:not(:disabled), .sliding-menu-button:focus:not(:disabled) {
+      background-color: #61719c;
+      cursor: pointer; }
+    .sliding-menu-button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed; }
+    .sliding-menu-button img {
+      height: 1.3em; } }
