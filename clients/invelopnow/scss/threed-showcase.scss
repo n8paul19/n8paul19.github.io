@@ -23,7 +23,8 @@ section.threed-showcase {
 
 		h2 {
 			color:white;
-			font-weight: 100;
+			font-size: 32px;
+			font-weight: 900;
 			margin: 20px 0 40px;
 		}
 	.threed-message {
@@ -33,14 +34,27 @@ section.threed-showcase {
 	}
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 520px) {
+	section.threed-showcase {
+		article {
+			div iframe {
+				height:520px;
+			}
+
+		}
+	}
+}
+
+@media screen and (min-width: 1020px) {
 
 	section.threed-showcase {
 		article {
-			@include column(4);
-
+			@include column(8);
+			@include push(2);
+			@include pull(2);
+			
 			div iframe {
-				height:320px;
+				height:620px;
 			}
 
 		}
@@ -49,6 +63,7 @@ section.threed-showcase {
 			@include column(6);
 			@include push(3);
 			@include pull(3);
+			margin-top:40px;
 		}
 	}
 }

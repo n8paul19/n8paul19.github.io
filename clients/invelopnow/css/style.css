@@ -1687,9 +1687,9 @@ section.home-lead {
     section.home-lead p {
       display: inline;
       float: left;
-      width: 64.5833333333%;
+      width: 70.8333333333%;
       margin: 0 1.0416666667%;
-      margin-left: 17.7083333333%;
+      margin-left: 13.5416666667%;
       margin-top: 30px;
       font-size: 18px; }
 
@@ -1808,7 +1808,8 @@ section.threed-showcase {
         height: 250px; }
   section.threed-showcase h2 {
     color: white;
-    font-weight: 100;
+    font-size: 32px;
+    font-weight: 900;
     margin: 20px 0 40px; }
   section.threed-showcase .threed-message {
     display: inline;
@@ -1817,21 +1818,27 @@ section.threed-showcase {
     margin: 0 1.0416666667%;
     color: white; }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 520px) {
+  section.threed-showcase article div iframe {
+    height: 520px; } }
+@media screen and (min-width: 1020px) {
   section.threed-showcase article {
     display: inline;
     float: left;
-    width: 31.25%;
-    margin: 0 1.0416666667%; }
+    width: 64.5833333333%;
+    margin: 0 1.0416666667%;
+    margin-left: 17.7083333333%;
+    margin-right: 17.7083333333%; }
     section.threed-showcase article div iframe {
-      height: 320px; }
+      height: 620px; }
   section.threed-showcase .threed-message {
     display: inline;
     float: left;
     width: 47.9166666667%;
     margin: 0 1.0416666667%;
     margin-left: 26.0416666667%;
-    margin-right: 26.0416666667%; } }
+    margin-right: 26.0416666667%;
+    margin-top: 40px; } }
 footer {
   text-align: left;
   z-index: 20;
@@ -1942,15 +1949,15 @@ footer {
 section.about .alpha {
   text-align: center;
   margin-bottom: 40px;
-  background: url(../images/101H.jpg);
+  background-image: linear-gradient(to bottom, rgba(22, 44, 55, 0), rgba(22, 44, 55, 0.6)), url(../images/101H.jpg);
   background-size: cover;
   color: white;
-  padding: 40px 0; }
+  padding: 100px 0; }
   section.about .alpha h1 {
     font-weight: 100;
     font-size: 32px;
     line-height: 1;
-    text-shadow: 0 0 8px #162c37; }
+    text-shadow: 0 2px 5px #162c37; }
     section.about .alpha h1 span {
       font-weight: 900;
       display: block; }
@@ -1962,6 +1969,12 @@ section.about .gamma {
   margin-left: 5.2083333333%;
   margin-right: 5.2083333333%;
   margin-bottom: 40px; }
+  section.about .gamma ul {
+    list-style: inherit;
+    padding-left: 35px;
+    margin-bottom: 20px; }
+    section.about .gamma ul li {
+      padding-left: 2px; }
 section.about p {
   font-size: 16px;
   line-height: 24px; }
@@ -1975,7 +1988,8 @@ section.about p {
       float: left;
       width: 64.5833333333%;
       margin: 0 1.0416666667%;
-      margin-left: 17.7083333333%; } }
+      margin-left: 17.7083333333%;
+      margin-bottom: 40px; } }
 
 section.contact-form {
   display: inline;

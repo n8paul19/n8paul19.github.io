@@ -162,8 +162,8 @@ section.home-lead {
 			@include push(1.5);
 		}
 		p {
-			@include column(8);
-			@include push(2);
+			@include column(8.75);
+			@include push(1.5);
 			margin-top:30px;
 			font-size: 18px;
 		}
