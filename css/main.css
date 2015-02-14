@@ -1,7 +1,3 @@
-/* Neat 1.7.0
- * http://neat.bourbon.io
- * Copyright 2012-2014 thoughtbot, inc.
- * MIT License */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 html {
   -webkit-box-sizing: border-box;
@@ -1205,6 +1201,123 @@ h4, h5, h6 {
   font-size: 1.5em;
   font-weight: 400; }
 
+article {
+  text-align: left; }
+  article h1, article h2, article h3, article p {
+    margin: 0; }
+  article hr {
+    border-bottom: 1px solid #DDD;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: 1.5em 0; }
+  article p {
+    color: #333;
+    line-height: 1.5em; }
+  article a {
+    color: #477DCA;
+    text-decoration: none; }
+  article::after {
+    clear: both;
+    content: "";
+    display: table; }
+  article .type {
+    border-bottom: 1px solid;
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-size: 0.7em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 2em;
+    padding: 0.1em 0;
+    text-align: left;
+    text-transform: uppercase; }
+  article h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0.6em; }
+    @media screen and (min-width: 40em) {
+      article h1 {
+        font-size: 2.4em; } }
+  article h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+    font-weight: 900;
+    line-height: 1.4em;
+    margin: 1.5em 0 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6c7dab; }
+    @media screen and (min-width: 40em) {
+      article h2 {
+        font-size: 1.4em; } }
+  article code {
+    background: #F7F7F7;
+    border-radius: 4.5px;
+    border: 1px solid #E0E0E0;
+    font-family: monaco;
+    font-size: 0.65em;
+    font-style: normal;
+    padding: 0.1em 0.4em;
+    white-space: nowrap; }
+  article h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.4em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase; }
+  article p.date {
+    color: rgba(51, 51, 51, 0.4);
+    font-family: "Lato", sans-serif;
+    font-size: 0.8em;
+    margin-bottom: 0.5em; }
+  article p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1;
+    margin-bottom: 1.5em; }
+    article p span {
+      font-family: "Lato", sans-serif;
+      font-size: 0.8em;
+      font-weight: 600;
+      text-transform: uppercase; }
+  article hr {
+    width: 3em; }
+  article a.read-more {
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-left: 0.2em;
+    position: relative;
+    text-transform: uppercase; }
+    article a.read-more span {
+      font-size: 1.7em;
+      position: absolute;
+      right: -10px;
+      top: -2px; }
+  article p.author {
+    font-family: "Lato", sans-serif;
+    font-style: italic; }
+
+@media screen and (min-width: 53.75em) {
+  .scroll-on-page aside {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 31.7615656014%; }
+    .scroll-on-page aside:last-child {
+      margin-right: 0; } }
+.scroll-on-page .scroll-on-page-link {
+  display: block;
+  margin-right: 0.5em;
+  outline: none;
+  padding: 0.5em 1em; }
+  .scroll-on-page .scroll-on-page-link:last-child {
+    margin-bottom: 0.5em; }
+
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -1235,10 +1348,11 @@ h4, h5, h6 {
     border-color: #fff; }
 
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: 200;
   margin: 0;
-  color: #777; }
+  color: #777;
+  padding-top: 80px; }
 
 a {
   text-decoration: none; }
@@ -1247,21 +1361,29 @@ section article {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  section article:after {
+  section article::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
 
 header, section, footer {
   width: 100%;
   display: inline;
   float: left; }
 
+section {
+  height: 1000px; }
+
 header {
   background: #404b6b;
   width: 100%;
   padding: 20px;
-  margin: 0; }
+  margin: 0;
+  position: fixed;
+  top: 0;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  transition: all 500ms ease; }
 
 .kraft-logo {
   background: url(../img/kraft-logo-hr.svg) no-repeat;
@@ -1270,9 +1392,9 @@ header {
   height: 55px;
   display: block;
   float: left;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  transition: all 500ms ease; }
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease; }
 
 @media screen and (min-width: 620px) {
   .kraft-logo {
@@ -1289,10 +1411,7 @@ ol {
     float: left;
     font-weight: 200;
     position: relative;
-    list-style: none;
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    transition: all 0.8s; }
+    list-style: none; }
     ol > li a {
       color: white;
       text-decoration: none;
@@ -1304,16 +1423,16 @@ section#hero {
   color: white;
   padding: 50px 0; }
 
-section#work article > div {
+section#work article > div.thumb {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
   width: 23.2317613015%;
   background: #e7e7e7;
   min-height: 250px; }
-  section#work article > div:last-child {
+  section#work article > div.thumb:last-child {
     margin-right: 0; }
-section#work article > div::nth-child(4) {
+section#work article > div.thumb::nth-child(4) {
   margin-right: 0; }
 
 footer {
@@ -1325,13 +1444,19 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding: 25px 0; }
-    footer article:after {
+    footer article::after {
+      clear: both;
       content: "";
-      display: table;
-      clear: both; }
+      display: table; }
 
 .sliding-menu-button {
   display: none; }
+
+.line {
+  height: 2px;
+  background: #6c7dab;
+  width: 20%;
+  margin: 0 auto 1.5em; }
 
 @media screen and (max-width: 620px) {
   .sliding-menu-content {

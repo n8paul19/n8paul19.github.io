@@ -1,0 +1,1 @@
+$("a.scroll-on-page-link").on("click",function(e){e.preventDefault(),$("html, body").animate({scrollTop:$(this.hash).offset().top-$("header").outerHeight(!0)},600)}),$(document).ready(function(){$(".js-menu-trigger,.js-menu-screen").on("click touchstart",function(e){$(".js-menu,.js-menu-screen").toggleClass("is-visible"),e.preventDefault()})});
