@@ -189,12 +189,11 @@ header {
 		height:110px;
 		position:fixed;
 
-		header  {
+		
 		.nav-logo {
 			@include column(6);
 			text-align: left;
 		}
-	}
 
 		.social {
 			@include column(6);

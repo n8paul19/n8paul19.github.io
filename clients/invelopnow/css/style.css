@@ -1599,7 +1599,7 @@ header {
     header {
       height: 110px;
       position: fixed; }
-      header header .nav-logo {
+      header .nav-logo {
         display: inline;
         float: left;
         width: 47.9166666667%;
