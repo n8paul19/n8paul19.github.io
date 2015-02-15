@@ -1908,6 +1908,8 @@ section.threed-showcase {
       width: 100%; }
       section.threed-showcase article div iframe {
         height: 250px; }
+        section.threed-showcase article div iframe h2.modal-title {
+          font-size: 20px; }
   section.threed-showcase h2 {
     color: white;
     font-size: 32px;
