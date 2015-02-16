@@ -18,9 +18,6 @@ section.threed-showcase {
 			iframe {
 				height:250px;
 
-				h2.modal-title {
-					font-size: 20px;
-				}
 			}
 		}
 	}
@@ -36,6 +33,10 @@ section.threed-showcase {
 		// margin-top:20px;
 		color:rgba(255, 255, 255, 1);
 	}
+}
+
+#gui-message.modal-title {
+	font-size: 20px !important;
 }
 
 @media screen and (min-width: 520px) {

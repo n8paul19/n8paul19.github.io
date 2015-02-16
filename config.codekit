@@ -488,11 +488,29 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/clients\/invelopnow\/css\/jquery.mmenu.all.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/css\/jquery.mmenu.all.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/clients\/invelopnow\/css\/menu.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/clients\/invelopnow\/css\/menu.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/clients\/invelopnow\/css\/nav.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/css\/nav.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1004,6 +1022,28 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/clients\/invelopnow\/js\/jquery.mmenu.min.all.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/js\/jquery.mmenu.min.all.js",
+		"outputAbbreviatedPath": "\/clients\/invelopnow\/js\/min\/jquery.mmenu.min.all-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/clients\/invelopnow\/js\/jquery.slicknav.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/js\/jquery.slicknav.min.js",
+		"outputAbbreviatedPath": "\/clients\/invelopnow\/js\/min\/jquery.slicknav.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/clients\/invelopnow\/js\/main-min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -1028,7 +1068,7 @@
 		},
 	"\/clients\/invelopnow\/js\/menu.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/clients\/invelopnow\/js\/menu.js",
 		"outputAbbreviatedPath": "\/clients\/invelopnow\/js\/min\/menu-min.js",
@@ -1048,6 +1088,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/clients\/invelopnow\/js\/min\/main-min-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/js\/min\/main-min-min.js",
+		"outputAbbreviatedPath": "\/clients\/invelopnow\/js\/min\/min\/main-min-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/clients\/invelopnow\/js\/min\/main-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -1059,12 +1110,45 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/clients\/invelopnow\/js\/min\/nav-menu-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/js\/min\/nav-menu-min.js",
+		"outputAbbreviatedPath": "\/clients\/invelopnow\/js\/min\/min\/nav-menu-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/clients\/invelopnow\/js\/modernizr.custom.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/clients\/invelopnow\/js\/modernizr.custom.js",
 		"outputAbbreviatedPath": "\/clients\/invelopnow\/js\/min\/modernizr.custom-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/clients\/invelopnow\/js\/nav-menu.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/js\/nav-menu.js",
+		"outputAbbreviatedPath": "\/clients\/invelopnow\/js\/min\/nav-menu-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/clients\/invelopnow\/js\/nav.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/js\/nav.js",
+		"outputAbbreviatedPath": "\/clients\/invelopnow\/js\/min\/nav-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1377,6 +1461,47 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/clients\/invelopnow\/scss\/nav-menu.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/scss\/nav-menu.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/clients\/invelopnow\/scss\/nav-menu.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/scss\/nav-menu.scss",
+		"outputAbbreviatedPath": "\/clients\/invelopnow\/css\/nav-menu.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/clients\/invelopnow\/scss\/nav.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/scss\/nav.scss",
+		"outputAbbreviatedPath": "\/clients\/invelopnow\/css\/nav.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/clients\/invelopnow\/scss\/reset.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1450,6 +1575,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/clients\/invelopnow\/scss\/slick.scss",
 		"outputAbbreviatedPath": "\/clients\/invelopnow\/css\/slick.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/clients\/invelopnow\/scss\/slicknav.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/scss\/slicknav.scss",
+		"outputAbbreviatedPath": "\/clients\/invelopnow\/css\/slicknav.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -4100,6 +4241,20 @@
 	],
 "lastSavedByUser": "Nathan A. Paul",
 "manualImportLinks": {
+	"\/clients\/invelopnow\/js\/main-min.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/clients\/invelopnow\/js\/menu.js",
+			"position": 0,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/clients\/invelopnow\/js\/nav-menu.js",
+			"position": 1,
+			"type": 1
+			}
+		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",

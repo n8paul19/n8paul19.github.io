@@ -168,6 +168,14 @@ header {
 		@include column(12);
 		margin-top:15px;
 		text-align: center;
+
+		ul {
+			float: right;
+
+				li {
+					float: left;
+				}
+		}
 	}
 
 	.social {
