@@ -253,8 +253,8 @@ transition: opacity 0.4s, height 0s 0.4s;
 }
 
 html.js-nav-active .container {
-  -webkit-transform: translateX(55%) scale(.9);
-  transform: translateX(55%) scale(.9);
+  -webkit-transform: translateX(0%) translateY(10%) scale(.9);
+  transform: translateX(0%) translateY(10%) scale(.9);
   -webkit-transition: -webkit-transform 0.4s;
 transition: transform 0.4s;
 -webkit-transform-origin: 50% 50%;
@@ -271,10 +271,8 @@ backface-visibility: hidden;
 
 
 .js .nav-collapse-0.opened {
-  left: 5%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  left: 1%;
+  top: 1%;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   position: absolute;
@@ -282,13 +280,30 @@ backface-visibility: hidden;
 }
 
 .nav-collapse {
-  left: 5%;
-  top: 50%;
+  left: 1%;
+  top: 1%;
   position: relative !important;
   -webkit-transition: max-height 0ms !important;
   transition: max-height 0ms !important;
   transition: all 500ms ease;
 }
+.nav-collapse li {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.nav-collapse .social {
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  padding-top: 2em;
+  margin-top:1em;
+}
+
+.nav-collapse .social a {
+  font-size: 2em;
+  display: inline;
+  padding: 1em 2em;
+  color:rgba(255, 255, 255, .6);
+ } 
 
 @media screen and (min-width: 820px) {  
   .nav-toggle, .nav-collapse {
