@@ -133,6 +133,13 @@ input, textarea {
 	
 }
 
+.desktop {
+		display: none !important;
+	}
+	.mobile {
+		display: inherit !important;
+	}
+
 @media screen and (min-width: 980px) {
 	.wrapper {
 		@include column(10);
@@ -147,6 +154,18 @@ input, textarea {
 	}
 }
 
+@media screen and (min-width: 630px) {
+
+.desktop {
+		display: inherit !important;
+	}
+	.mobile {
+		display: none !important;
+	}
+	header {
+		height:180px !important;
+	}
+}
 @import "header.scss";
 @import "home.scss";
 @import "services.scss";

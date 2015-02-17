@@ -1583,6 +1583,12 @@ input, textarea {
     font-size: 15px;
     font-weight: 100; }
 
+.desktop {
+  display: none !important; }
+
+.mobile {
+  display: inherit !important; }
+
 @media screen and (min-width: 980px) {
   .wrapper {
     display: inline;
@@ -1594,10 +1600,19 @@ input, textarea {
   section {
     min-height: 700px;
     height: 100%; } }
+@media screen and (min-width: 630px) {
+  .desktop {
+    display: inherit !important; }
+
+  .mobile {
+    display: none !important; }
+
+  header {
+    height: 180px !important; } }
 header {
   text-align: right;
   display: block;
-  height: 180px;
+  height: 120px;
   background: white;
   position: relative;
   width: 100%;
@@ -1903,6 +1918,9 @@ section.home-lead {
     overflow: hidden;
     z-index: 1;
     background-position: center; }
+
+  #the_video iframe {
+    display: inherit; }
 
   #video_overlay {
     height: auto;

@@ -461,6 +461,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/clients\/invelopnow\/css\/component.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/css\/component.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/clients\/invelopnow\/css\/grid-photo.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -524,6 +533,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/clients\/invelopnow\/css\/responsive-nav.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/css\/responsive-nav.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/clients\/invelopnow\/css\/responsive.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -550,6 +568,28 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/clients\/invelopnow\/debut_dark.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19901,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/debut_dark.png",
+		"outputAbbreviatedPath": "\/clients\/invelopnow\/debut_dark.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/clients\/invelopnow\/debut_dark_@2X.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26851,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/debut_dark_@2X.png",
+		"outputAbbreviatedPath": "\/clients\/invelopnow\/debut_dark_@2X.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/clients\/invelopnow\/favicon-128.png": {
 		"fileType": 32768,
@@ -1160,6 +1200,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/clients\/invelopnow\/js\/okvideo.min.js",
 		"outputAbbreviatedPath": "\/clients\/invelopnow\/js\/min\/okvideo.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/clients\/invelopnow\/js\/responsive-nav.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/js\/responsive-nav.min.js",
+		"outputAbbreviatedPath": "\/clients\/invelopnow\/js\/min\/responsive-nav.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
