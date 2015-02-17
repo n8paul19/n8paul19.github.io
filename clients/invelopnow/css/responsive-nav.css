@@ -253,8 +253,13 @@ transition: opacity 0.4s, height 0s 0.4s;
 }
 
 html.js-nav-active .container {
+<<<<<<< HEAD
   -webkit-transform: translateX(0%) translateY(10%) scale(.9);
   transform: translateX(0%) translateY(10%) scale(.9);
+=======
+  -webkit-transform: translateX(55%) scale(.9);
+  transform: translateX(55%) scale(.9);
+>>>>>>> fe1a4c19551b1fe2ddd669617d04e8ed4fc6c507
   -webkit-transition: -webkit-transform 0.4s;
 transition: transform 0.4s;
 -webkit-transform-origin: 50% 50%;
