@@ -48,9 +48,9 @@ section.hero-home {
 	background-image: url(../images/invelop-video-bg.jpg);
 	background-size: cover;
 }
-#the_video iframe {
-	display:none;
-}
+// #the_video iframe {
+// 	display:none;
+// }
 
 
 div.home-hero-video {
@@ -58,7 +58,7 @@ div.home-hero-video {
 	div.slider-message { 
 		
 		div {
-			top:155px;
+			top:115px;
 		}
 	
 	}
@@ -213,9 +213,9 @@ section.home-lead {
 	background-position: center;
 }
 
-#the_video iframe {
-	display:inherit;
-}
+// #the_video iframe {
+// 	display:inherit;
+// }
 
 #video_overlay {
 	height: auto;

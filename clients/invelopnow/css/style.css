@@ -1605,20 +1605,16 @@ input, textarea {
     display: inherit !important; }
 
   .mobile {
-    display: none !important; }
-
-  header {
-    height: 180px !important; } }
+    display: none !important; } }
 header {
   text-align: right;
   display: block;
-  height: 120px;
+  height: 30px;
   background: white;
   position: relative;
   width: 100%;
   z-index: 110;
-  top: 0;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); }
+  top: 0; }
   header a {
     color: #00afef;
     text-decoration: none;
@@ -1626,9 +1622,10 @@ header {
     font-size: 18px; }
   header .nav-logo {
     display: block;
-    float: left;
-    width: 100%;
-    text-align: center; }
+    float: right;
+    width: 85%;
+    text-align: center;
+    margin: -75px auto 0; }
   header video.logo-loop {
     background: #fff !important;
     margin-top: -8px;
@@ -1641,7 +1638,7 @@ header {
   header body {
     background: #fff; }
   header .logo {
-    width: 13em;
+    width: 12em;
     height: 4em;
     animation: bounceIn 1s alternate;
     -webkit-animation: bounceIn 1s alternate;
@@ -1735,7 +1732,8 @@ header {
   @media screen and (min-width: 820px) {
     header {
       height: 110px;
-      position: fixed; }
+      position: fixed;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); }
       header .nav-logo {
         display: inline;
         float: left;
@@ -1801,11 +1799,8 @@ section.hero-home {
   background-image: url(../images/invelop-video-bg.jpg);
   background-size: cover; }
 
-#the_video iframe {
-  display: none; }
-
 div.home-hero-video div.slider-message div {
-  top: 155px; }
+  top: 115px; }
 
 .slick-slide img {
   opacity: .4 !important; }
@@ -1918,9 +1913,6 @@ section.home-lead {
     overflow: hidden;
     z-index: 1;
     background-position: center; }
-
-  #the_video iframe {
-    display: inherit; }
 
   #video_overlay {
     height: auto;

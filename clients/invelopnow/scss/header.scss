@@ -1,13 +1,12 @@
 header {
 	text-align:right;
 	display:block;
-	height:120px;
+	height:30px;
 	background:white;
 	position: relative;
 	width:100%;
 	z-index:110;
 	top:0;
-	box-shadow: 0 0 3px rgba(0,0,0,.1);
 
 	a {
 		color:$link-color;
@@ -36,9 +35,10 @@ header {
 
 	.nav-logo {
 		display: block;
-		float:left;
-		width: 100%;
+		float:right;
+		width: 85%;
 		text-align: center;
+		margin: -75px auto 0;
 	}
 
 	video.logo-loop {
@@ -57,7 +57,7 @@ header {
 }
 
 .logo {
-  width: 13em; 
+  width: 12em; 
   height: 4em;
   animation: bounceIn 1s alternate;
   -webkit-animation: bounceIn 1s alternate;
@@ -196,6 +196,8 @@ header {
 
 		height:110px;
 		position:fixed;
+		box-shadow: 0 0 3px rgba(0,0,0,.1);
+
 
 		
 		.nav-logo {

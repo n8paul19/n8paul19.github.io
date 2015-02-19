@@ -2202,6 +2202,7 @@ if ( typeof define === 'function' && define.amd ) {
 (function() {
 	var container = document.querySelector( 'div.container' ),
 		triggerBttn = document.getElementById( 'trigger-overlay' ),
+        triggerBttnTwo = document.getElementById( 'trigger-overlay-two'),
 		overlay = document.querySelector( 'div.overlay' ),
 		closeBttn = overlay.querySelector( 'button.overlay-close' );
 		transEndEventNames = {
@@ -2240,6 +2241,7 @@ if ( typeof define === 'function' && define.amd ) {
 	}
 
 	triggerBttn.addEventListener( 'click', toggleOverlay );
+    triggerBttnTwo.addEventListener( 'click', toggleOverlay);
 	closeBttn.addEventListener( 'click', toggleOverlay );
 })();
 
