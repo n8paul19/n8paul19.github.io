@@ -232,7 +232,7 @@ background: #7483A0;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   -webkit-transform: translateZ(0) translateX(0) rotateY(0deg);
-  transform: translateZ(0) translateX(0) rotateY(0deg);
+    transform: translateZ(0) translateX(0) rotateY(0deg);
 }
 
 .container::after {
@@ -306,6 +306,11 @@ backface-visibility: hidden;
  } 
 
 @media screen and (min-width: 820px) {  
+
+  .container {
+    -webkit-transform: initial;
+    transform: initial;
+  }
   .nav-toggle, .nav-collapse {
     display: none;
   }

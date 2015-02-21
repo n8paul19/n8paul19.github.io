@@ -1492,6 +1492,12 @@ html, body {
 
   .overlay-nav ul li {
     min-height: 34px; } }
+.no-svg .nav-logo {
+  background-image: url(../images/invelop-logo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px; }
+
 body {
   background: white;
   -webkit-backface-visibility: hidden; }
@@ -1600,7 +1606,7 @@ input, textarea {
   section {
     min-height: 700px;
     height: 100%; } }
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 40em) {
   .desktop {
     display: inherit !important; }
 
@@ -1729,6 +1735,18 @@ header {
       padding: 15px 10px; }
       header .social a span {
         font-size: 16px; }
+  @media screen and (min-width: 40em) {
+    header {
+      height: 200px; }
+      header .nav-logo {
+        width: 100%;
+        margin: 0 auto; }
+      header nav {
+        text-align: center; }
+        header nav ul {
+          float: none;
+          margin: 0 auto;
+          display: table; } }
   @media screen and (min-width: 820px) {
     header {
       height: 110px;
@@ -1757,7 +1775,10 @@ header {
         margin: 0 1.0416666667%;
         float: right;
         margin-top: 15px;
-        text-align: right; } }
+        text-align: right; }
+        header nav ul {
+          float: right;
+          width: auto; } }
 
 section.home-slider {
   position: relative;
@@ -1799,6 +1820,9 @@ section.hero-home {
   background-image: url(../images/invelop-video-bg.jpg);
   background-size: cover; }
 
+#the_video iframe {
+  display: none; }
+
 div.home-hero-video div.slider-message div {
   top: 115px; }
 
@@ -1808,6 +1832,9 @@ div.home-hero-video div.slider-message div {
 .slick-initialized .slick-slide {
   display: block;
   background: #162c37; }
+
+#the_video {
+  position: fixed; }
 
 section.home-slider {
   min-height: 225px; }
@@ -1908,11 +1935,12 @@ section.home-lead {
     width: 100%;
     height: 100%;
     padding: 0;
-    background-image: url(../images/invelop-video-bg.jpg);
-    background-size: cover;
     overflow: hidden;
     z-index: 1;
     background-position: center; }
+
+  #the_video iframe {
+    display: inherit; }
 
   #video_overlay {
     height: auto;

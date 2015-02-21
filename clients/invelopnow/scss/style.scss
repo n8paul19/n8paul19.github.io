@@ -16,7 +16,12 @@ $orange:#eb622b;
 @import "menu.scss";
 @import "icons.scss";
 @import "nav-menu.scss";
-
+.no-svg .nav-logo {
+		background-image: url(../images/invelop-logo.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 100px;
+}
 body {
 	background: white;
 	-webkit-backface-visibility: hidden;
@@ -154,7 +159,7 @@ input, textarea {
 	}
 }
 
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 40em) {
 
 .desktop {
 		display: inherit !important;

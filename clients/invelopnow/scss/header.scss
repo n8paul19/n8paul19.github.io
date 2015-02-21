@@ -32,7 +32,7 @@ header {
 	// 	height:auto;
 
 	// }
-
+	
 	.nav-logo {
 		display: block;
 		float:right;
@@ -191,7 +191,21 @@ header {
 			}
 		}
 	}
-
+	@media screen and (min-width: 40em) {
+		height:200px;
+		.nav-logo {
+			width: 100%;
+			margin:0 auto;
+		}
+			nav {
+				text-align: center;
+				 ul {
+				float: none;
+				margin:0 auto;
+				display: table;
+			}
+		}
+	}
 	@media screen and (min-width: 820px) {
 
 		height:110px;
@@ -220,6 +234,11 @@ header {
 			float: right;
 			margin-top:15px;
 			text-align: right;
+
+			ul {
+				float: right;
+				width:auto;
+			}
 		}
 	}
 }
