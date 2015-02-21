@@ -73,6 +73,7 @@ footer {
 			@include pull(.5);
 			background: $dark-blue;
 			color:white;
+			-webkit-appearance: none;
 
 			&:hover {
 				background: $darkest-blue;
