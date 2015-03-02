@@ -2103,6 +2103,47 @@ section.threed-showcase {
     margin-left: 26.0416666667%;
     margin-right: 26.0416666667%;
     margin-top: 40px; } }
+.showcases {
+  padding: 50px 0;
+  background: #C6A035 url(../images/bg-yellow.jpg) repeat;
+  text-align: center;
+  color: white;
+  float: left; }
+  .showcases h1 {
+    margin-bottom: 25px;
+    font-weight: 100;
+    font-size: 42px; }
+  .showcases .alpha {
+    display: inline;
+    float: left;
+    width: 89.5833333333%;
+    margin: 0 1.0416666667%;
+    margin-left: 5.2083333333%; }
+    .showcases .alpha p {
+      text-align: left; }
+  .showcases .showcase-container {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 0 0 5px;
+    width: 100%; }
+  @media screen and (min-width: 820px) {
+    .showcases {
+      padding-top: 160px; }
+      .showcases .alpha {
+        display: inline;
+        float: left;
+        width: 64.5833333333%;
+        margin: 0 1.0416666667%;
+        margin-left: 17.7083333333%; }
+      .showcases .showcase-container {
+        width: 50%;
+        height: 500px; }
+        .showcases .showcase-container iframe {
+          height: 500px; } }
+
 footer {
   text-align: left;
   z-index: 20;

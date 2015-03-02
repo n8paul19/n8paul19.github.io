@@ -1,0 +1,50 @@
+.showcases {
+	padding:50px 0;
+	background:#C6A035 url(../images/bg-yellow.jpg) repeat;
+	text-align: center;
+	color:white;
+	float:left;
+
+	h1 {
+		margin-bottom: 25px;
+		font-weight: 100;
+		font-size: 42px;
+	}
+
+	.alpha {
+		@include column(11);
+		@include push(.5);
+
+		p {
+			text-align: left;
+		}
+	}
+	.showcase-container {
+			float: left;
+			overflow: hidden;
+			position: relative;
+			text-align: center;
+			cursor: pointer;
+			padding: 5px 0 0 5px;
+			width: 100%;
+		}
+	@media screen and (min-width: 820px) {
+		
+		padding-top:160px;
+
+		.alpha {
+			@include column(8);
+			@include push(2);
+		}
+
+		.showcase-container {
+			width: 50%;
+			height:500px;
+
+				iframe {
+					height:500px;
+				}
+		}
+		
+	}
+}

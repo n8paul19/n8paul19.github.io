@@ -1617,6 +1617,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/clients\/invelopnow\/scss\/showcases.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/scss\/showcases.scss",
+		"outputAbbreviatedPath": "\/clients\/invelopnow\/css\/showcases.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/clients\/invelopnow\/scss\/slick.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1756,6 +1772,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/clients\/invelopnow\/services\/residential.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/clients\/invelopnow\/showcases.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow\/showcases.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
