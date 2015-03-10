@@ -1,6 +1,6 @@
 .showcases {
 	padding:50px 0;
-	background:#C6A035 url(../images/bg-yellow.jpg) repeat;
+	background:#C6A035 url(../images/bg-dark.jpg) repeat;
 	text-align: center;
 	color:white;
 	float:left;
@@ -38,11 +38,13 @@
 		}
 
 		.showcase-container {
-			width: 50%;
-			height:500px;
+			width: 80%;
+			margin: 20px auto;
+			float: none;
+			height:600px;
 
 				iframe {
-					height:500px;
+					height:600px;
 				}
 		}
 		
