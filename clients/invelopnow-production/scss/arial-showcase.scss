@@ -1,0 +1,22 @@
+section.arial-showcase {
+	z-index:40;
+	.bg {
+		background: url(http://nebula.wsimg.com/355692f30e2116da364ad0d5c7030dd4?AccessKeyId=882927CA32A58CCD921C&disposition=0&alloworigin=1);
+		background-position: center center;
+		background-size: cover;
+		background-attachment:fixed;
+	}
+	.message {
+		background: rgba(0,0,0,.4);
+		height: 100%;
+		width: 100%;
+		max-width: auto;
+		max-width: none;
+
+		h2 {
+			margin: 0;
+			padding:120px;
+		}
+
+	}
+}

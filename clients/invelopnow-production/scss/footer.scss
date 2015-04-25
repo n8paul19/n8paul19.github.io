@@ -1,0 +1,129 @@
+footer {
+	text-align:left;
+	z-index:20;
+	min-height:inherit;
+	position:relative;
+	float:left;
+	background:white;
+	box-shadow: 0 0 3px rgba(0,0,0,.1);
+	
+
+	nav {
+		margin-top:0;
+	}
+
+	.alpha {
+		@include column(5);
+		text-align: left;
+		padding-top:40px;
+	}
+	.beta {
+		@include column(7);
+		padding-top:40px;
+		text-align: right;
+	}
+	.gamma {
+		@include column(2);
+		padding-top:40px;
+
+		.btn {
+			text-align: center;
+			margin-top:5px;
+			display: block;
+		}
+	}
+	.footer-bottom {
+		width: 100%;
+		float: left;
+		padding-top:20px;
+		background:white;
+		
+		p {
+			text-align: center;
+			font-size: 12px;
+		}
+	}
+	.email-signup {
+		// background:#e3e7ee;
+		background:white;
+		width: 100%;
+		float: left;
+		padding:50px 0;
+		text-align: center;
+		
+
+		.icon-mail {
+			font-size: 24px;
+			color:$dark-blue;
+		}
+
+		input {
+			@include column(11);
+			@include push(.5);
+			margin-top:20px;
+			text-align: center;
+			font-size: 18px;
+			border-color: $grey;
+			color:$darkest-blue;
+		}
+
+		.btn {
+			@include column(11);
+			margin:15px;
+			@include push(.5);
+			@include pull(.5);
+			background: $dark-blue;
+			color:white;
+			-webkit-appearance: none;
+
+			&:hover {
+				background: $darkest-blue;
+			}
+		}
+
+		p {
+			margin: 15px 0 0;
+			font-size: 14px;
+			font-style: italic;
+			color:$grey;
+		}
+
+		::-webkit-input-placeholder {
+			color: $darkest-blue;
+			font-weight: 100;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+			color: $darkest-blue;
+			font-weight: 100;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+			color: $darkest-blue;
+			font-weight: 100; 
+		}
+
+		:-ms-input-placeholder {  
+			color: $darkest-blue;
+			font-weight: 100; 
+		}
+	}
+	
+	@media screen and (min-width: 820px) {
+
+			.email-signup {
+
+			input {
+				@include column(6);
+				margin-left:auto;
+				margin-right:auto;
+				float:none;
+				margin-bottom: 15px;
+			}
+			.btn {
+				width: 150px;
+				float:none;
+			}
+		}
+	}
+}

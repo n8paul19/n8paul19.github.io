@@ -1,0 +1,237 @@
+section.home-slider {
+	position:relative;
+	z-index:100;
+	overflow:hidden;
+	background:white;
+}
+div.slider-message {
+	position:relative;
+	width:100%;
+	height:100%;
+	text-align:center;
+	z-index:100;
+
+	div {
+		position:absolute;
+		top:25px;
+		text-align:center;
+		left:0;
+		right:0;
+		margin-left:auto;
+		margin-right:auto;
+
+		h2 {
+			color: white;
+			font-size: 26px;
+			font-weight: 400;
+			margin-bottom: 20px;
+			line-height: 1;
+			text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+			span {
+				display:block;
+				font-weight:900;
+				font-size:35px;
+				// margin-bottom: 10px;
+			}
+		}
+	}
+
+	a.btn-slider-button {
+		color:white;
+		border:1px solid white;
+		margin:25px auto;
+
+	}
+}
+
+section.hero-home {
+	background-image: url(../images/invelop-video-bg.jpg);
+	background-size: cover;
+}
+#the_video iframe {
+	display:none;
+}
+
+
+div.home-hero-video {
+
+	div.slider-message { 
+		
+		div {
+			top:115px;
+		}
+	
+	}
+
+}
+
+
+#the_video {
+	position: fixed;
+}
+
+section.home-slider {
+	min-height:225px;
+}
+section.home-lead {
+	z-index: 80;
+	position: relative;
+	// background: rgba(227, 231, 238, .9);
+	background:white;
+	text-align:center;
+	padding:40px 0;
+
+	article {
+		// @include column(10);
+		// @include push(1);
+	}
+	h1 {
+		margin-bottom:20px;
+		font-size: 28px;
+	}
+
+	p.lead {
+		font-size:150%;
+		margin-bottom: -15px;
+		padding-bottom:0;
+	}
+	div {
+		@include column(4);
+
+		span {
+			font-size: 35px;
+			color:$darkest-blue;
+		}
+		h3 {
+			color:$darkest-blue;
+			margin-top:15px;
+			font-size: 16px;
+		}
+	}
+
+	p {
+		@include column(12);
+		margin-top:20px;
+		font-size:16px;
+	}
+}
+
+.slick-slider {
+    margin-bottom: 0;
+  }
+@media screen and (min-width: 820px) {
+
+	section.hero-home {
+		min-height:900px;
+	}
+
+	div.slider-message {
+
+		div {
+			top:260px;
+
+			h2 {
+				font-size: 42px;
+
+				span {
+					font-size:62px;
+				}
+			}
+		}
+	}
+
+	div.home-hero-video {
+
+	div.slider-message { 
+		
+		div {
+			top:360px;
+		}
+	
+	}
+
+}
+
+	section.home-lead {
+		padding:80px 0;
+		min-height: 580px;
+
+		h1 {
+			margin-bottom:40px;
+			font-size: 32px;
+		}
+
+		article {
+			@include column(10);
+			@include push(1);
+		}
+		div {
+			@include column(3);
+
+			span {
+				font-size: 65px;
+			}
+
+			h3 {
+				font-size: 20px;
+			}
+		}
+		.alpha {
+			@include push(1.5);
+		}
+		p {
+			@include column(8.75);
+			@include push(1.5);
+			margin-top:30px;
+			font-size: 18px;
+		}
+	}
+	section.home-slider {
+		height:900px
+	}
+
+	#video_cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 2;
+}
+
+#the_video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	// background-image: url(../images/invelop-video-bg.jpg);
+	// background-size: cover;
+	overflow: hidden;
+	z-index: 1;
+	background-position: center;
+}
+
+#the_video iframe {
+	display:inherit;
+}
+
+#video_overlay {
+	height: auto;
+	margin: auto;
+	max-width: 940px;
+	position: absolute;
+	top: 165px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 99;
+}
+
+	.slick-slider {
+    margin-bottom: 30px;
+    height:100%;
+	}
+}

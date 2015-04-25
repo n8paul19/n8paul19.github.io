@@ -1,0 +1,244 @@
+header {
+	text-align:right;
+	display:block;
+	height:30px;
+	background:white;
+	position: relative;
+	width:100%;
+	z-index:110;
+	top:0;
+
+	a {
+		color:$link-color;
+		text-decoration: none;
+		padding:15px;
+		font-size: 18px;
+	}
+
+	// .logo {
+	// 	display: none;
+	// 	float: left;
+	// 	margin-top: -13px;
+	// 	text-indent: -9999em;
+	// 	background: url(../images/invelop-logo.jpg);
+	// 	height: 48px;
+	// 	width: 150px;
+	// 	background-size: 150px 48px;
+	// 	text-align: left;
+	// }
+
+	// .logo {
+	// 	width:240px;
+	// 	height:auto;
+
+	// }
+	
+	.nav-logo {
+		display: block;
+		float:right;
+		width: 85%;
+		text-align: center;
+		margin: -75px auto 0;
+	}
+
+	video.logo-loop {
+		background: #fff !important;
+		margin-top: -8px;
+		width: 100%;
+		max-width:360px;
+		height:auto;
+		margin-left: 0;
+		margin-right: auto;
+		display: block;
+	}
+
+	body {
+  background: #fff;
+}
+
+.logo {
+  width: 12em; 
+  height: 4em;
+  animation: bounceIn 1s alternate;
+  -webkit-animation: bounceIn 1s alternate;
+  -moz-animation: bounceIn 1s alternate;
+  -o-animation: bounceIn 1s alternate;
+  transform: rotate(0deg) scale(1) translateZ(0);
+  transition: all .4s cubic-bezier(.8,1.8,.75,.75);
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: rotate(-.5deg) scale(.95);
+}
+
+.bubble { fill: #00afef; }
+.type { fill: #00afef; }
+.icon { fill:  #fff; }
+
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 1;
+    transform: scale(.3) rotate(-5deg);
+  } 
+
+  40% {
+    opacity: 1;
+    transform: scale(1.05) rotate(-1deg);
+  } 
+
+  70% {
+    opacity: 1;
+    transform: scale(.9) rotate(-3deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-o-keyframes bounceIn {
+  0% {
+    opacity: 1;
+    transform: scale(.3) rotate(-5deg);
+  } 
+
+  40% {
+    opacity: 1;
+    transform: scale(1.05) rotate(-1deg);
+  } 
+
+  70% {
+    opacity: 1;
+    transform: scale(.9) rotate(-3deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes bounceIn {
+  0% {
+    opacity: 1;
+    transform: scale(.3) rotate(-5deg);
+  } 
+
+  40% {
+    opacity: 1;
+    transform: scale(1.05) rotate(-1deg);
+  } 
+
+  70% {
+    opacity: 1;
+    transform: scale(.9) rotate(-3deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 1;
+    transform: scale(.3) rotate(-5deg);
+  } 
+
+  40% {
+    opacity: 1;
+    transform: scale(1.05) rotate(-1deg);
+  } 
+
+  70% {
+    opacity: 1;
+    transform: scale(.9) rotate(-3deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+	nav {
+		@include column(12);
+		margin-top:15px;
+		text-align: center;
+
+		ul {
+			float: right;
+
+				li {
+					float: left;
+				}
+		}
+	}
+
+	.social {
+		@include column(12);
+		text-align:center;
+
+		a {
+			color:$grey;
+			padding: 15px 10px;
+
+			span {
+				font-size: 16px;
+			}
+		}
+	}
+	@media screen and (min-width: 40em) {
+		height:200px;
+		.nav-logo {
+			width: 100%;
+			margin:0 auto;
+		}
+			nav {
+				text-align: center;
+				 ul {
+				float: none;
+				margin:0 auto;
+				display: table;
+			}
+		}
+	}
+	@media screen and (min-width: 820px) {
+
+		height:110px;
+		position:fixed;
+		box-shadow: 0 0 3px rgba(0,0,0,.1);
+
+
+		
+		.nav-logo {
+			@include column(6);
+			text-align: left;
+		}
+
+		.social {
+			@include column(6);
+			text-align:right;
+			margin-top: 15px;
+			float: right;
+
+			a {
+				padding: 15px;
+			}
+		}
+		nav {
+			@include column(6);
+			float: right;
+			margin-top:15px;
+			text-align: right;
+
+			ul {
+				float: right;
+				width:auto;
+			}
+		}
+	}
+}

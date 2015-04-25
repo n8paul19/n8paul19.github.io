@@ -1,0 +1,61 @@
+section.services-subpages {
+	
+	.wrapper {
+		margin-bottom: 40px;
+	}
+
+	.gamma {
+		padding:30px 20px;
+		background: url(../images/bg-grey.jpg) repeat;
+		color:white;
+		text-align: center;
+		margin-bottom:20px;
+
+		h3 {
+			font-weight: 100;
+		}
+
+		h1 {
+			font-size:36px;
+			font-weight: 900;
+			line-height: 1;
+		}
+	}	
+
+	.alpha {
+		@include column(12);
+	}
+	menu {
+		@include column(12);
+		border-top: 1px solid $lite-grey;
+		padding-top:20px;
+	}
+	
+	@media screen and (min-width: 820px) {
+
+		.gamma {
+			padding:60px;
+			margin-bottom:40px;
+		
+			h3 {
+				margin-top: 100px;
+			}
+
+			h1 {
+				font-size:50px;
+			}
+			
+		}
+		.alpha {
+			@include column(9);
+			border-right:1px solid $lite-grey;
+			padding-right:9.375%;
+		}
+		menu {
+		@include column(3);
+		border-top: none;
+		padding-top:0;
+		}
+	}
+}
+

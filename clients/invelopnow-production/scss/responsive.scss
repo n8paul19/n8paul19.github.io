@@ -1,0 +1,13 @@
+@media screen and (min-width: 980px) {
+	.wrapper {
+		@include column(10);
+		@include push(1);
+	}
+}
+
+@media screen and (min-width: 820px) {	
+	section {
+		min-height:700px;
+		height:100%;
+	}
+}
