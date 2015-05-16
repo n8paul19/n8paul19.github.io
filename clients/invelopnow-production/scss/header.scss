@@ -42,7 +42,8 @@ header {
 	}
 
 	video.logo-loop {
-		background: #fff !important;
+		background: transparent no-repeat url(../images/invelop-logo.jpg);
+		background-size:70%;
 		margin-top: -8px;
 		width: 100%;
 		max-width:360px;
@@ -50,6 +51,7 @@ header {
 		margin-left: 0;
 		margin-right: auto;
 		display: block;
+
 	}
 
 	body {

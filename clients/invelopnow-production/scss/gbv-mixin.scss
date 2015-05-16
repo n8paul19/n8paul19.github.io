@@ -1,0 +1,15 @@
+$base-spacing: 15px;
+$link-color: #00afef;
+$primary-color:#62bd17;
+$dark-blue: #0e79a0;
+$darkest-blue:#162c37;
+$lite-grey: #e3e7ee;
+$grey: #b8c2d5;
+$orange:#eb622b;
+
+$transition: .3s;// increase this to see the transformations happen in slow motion
+
+a {
+	color:$link-color;
+	text-decoration:none;
+}

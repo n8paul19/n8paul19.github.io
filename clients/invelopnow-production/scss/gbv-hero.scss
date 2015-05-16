@@ -1,0 +1,19 @@
+
+section.hero {
+	padding-bottom:0;
+}
+
+.hero {
+
+	.btn {
+		display: block;
+		margin-top: 40%;
+
+		span {
+			display: block;
+			opacity: .7;
+			font-size: 90%;
+			transition: all 500ms ease;
+		}
+	}
+}

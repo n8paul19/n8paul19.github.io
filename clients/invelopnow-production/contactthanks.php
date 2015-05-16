@@ -33,37 +33,95 @@
   <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
-    <!--[if lt IE 7]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  <div class="perspective">
+    <nav role="navigation" id="mobile-nav" class="nav-collapse mobile">
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="showcases.html">Showcases</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="#" id="trigger-overlay" class="trigger-overlay">Contact Us</a></li>
+      </ul>
+      <div class="social mobile">
+        <a href="https://www.facebook.com/pages/Invelop-LLC/778989742148951?skip_nax_wizard=true&ref_type=logout_gear" target="_blank"><span class="icon-facebook"></span></a>
+        <a href="https://twitter.com/invelopnow" target="_blank"><span class="icon-twitter"></span></a>
+        <a href="https://plus.google.com/u/0/117870942033177453042/about" target="_blank"><span class="icon-googleplus"></span></a>
+        <a href="https://www.youtube.com/channel/UCLYH2GIenP3pVFECHDcP-hg" target="_blank"><span class="icon-youtube"></span></a>
+        <a href="https://www.linkedin.com/company/9219645?trk=tyah&trkInfo=tarId%3A1421164454460%2Ctas%3Ainvelop%20llc%2Cidx%3A1-1-1" target="_blank"><span class="icon-linkedin"></span></a>
+        <a href="http://instagram.com/invelopnow?ref=badge" target="_blank"><span class="icon-instagram"></span></a>
+        <a href="http://www.pinterest.com/invelopnow/" target="_blank"><span class="icon-pinterest" target="_blank"></span></a>
+      </div>
+    </nav>
     <div class="container">
-    <!-- header -->
-    <header>
-      <div class="wrapper">
-        <a class="nav-logo" href="/">
-            <video class="logo-loop" width="480" height="100" autoplay="autoplay" preload="none"poster="images/invelop-logo.jpg" loop>
+      <a href="#nav" class="nav-toggle">Menu</a>
+      <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <!-- header -->
+      <header>
+        <div class="wrapper">
+          <!-- <a class="nav-logo" href="index.html">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 360 109.3" enable-background="new 0 0 360 109.3" xml:space="preserve" class="logo">
+              <g>
+                <path class="bubble" d="M74.8,89.4l0-33.3c0-4.9-0.8-8.5-2.3-10.9c-1.5-2.4-4.2-3.6-8.1-3.6c-4.4,0-7.6,1.3-9.6,3.9
+                c-2,2.6-3,6.9-3,12.9l0,30.9l-16.2,0l0-58.9l15.4,0l0,8.2h0.3c2-3.4,4.7-5.9,8-7.5c3.3-1.6,6.6-2.3,10-2.3c4.3,0,7.9,0.6,10.6,1.8
+                c2.8,1.2,5,2.8,6.5,4.9c1.6,2.1,2.7,4.6,3.4,7.6c0.6,3,1,6.3,1,10l0,31.6c7-8.7,11.1-19.8,11.1-31.9c0-28.2-22.9-51.1-51.1-51.1
+                c-8.9,0-17.2,2.3-24.5,6.3h1.1l0,13.3l-16.2,0v-0.8c-7.2,8.8-11.5,20-11.5,32.3c0,12.2,4.3,23.5,11.5,32.3l0-54.7l16.2,0l0,58.9
+                H15.1c9.2,9.1,21.9,14.7,35.8,14.7s26.6-5.6,35.8-14.7H74.8z"/>
+                <g>
+                  <path class="type" d="M136.8,90.1h-5l-22-53.7h4.7l19.8,49.1h0.2L153,36.4h4.5L136.8,90.1z"/>
+                  <path class="type" d="M208.6,82.3c-1.1,1.5-2.3,2.9-3.7,4.1c-4,3.3-9.3,5-15.9,5c-4,0-7.6-0.7-10.6-2.1c-3-1.4-5.5-3.4-7.5-5.9
+                  c-2-2.5-3.5-5.4-4.5-8.8c-1-3.4-1.5-7-1.5-10.9c0-3.8,0.5-7.4,1.5-10.8c1-3.4,2.6-6.5,4.6-9.1c2.1-2.6,4.6-4.7,7.7-6.3
+                  c3.1-1.6,6.7-2.4,10.9-2.4c3.8,0,7.2,0.7,10.1,2.1c2.9,1.4,5.4,3.3,7.4,5.7c2,2.4,3.5,5.2,4.5,8.4c1,3.2,1.5,6.6,1.5,10.2
+                  c0,0.3,0,0.7-0.1,1.2c0,0.5-0.1,0.8-0.1,1.1h-44.2v0.6c0,3.1,0.4,6.1,1.3,9c0.9,2.9,2.1,5.4,3.8,7.5c1.7,2.2,3.8,3.9,6.3,5.1
+                  c2.5,1.3,5.5,1.9,8.8,1.9c5.5,0,9.8-1.4,13-4.2c1.1-1,2.1-2.1,3-3.4L208.6,82.3z M209.1,60.3c-0.1-2.9-0.6-5.7-1.5-8.3
+                  c-0.9-2.6-2.1-4.9-3.8-6.9c-1.7-2-3.7-3.6-6.1-4.8c-2.4-1.2-5.1-1.8-8.2-1.8c-3.3,0-6.1,0.6-8.6,1.8c-2.5,1.2-4.6,2.8-6.3,4.8
+                  c-1.7,2-3,4.3-3.9,7c-0.9,2.6-1.5,5.4-1.7,8.2H209.1z"/>
+                  <path class="type" d="M231.8,15.4v74.6h-4V15.4H231.8z"/>
+                  <path class="type" d="M246.4,63.2c0-3.8,0.5-7.4,1.6-10.8c1.1-3.4,2.7-6.4,4.8-8.9c2.1-2.6,4.7-4.6,7.9-6.1
+                  c3.1-1.5,6.7-2.2,10.7-2.2c4,0,7.6,0.7,10.7,2.2c3.1,1.5,5.7,3.5,7.9,6.1c2.1,2.6,3.7,5.6,4.8,8.9c1.1,3.4,1.6,7,1.6,10.8
+                  c0,3.8-0.5,7.5-1.6,10.9c-1.1,3.4-2.7,6.4-4.8,8.9c-2.1,2.5-4.7,4.6-7.9,6.1c-3.1,1.5-6.7,2.2-10.7,2.2c-4,0-7.6-0.8-10.7-2.2
+                  c-3.1-1.5-5.7-3.5-7.9-6.1c-2.1-2.5-3.7-5.5-4.8-8.9C246.9,70.7,246.4,67.1,246.4,63.2z M250.4,63.2c0,3.2,0.5,6.3,1.4,9.3
+                  c0.9,3,2.3,5.6,4,7.9c1.8,2.3,4,4.1,6.6,5.5c2.6,1.4,5.6,2,9,2c3.4,0,6.4-0.7,9-2c2.6-1.4,4.8-3.2,6.6-5.5c1.8-2.3,3.1-4.9,4-7.9
+                  c0.9-3,1.4-6,1.4-9.3s-0.5-6.3-1.4-9.3c-0.9-3-2.3-5.6-4-7.9c-1.8-2.3-4-4.1-6.6-5.5c-2.6-1.4-5.6-2-9-2c-3.4,0-6.4,0.7-9,2
+                  c-2.6,1.4-4.8,3.2-6.6,5.5c-1.8,2.3-3.1,4.9-4,7.9C250.9,56.9,250.4,60,250.4,63.2z"/>
+                  <path class="type" d="M315.1,48.7h0.3c0.4-1.3,1.1-2.8,2.1-4.4c1-1.6,2.3-3.1,3.9-4.4c1.6-1.4,3.6-2.5,5.9-3.4
+                  c2.3-0.9,4.9-1.4,7.9-1.4c4.2,0,7.8,0.8,10.9,2.3c3.1,1.5,5.6,3.6,7.7,6.2c2,2.6,3.5,5.6,4.5,9c1,3.4,1.5,7,1.5,10.8
+                  c0,4.1-0.5,7.9-1.5,11.3c-1,3.4-2.5,6.4-4.5,8.8c-2,2.5-4.6,4.4-7.7,5.8c-3.1,1.4-6.7,2.1-10.9,2.1c-4.5,0-8.6-1-12.1-2.9
+                  c-3.6-1.9-6.1-5.1-7.8-9.5h-0.2l0,30.4h-3.9v-73h3.9V48.7z M335.3,87.9c3.6,0,6.6-0.7,9.2-2c2.6-1.3,4.7-3.1,6.4-5.3
+                  c1.7-2.2,2.9-4.8,3.7-7.8c0.8-3,1.2-6.1,1.2-9.5c0-3.1-0.4-6.1-1.2-9c-0.8-3-2-5.6-3.6-7.9c-1.6-2.3-3.7-4.2-6.3-5.6
+                  c-2.6-1.4-5.7-2.1-9.4-2.1c-3.6,0-6.7,0.7-9.3,2.1c-2.6,1.4-4.6,3.2-6.2,5.5c-1.6,2.3-2.8,4.9-3.5,7.9c-0.7,3-1.1,6-1.1,9.3
+                  c0,3.2,0.3,6.3,1,9.3c0.6,3,1.7,5.6,3.2,7.8c1.5,2.3,3.6,4.1,6.2,5.4C328.2,87.2,331.4,87.9,335.3,87.9z"/>
+                </g>
+              </g>
+            </svg>
+          </a> -->
+          <a class="nav-logo" href="/">
+            <video class="logo-loop" width="480" height="100" autoplay="autoplay" preload="none" loop>
               <source src="images/invelop-logo.mov" type="video/mov" />
               <source src="images/invelop-logo.ogg" type="video/ogg" />
               <img src="images/invelop-logo.jpg" class="logo">
             </video>
           </a>
-        <div class="social">
+          <div class="social desktop">
             <a href="https://www.facebook.com/pages/Invelop-LLC/778989742148951?skip_nax_wizard=true&ref_type=logout_gear" target="_blank"><span class="icon-facebook"></span></a>
             <a href="https://twitter.com/invelopnow" target="_blank"><span class="icon-twitter"></span></a>
             <a href="https://plus.google.com/u/0/117870942033177453042/about" target="_blank"><span class="icon-googleplus"></span></a>
             <a href="https://www.youtube.com/channel/UCLYH2GIenP3pVFECHDcP-hg" target="_blank"><span class="icon-youtube"></span></a>
             <a href="https://www.linkedin.com/company/9219645?trk=tyah&trkInfo=tarId%3A1421164454460%2Ctas%3Ainvelop%20llc%2Cidx%3A1-1-1" target="_blank"><span class="icon-linkedin"></span></a>
             <a href="http://instagram.com/invelopnow?ref=badge" target="_blank"><span class="icon-instagram"></span></a>
-            <a href="http://www.pinterest.com/invelopnow/"><span class="icon-pinterest" target="_blank"></span></a>
+            <a href="http://www.pinterest.com/invelopnow/" target="_blank"><span class="icon-pinterest" target="_blank"></span></a>
           </div>
-        <nav>
-         <a href="services.html">Services</a>
-          <a href="faqs.html">FAQs</a>
-          <a href="#" id="trigger-overlay">Contact Us</a>
-        </nav>
-      </div>
-    </header>
-    <!-- /header -->
+          <nav role="navigation" class="desktop">
+            <ul>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="showcases.html">Showcases</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+              <li><a href="#" id="trigger-overlay-two" class="trigger-overlay">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- /header -->
     <section class="about">
       <div class="alpha">
           <h1>Thank you!</h1>
@@ -75,73 +133,66 @@
         <p class="lead">We've received your message and will be in touch right away.</p></div>
       </div>
     </section>
-<!-- FOOTER -->
-<footer>
-  <div id="mc_embed_signup" class="email-signup">
-    <form action="//invelopnow.us9.list-manage.com/subscribe/post?u=778993d3c4f211e0340bdcb71&amp;id=1f07ac002b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <span class="icon-mail"></span>
-      <h3>Sign up for Invelop’s Newsletter</h3>
-      <div id="mc_embed_signup_scroll" class="field-wrapper">
-        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;"><input type="text" name="b_778993d3c4f211e0340bdcb71_1f07ac002b" tabindex="-1" value=""></div>
-        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
-        <p>We don’t share email addresses and you can unsubscribe at any time.</p>
-      </div>
-    </form>
-  </div>
-  <div class="footer-bottom">
-    <p>@2015 Invelop LLC •  All Rights Reserved</p>
-  </div>
-</footer>
-</div>
-<!-- Overlay -->
-<div class="overlay overlay-contentscale">
-  <button type="button" class="overlay-close">Close</button>
-
-  <section class="contact-form">
-    <div class="wrapper">
-      <h2>Contact Us</h2>
-      <div class="contact-phone">
-	<img src="https://service.ringcentral.com/picture/dot.gif" width="1" height="1"/><div style="cursor:pointer; display:inline-block;" onclick='var wind = window; var winop = wind.open; winop("https://service.ringcentral.com/ringme/?uc=860FB34D85E0BEBA57F5209C9DEF66D8437057569959,0,202,1,0&s=no&v=2&s_=1210", "Callback_RingMe", "resizable=no,width=650,height=460"); return false;'><span class="icon-mobile"></span> RingMe Now</div>
-</div>
-
-     <form method="post" action="contactengine.php">
-      <feildset>
-        <div class="field-wrapper">
-          <label for="Name">Your Name</label>
-          <input name="Name" id="Name" placeholder="First and Last Name " />
+    <footer>
+        <div id="mc_embed_signup" class="email-signup">
+          <form action="//invelopnow.us9.list-manage.com/subscribe/post?u=778993d3c4f211e0340bdcb71&amp;id=1f07ac002b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <span class="icon-mail"></span>
+            <h3>Sign up for Invelop’s Newsletter</h3>
+            <div id="mc_embed_signup_scroll" class="field-wrapper">
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_778993d3c4f211e0340bdcb71_1f07ac002b" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+              <p>We don’t share email addresses and you can unsubscribe at any time.</p>
+            </div>
+          </form>
         </div>
-
-        <div class="field-wrapper">
-          <label for="Tel">Your Number</label>
-          <input name="Tel" id="Tel" placeholder="Phone Number" />
+        <div class="footer-bottom">
+          <p>@2015 Invelop LLC •  All Rights Reserved</p>
         </div>
-
-        <div class="field-wrapper">
-          <label for="Email">Your Email</label>
-          <input name="Email" id="Email" placeholder="Email" />
+      </footer><!-- /footer -->
+    </div><!-- /container -->
+    <div class="overlay overlay-contentscale">
+      <button type="button" class="overlay-close">Close</button>
+      <section class="contact-form">
+        <div class="wrapper">
+          <h2>Contact Us</h2>
+          <div class="contact-phone">
+            <img src="https://service.ringcentral.com/picture/dot.gif" width="1" height="1"/><div style="cursor:pointer; display:inline-block;" onclick='var wind = window; var winop = wind.open; winop("https://service.ringcentral.com/ringme/?uc=860FB34D85E0BEBA57F5209C9DEF66D8437057569959,0,202,1,0&s=no&v=2&s_=1210", "Callback_RingMe", "resizable=no,width=650,height=460"); return false;'><span class="icon-mobile"></span> RingMe Now</div>
+          </div>
+          <form method="post" action="contactengine.php">
+            <feildset>
+              <div class="field-wrapper">
+                <label for="Name">Your Name</label>
+                <input name="Name" id="Name" placeholder="First and Last Name " />
+              </div>
+              <div class="field-wrapper">
+                <label for="Tel">Your Number</label>
+                <input name="Tel" id="Tel" placeholder="Phone Number" />
+              </div>
+              <div class="field-wrapper">
+                <label for="Email">Your Email</label>
+                <input name="Email" id="Email" placeholder="Email" />
+              </div>
+              <div class="field-wrapper">
+                <label for="Message">Your Message</label>
+                <textarea rows="4" cols="50"input name="Message" id="Message" placeholder="Send us a note"></textarea>
+              </div>
+              <button type="submit" class="btn submit-button">
+                <span class="icon-paperplane"></span> Send
+              </button>
+            </feildset>
+          </form>
         </div>
-
-        <div class="field-wrapper">
-          <label for="Message">Your Message</label>
-          <textarea rows="4" cols="50"input name="Message" id="Message" placeholder="Send us a note"></textarea>
-        </div>
-        
-        <button type="submit" class="btn submit-button">
-          <span class="icon-paperplane"></span> Send
-        </button>
-      </feildset>
-    </form>
-  </div>
-
-</section>
-</div>
-</div><!-- /container -->
+      </section>
+    </div><!-- /overlay -->
+  </div><!-- /perspective -->
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/main-min.js"></script>
-
+  <script>
+  var navigation = responsiveNav("mobile-nav", {customToggle: ".nav-toggle"});
+  </script>
      
     <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
