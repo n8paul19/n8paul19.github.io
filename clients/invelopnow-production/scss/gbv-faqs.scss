@@ -1,3 +1,10 @@
+.questions {
+	text-align:left;
+
+	@media screen and (min-width: 875px) {
+		text-align:center;
+	}
+}
 .questions h2, .questions h3, .questions p {
 	max-width:875px;
 	margin-left:auto;
@@ -5,7 +12,8 @@
 }
 
 .questions h3 {
-	margin-top:30px;
-	padding-top:30px;
+	margin-top:$base-spacing * 3;
+	margin-bottom:$base-spacing - 5;
+	padding-top:$base-spacing * 2;
 	border-top: 1px solid #e7e7e7;
 }

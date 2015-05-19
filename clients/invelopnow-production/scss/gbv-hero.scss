@@ -1,4 +1,13 @@
+section.hero {
+		background: url(../images/google-partners-mobile.jpg) no-repeat; 
+		background-position: 0 20% ;
+	}
 
+@media screen and (min-width:875px) {
+	section.hero {
+		background: none; 
+	}
+}
 section.hero {
 	padding-bottom:0;
 }
@@ -7,7 +16,10 @@ section.hero {
 
 	.btn {
 		display: block;
-		margin-top: 40%;
+		margin-top:350px;
+		@media screen and (min-width:875px) {
+		margin-top: 60%;
+	}
 
 		span {
 			display: block;

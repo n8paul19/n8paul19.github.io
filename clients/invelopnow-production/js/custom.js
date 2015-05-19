@@ -25,7 +25,7 @@
             $(".player").mb_YTPlayer();
         } else {
             //jQuery will add the default background to the preferred class 
-            $('.big-background, .small-background-section').addClass(
+            $('.hero').addClass(
                 'big-background-default-image');
         }
     });

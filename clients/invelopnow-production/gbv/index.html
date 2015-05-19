@@ -48,16 +48,17 @@
 		</div>
 	<div class="ip-main">
 		<header>
-			<div class="wrapper">
-				<button type="button" role="button" aria-label="Toggle Navigation" class="mobile lines-button x">
+			<div class="">
+				<a class="logo" href="/"><span>Invelop</span></a>
+				<button type="button" role="button" aria-label="Toggle Navigation" class="mobile-nav-button lines-button x">
 	          <span class="lines"></span>
 	        </button>
 				<nav>
 					<ul>
 						<li><a class="scrollto" href="#top">Home</a></li>
-						<li><a class="scrollto" href="#what">What is Google Business View</a></li>
-						<li><a class="scrollto" href="#why">Why get Google Business View</a></li>
-						<li><a class="scrollto" href="#clients">Clients</a></li>
+						<li><a class="scrollto" href="#what">About Google Business View</a></li>
+						<li><a class="scrollto" href="#why">Benefits</a></li>
+						<!--<li class="hide"><a class="scrollto" href="#clients">Clients</a></li>-->
 						<li><a class="scrollto" href="#quote">Quote</a></li>
 						<li><a class="scrollto" href="#faqs">FAQs</a></li>
 						<li><a class="scrollto" href="#contact">Contact</a></li>
@@ -106,27 +107,53 @@
 			<h2>What is Google Business View & Why Do I Need it?</h2>
 			<p>A picture is worth a thousand words Google Business View lets potential customers see what your business is all about - from the inside out</p>
 			<p>A Google Business View virtual tour will appear within the following Google products:</p>
-			<p>Google Search * Google Street View * Google Maps * Google Local Google My Business * Google +</p>
+			<div class="g-products g-search">Google Search</div><div class="g-products g-view">Google Street View</div><div class="g-products g-maps">Google Maps</div><div class="g-products g-local">Google Local</div><div class="g-products g-business">Google My Business</div><div class="g-products g-plus">Google +</div>
 		</div>
 	</section>
 	<!-- Why -->
 	<section class="why-gbv" id="why" name="why">
-		<div class="wrapper">
+		<div class="wide-wrapper">
 			<h2>Why get Google Business View?</h2>
-			<p>-Add premium-quality photography to your presence across Google-
-
-	-Increase visibility of your business and increase engagement with your customers-
-
-	-Invite customers inside to experience your business’s interior with familiar Street View navigation-
-
-	-Manage your Google My Business page information on-the-go with the Android app or  iOS app-
-
-	-Easily embed the virtual tour and images on your website and social media outlets-</p>
+			<div class="why-content">
+			<p>
+				<ul>
+					<li>Add premium-quality photography to your presence across Google</li>
+					<li>Increase visibility of your business and increase engagement with your customers</li>
+					<li>Invite customers inside to experience your business’s interior with familiar Street View navigation</li>
+					<li>Manage your Google My Business page information on-the-go with the Android app or  iOS app</li>
+					<li>Easily embed the virtual tour and images on your website and social media outlets</li>
+				</ul></p></div>
 		</div>
 	</section>
 	<!-- Quote -->
 	<section class="get-quote" id="quote" name="quote">
-		<div class="wrapper"></div>
+		<div class="wrapper">
+			<h2>Best Pricing</h2>
+			<p><strong>No hidden fees, pays as you go!</strong></p>
+			<p>One Time cost to showcase your business 360 views in Google</p>
+		</div>
+		<div class="wrapper">
+			<div class="price-box">
+				<h4>Platinum Package</h4>
+				<h2>Request a Quote</h2>
+				<ul>
+					<li><span>10</span> Panos</li>
+ 					<li><span>10</span> HD Images</li>
+					<li><span class="icon-googleplus"></span>Setup of Google+ Local page</li>
+				</ul>
+				<a href="#" class="btn">Get Quote</a>
+			</div>
+			<div class="price-box">
+				<h4>Platinum Package</h4>
+				<h2>Request a Quote</h2>
+				<ul>
+					<li><span>20+</span> Panos</li>
+ 					<li><span>20</span>  HD Images</li>
+					<li><span class="icon-browser"></span>Integration in website</li>
+				</ul>
+				<a href="#" class="btn">Get Quote</a>
+			</div>
+		</div>
 	</section>
 	<!-- FAQs -->
 	<section class="questions" id="faqs" name="faqs">
@@ -226,10 +253,10 @@
     $('#big_video').css({'height': vph + 'px'});
     }
     </script>
-  <script src="../js/device.min.js"></script> <!--OPTIONAL JQUERY PLUGIN-->
-  <script src="../js/jquery.mb.YTPlayer.js"></script>
+  <script src="../js/device.min.js"></script><!--OPTIONAL JQUERY PLUGIN-->
   <script src="../js/custom.js"></script>
-	<script src="../js/nav.min.js"></script>
+  <script src="../js/jquery.mb.YTPlayer.js"></script>
+  <script src="../js/nav.min.js"></script>
 	<script src="../js/classie.js"></script>
 	<script src="../js/pathLoader.js"></script>
 	<script src="../js/gbv-preloader.js"></script>
@@ -260,6 +287,10 @@
 		}
 	</script>
 	<script>
+	$("nav ul li a").click(function() {
+        $("nav").removeClass("active"),
+        $("button").removeClass("close")
+       })
     var anchor = document.querySelectorAll('button');
     
     [].forEach.call(anchor, function(anchor){
@@ -276,6 +307,7 @@
         }
       }
     }); 
+
   </script>
 	<script>
 	(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

@@ -497,6 +497,31 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/clients\/invelopnow-production\/css\/gbv-what.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/css\/gbv-what.scss",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/css\/gbv-what.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/clients\/invelopnow-production\/css\/gbv.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/css\/gbv.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/clients\/invelopnow-production\/css\/grid-photo.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -799,6 +824,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/clients\/invelopnow-production\/images\/google-partners-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 87754,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/google-partners-mobile.jpg",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/google-partners-mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/clients\/invelopnow-production\/images\/google-partners.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 159499,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/google-partners.jpg",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/google-partners.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/clients\/invelopnow-production\/images\/google-streetview.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44648,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/google-streetview.png",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/google-streetview.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/clients\/invelopnow-production\/images\/google_now_48dp.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7124,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/google_now_48dp.png",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/google_now_48dp.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/clients\/invelopnow-production\/images\/google_plus_48dp.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4806,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/google_plus_48dp.png",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/google_plus_48dp.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/clients\/invelopnow-production\/images\/grid-builder.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -865,6 +945,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/clients\/invelopnow-production\/images\/icn-local-64.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2141,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/icn-local-64.png",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/icn-local-64.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/clients\/invelopnow-production\/images\/icon-facebook.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -916,6 +1007,28 @@
 		"initialSize": 232501,
 		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/invelop-video-bg.jpg",
 		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/invelop-video-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/clients\/invelopnow-production\/images\/maps_48dp.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3842,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/maps_48dp.png",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/maps_48dp.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/clients\/invelopnow-production\/images\/my_business_48dp.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2622,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/my_business_48dp.png",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/my_business_48dp.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1059,6 +1172,17 @@
 		"initialSize": 471933,
 		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/slider\/slider-06.jpg",
 		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/slider\/slider-06.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/clients\/invelopnow-production\/images\/streetview-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2881,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/streetview-icon.png",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/images\/streetview-icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1237,6 +1361,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/clients\/invelopnow-production\/js\/min\/custom-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/js\/min\/custom-min.js",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/js\/min\/min\/custom-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/clients\/invelopnow-production\/js\/min\/jquery.mb.YTPlayer-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -1276,6 +1411,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/js\/min\/nav-menu-min.js",
 		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/js\/min\/min\/nav-menu-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/clients\/invelopnow-production\/js\/min\/nav.min-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/js\/min\/nav.min-min.js",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/js\/min\/min\/nav.min-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1681,6 +1827,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/clients\/invelopnow-production\/scss\/gbv-quote.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/scss\/gbv-quote.scss",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/css\/gbv-quote.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/clients\/invelopnow-production\/scss\/gbv-style.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1690,6 +1852,38 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/scss\/gbv-style.scss",
 		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/css\/gbv-style.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/clients\/invelopnow-production\/scss\/gbv-what.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/scss\/gbv-what.scss",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/css\/gbv-what.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/clients\/invelopnow-production\/scss\/gbv-why.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients\/invelopnow-production\/scss\/gbv-why.scss",
+		"outputAbbreviatedPath": "\/clients\/invelopnow-production\/css\/gbv-why.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

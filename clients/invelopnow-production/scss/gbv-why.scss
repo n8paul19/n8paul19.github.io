@@ -1,0 +1,36 @@
+.why-content {
+		text-align:left;
+		font-size:18px;
+		ul {
+			padding-left: $base-spacing * 2;
+
+			li {
+			list-style-type: disc;
+			margin-bottom: $base-spacing;
+		}
+	}
+
+	}
+
+@media screen and (min-width:875px) {
+
+.why-gbv {
+	min-height:600px;
+	background: url(../images/google-partners.jpg) no-repeat;
+	background-position: -120px 90px;
+	background-size: 80%;
+}
+
+
+	.why-content {
+		@include column(4.5);
+		@include push(6.5);
+		text-align:left;
+		font-size:18px;
+		margin-top: $base-spacing *2;
+		ul {
+			padding-left: 0;
+		}
+
+	}
+}

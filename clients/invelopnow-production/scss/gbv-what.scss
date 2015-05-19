@@ -1,4 +1,67 @@
 .what-gbv {
 	background:$darkest-blue;
 	color:white;
+	color:rgba(255, 255, 255, .7);
+	border:none;
+
+	h2 {
+		color:white;
+	}
+	.wrapper:hover p {
+		color:white;
+	}
+}
+
+.g-products {
+	@include column(6);
+	min-height:100px;
+	padding-top:$base-spacing * 4;
+	margin-top: $base-spacing;
+}
+@media screen and (min-width: 500px) {
+	.g-products {
+		@include column(4);
+		margin-top: $base-spacing;
+	}
+}
+@media screen and (min-width: 800px) {
+	.g-products {
+		@include column(2);
+		margin-top: $base-spacing;
+	}
+}
+.g-search {
+	background: url(../images/google_now_48dp.png) no-repeat;
+	background-size: 50px;
+	background-position: top center;
+}
+
+.g-view {
+	background: url(../images/google-streetview.png) no-repeat;
+	background-size: 50px;
+	background-position: top center;
+}
+
+.g-maps {
+	background: url(../images/maps_48dp.png) no-repeat;
+	background-size: 50px;
+	background-position: top center;
+}
+
+.g-local {
+	background: url(../images/icn-local-64.png) no-repeat;
+	background-size: 50px;
+	background-position: top center;
+}
+
+.g-business {
+	background: url(../images/my_business_48dp.png) no-repeat;
+	background-size: 50px;
+	background-position: top center;
+}
+
+.g-plus {
+	background: url(../images/google_plus_48dp.png) no-repeat;
+	background-size: 50px;
+	background-position: top center;
 }

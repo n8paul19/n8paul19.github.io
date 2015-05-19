@@ -6,9 +6,12 @@
 	color: inherit;
 	background: none;
 	cursor: pointer;
+	padding: 25px;
+@media screen and (min-width:875) {
 	padding: 25px 80px;
-	display: inline-block;
 	margin: 15px 30px;
+}
+	display: inline-block;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;

@@ -1,0 +1,1 @@
+!function($){$(document).ready(function(){device.tablet()||device.mobile()?$(".hero").addClass("big-background-default-image"):$(".player").mb_YTPlayer()})}(jQuery);

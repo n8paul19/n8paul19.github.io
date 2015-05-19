@@ -18,8 +18,35 @@ RESPONSIVE BREAKPOINTS
   }
 }
 /*********************
+LOGO
+**********************/
+.logo {
+  background: url(../images/invelop-logo.jpg) no-repeat;
+  background-size: 160px;
+  background-position: 5px;
+  float: left;
+  height: 60px;
+  width: 100%;
+  
+  
+  @media (max-width: 1600px) {
+    @include column(3);
+    margin-right:0;
+  }
+
+  @include breakpoint(875) {
+  width: 100%;
+  }
+  span {
+  visibility: hidden;
+  }
+}
+
+/*********************
 NAVIGATION STYLES
 **********************/
+
+
 header {
   position: fixed;
   top:0;
@@ -27,9 +54,19 @@ header {
   float: left;
   background:white;
   width:100%;
+  box-shadow: 0 0 5px $lite-grey;
   }
+@include breakpoint(875) {
+  header .wrapper {
+    padding:0;
+  }
+}
 nav {
+  @include column(9);
+  margin: 0;
+  @include breakpoint(875) {
   width:100%;
+  }
   
   @include breakpoint(875) {
     margin:0;
@@ -172,7 +209,7 @@ nav ul {
 /***************************
 MOBILE NAV STYLES
 ***************************/
-.mobile {
+.mobile-nav-button {
   display:none;
   margin:0;
   padding:20px 15px;
