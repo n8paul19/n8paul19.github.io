@@ -1,12 +1,6 @@
-.scroll-on-page {
+
   ///////////////////////////////////////////////////////////////////////////////////
-  $base-line-height: 1.5em !default;
-  $base-spacing: 1em !default;
-  $base-accent-color: #477DCA !default;
-  $base-link-color: $base-accent-color !default;
-  $dark-gray: #333 !default;
-  $large-screen: em(860) !default;
-  $base-font-color: $dark-gray !default;
+
   
   // p {
   //   color: $base-font-color;
@@ -19,23 +13,80 @@
   // }
   //////////////////////////////////////////////////////////////////////////////////
 
-  aside {
-    @include media($large-screen) {
-      @include span-columns(4);
-    }
-  }
+  // aside {
+  //   @include media($large-screen) {
+  //     @include span-columns(4);
+  //   }
+  // }
 
-  .scroll-on-page-link {
+  .logo {
     // border-bottom: 1px solid transparentize($base-link-color, 0.8);
+    // @include grid-column(5);
+    // margin-right: ($base-spacing / 2) ;
+    width: 100%;
     display: block;
-    margin-right: ($base-spacing / 2) ;
+    text-align: center;
     outline: none;
-    padding: ($base-spacing / 2) $base-spacing ;
+    // padding: ($base-spacing / 2) $base-spacing ;
+    a {
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: -0.025em;
+    border: 1px dashed transparent;
+    padding: 15px;
+    border-radius: 6px;
+    @media (min-width: 550px) {
+      margin-left: -20px;
+    }
+    &:focus {
+      outline: none;
+      border: 1px dashed;
+  }
+  }
+    margin-bottom: ($base-spacing / 2) ;
+  }
 
-    &:last-child {
-      margin-bottom: ($base-spacing / 2) ;
+  nav ul {
+    margin: 0;
+  
+    > li {
+      float: left;
+      font-weight: 200;
+      position: relative;
+      list-style: none;
+      // @include transition( all 0.8s );
+  
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        border: 1px dashed transparent;
+        border-radius: 6px;;
+
+        &:focus {
+          outline: none;
+          border: 1px dashed;
+      }
+      }
     }
   }
+
+  @media (min-width: 550px) {
+    .logo {
+      @include grid-column(5);
+      text-align: left;
+    }
+  
+  nav {
+    @include grid-column(7);
+    padding-top:$base-spacing / 2.5;
+
+    ul {
+        float: right;
+    }
+  }
+  
+}
 
   // article {
   //   h4 {
@@ -50,6 +101,5 @@
   //     @include span-columns(8);
   //   }
   // }
-}
 
 // Based on code by http://codepen.io/xmark/

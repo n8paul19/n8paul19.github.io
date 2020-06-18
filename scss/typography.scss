@@ -1,34 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+@media (min-width: 768px) {
+  :root {
+    font-size: calc(1rem + ((1vw - 7.68px) * 0.6944));
+    min-height: 0vw;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    font-size: 24px;
+  }
+}
+
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+	font-weight:300;
+	color:#777;
+	}
+
 h1 {
 	font-size: 3em;
-	font-weight:100;
+  font-weight:100;
+  font-family: $sans-serif;
 }
 
 h2 {
 	font-size: 2.5em;
-	font-weight:400;
+  font-weight:400;
+  font-family: $sans-serif;
 }
 
 h3 {
 	font-size: 2em;
-	font-weight:400;
+  font-weight:400;
+  font-family: $sans-serif;
 }
 
 h4, h5, h6 {
 	font-size: 1.5em;
-	font-weight:400;
+  font-weight:400;
+  font-family: $sans-serif;
 }
 
-article {
+
   ///////////////////////////////////////////////////////////////////////////////////
-  $base-border-radius: 3px !default;
-  $base-line-height: 1.5em !default;
-  $base-spacing: 1.5em !default;
-  $base-accent-color: #477DCA !default;
-  $base-link-color: $base-accent-color !default;
-  $dark-gray: #333 !default;
-  $light-gray: #DDD !default;
-  $medium-screen: em(640) !default;
-  $base-font-color: $dark-gray !default;
+  
+  h1, h2, h3 {
+    letter-spacing:  -0.025em;;
+  }
   
   h1, h2, h3, p {
     margin: 0;
@@ -43,7 +64,7 @@ article {
   }
 
   p {
-    color: $base-font-color;
+    // color: $base-font-color;
     line-height: $base-line-height;
   }
 
@@ -53,16 +74,14 @@ article {
   }
   //////////////////////////////////////////////////////////////////////////////////
 
-  $sans-serif: 'Lato', sans-serif;
-  $sans-serif-2: 'Lato', sans-serif;
 
-  @include clearfix;
-  text-align: left;
+  // @include clearfix;
+  // text-align: left;
 
   .type {
     border-bottom: 1px solid;
     display: inline-block;
-    font-family: $sans-serif-2;
+    font-family: $sans-serif;
     font-size: 0.7em;
     font-weight: 900;
     letter-spacing: 1px;
@@ -73,14 +92,11 @@ article {
   }
 
   h1 {
-    font-family: $sans-serif-2;
+    font-family: $sans-serif;
     font-size: 2em;
     font-weight: 600;
-    margin-bottom: 0.6em;
-
-    @include media($medium-screen) {
-      font-size: 2.4em;
-    }
+    margin-bottom: ($base-spacing);
+    // media: "screen and (max-width: 999px)",
   }
 
   h2 {
@@ -88,14 +104,10 @@ article {
     font-size: 1.2em;
     font-weight: 900;
     line-height: 1.4em;
-    margin: 1.5em 0 0.5em;
+    margin: 1em 0 2.5em;
     text-align: center;
-    text-transform: uppercase;
-    color:$kraft-purple;
-
-    @include media($medium-screen) {
-      font-size: 1.4em;
-    }
+    // text-transform: uppercase;
+    // color: white;
   }
 
   code {
@@ -110,7 +122,7 @@ article {
   }
 
   h3 {
-   font-family: $sans-serif-2;
+   font-family: $sans-serif;
    font-size: 1em;
    font-weight: 700;
    line-height: 1.4em;
@@ -126,8 +138,8 @@ article {
   }
 
   p {
-    font-family: $sans-serif;
-    font-weight: 300;
+    // font-family: $sans-serif;
+    // font-weight: 300;
     letter-spacing: 1;
     margin-bottom: 1.5em;
 
@@ -164,4 +176,9 @@ article {
     font-family: $sans-serif;
     font-style: italic;
   }
+
+
+
+header {
+  font-family: $sans-serif;
 }

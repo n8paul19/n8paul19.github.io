@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -1327,7 +1327,7 @@ section {
   border-top: 1px solid #e3e7ee;
   float: left;
   width: 100%;
-  padding: 60px 0; }
+  padding: 100px 0; }
 
 .wrapper {
   padding: 0 15px; }
@@ -1386,7 +1386,7 @@ LOGO
   float: left;
   height: 60px;
   width: 100%; }
-  @media (max-width: 1600px) {
+  @media (min-width: 875px) {
     .logo {
       display: inline;
       float: left;
@@ -1454,15 +1454,14 @@ nav ul {
         margin: 0; } }
     nav ul li a {
       display: block;
-      padding: 20px 15px;
+      padding: 20px 15px 22px;
       text-align: center;
       color: #00afef;
       text-decoration: none;
-      transition: all 0.1s ease; }
+      transition: all 500ms ease; }
       nav ul li a:hover {
-        background: #1c1c1c;
-        color: #00aedb;
-        transition: all 0.2s ease; }
+        background: #0e79a0;
+        color: #7DDDF5; }
       @media (max-width: 875px) {
         nav ul li a {
           display: table;
@@ -1480,7 +1479,7 @@ nav ul {
         nav ul li:hover ul {
           max-height: 0; } }
     nav ul li ul {
-      background: #1c1c1c;
+      background: #0e79a0;
       list-style: none;
       padding: 0;
       position: absolute;
@@ -1536,7 +1535,7 @@ MOBILE NAV STYLES
   position: absolute;
   color: white;
   text-decoration: none;
-  top: 15px;
+  top: 8px;
   right: 15px;
   line-height: 0;
   border-radius: 50%;
@@ -1819,8 +1818,9 @@ section.hero {
   .why-gbv {
     min-height: 600px;
     background: url(../images/google-partners.jpg) no-repeat;
-    background-position: -120px 90px;
-    background-size: 80%; }
+    background-position: -120px 150px;
+    background-size: 80%;
+    padding-bottom: 150px;}
 
   .why-content {
     display: inline;

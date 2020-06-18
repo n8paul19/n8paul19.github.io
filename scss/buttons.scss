@@ -1,7 +1,7 @@
 .btn {
 	display: inline-block;
 	margin-bottom: 0;
-	font-weight: normal;
+	font-weight: 700;
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
@@ -11,7 +11,7 @@
 	padding: 14px 24px;
 	font-size: 17px;
 	text-shadow: none;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	line-height: 1.42857143;
 	color: #fff;
 	background-color: transparent;
@@ -22,10 +22,16 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	border-radius: .75em;
 
 	&:hover {
-		color: $kraft-purple;
+		color: $grey-purple;
 		background-color: #fff;
 		border-color: #fff;
+	}
+
+	&:focus {
+		outline: none;
+		border: 2px dashed $lilac;
 	}
 }
