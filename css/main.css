@@ -1734,7 +1734,7 @@ sup {
 }
 
 nav ul {
-  margin: 0;
+  margin: 0 0 0 0;
   padding: 0;
   text-align: center;
 }
@@ -1767,6 +1767,16 @@ nav ul > li a:focus {
   border: 1px dashed;
 }
 
+.logo {
+  float: left;
+  width: 45%;
+  text-align: left;
+}
+
+nav {
+  float: right;
+}
+
 @media (min-width: 768px) {
   .logo {
     width: calc(33.3333333333% - 80px);
@@ -1782,6 +1792,7 @@ nav ul > li a:focus {
     margin-left: 60px;
     padding-top: 0.6em;
     float: right;
+    margin-top: -10px;
   }
   nav ul {
     float: right;
@@ -1914,6 +1925,7 @@ section {
 }
 
 header {
+  display: inline-block;
   background: #2f2b3b;
   padding: 0.75em 1.5em;
   top: 0;

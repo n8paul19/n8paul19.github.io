@@ -57,7 +57,7 @@
   }
 
   nav ul {
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 0;
     text-align: center;
   
@@ -93,7 +93,13 @@
       }
     }
   }
+  .logo {
+    float: left;
+    width: 45%;
+    text-align: left;
+  }
 
+  nav { float: right;}
   @media (min-width: 768px) {
     .logo {
       @include grid-column(4);
@@ -105,6 +111,7 @@
     @include grid-column(8);
     padding-top:$base-spacing / 2.5;
     float: right;
+    margin-top: -10px;
 
     ul {
         float: right;
