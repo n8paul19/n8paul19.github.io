@@ -69,6 +69,22 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/about/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/about/index.html",
+		"oF": 0
+		},
+	"/about/index.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/about/index.html",
+		"oF": 0
+		},
 	"/addons/_button.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -6943,6 +6959,55 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/bulletin-formats-elements displayed.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/bulletin-formats-elements displayed.mp4",
+		"oF": 0
+		},
+	"/img/bulletins-prepare-bulletin.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/bulletins-prepare-bulletin.mp4",
+		"oF": 0
+		},
+	"/img/catechism-hero.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/img/catechism-hero.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/catechism-thumb.png": {
+		"ft": 32768,
+		"iS": 266770,
+		"oA": 0,
+		"oAP": "/img/catechism-thumb.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/catechismapp-thumb.jpg": {
+		"ft": 16384,
+		"iS": 58678,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/catechismapp-thumb.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/claire-and-daddy.JPG": {
 		"ft": 16384,
 		"iS": 1861565,
@@ -6954,22 +7019,66 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/img/favicon-128.png": {
+	"/img/design-system-01.png": {
 		"ft": 32768,
-		"iS": 395,
+		"iS": 0,
 		"oA": 0,
-		"oAP": "/img/favicon-128.png",
+		"oAP": "/img/design-system-01.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/designsystem-thumb.jpg": {
+		"ft": 16384,
+		"iS": 35506,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/designsystem-thumb.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/faithcourses-hero.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/img/faithcourses-hero.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/faithcourses-thumb.jpg": {
+		"ft": 16384,
+		"iS": 73670,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/faithcourses-thumb.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/faithcourses-thumb.png": {
+		"ft": 32768,
+		"iS": 370637,
+		"oA": 0,
+		"oAP": "/img/faithcourses-thumb.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/img/favicon-16x16.png": {
+	"/img/favicon-128.png": {
 		"ft": 32768,
-		"iS": 86,
+		"iS": 395,
 		"oA": 0,
-		"oAP": "/img/favicon-16x16.png",
+		"oAP": "/img/favicon-128.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -6987,17 +7096,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/favicon-32x32.png": {
-		"ft": 32768,
-		"iS": 109,
-		"oA": 0,
-		"oAP": "/img/favicon-32x32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/img/favicon-96x96.png": {
 		"ft": 32768,
 		"iS": 4400,
@@ -7009,13 +7107,65 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/favicon.ico": {
+	"/img/healthcare-hero.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/img/healthcare-hero.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/healthcare-thumb": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/img/favicon.ico",
+		"oAP": "/img/healthcare-thumb",
 		"oF": 0
+		},
+	"/img/healthcare-thumb.jog": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/healthcare-thumb.jog",
+		"oF": 0
+		},
+	"/img/healthcare-thumb.jpg": {
+		"ft": 16384,
+		"iS": 64471,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/healthcare-thumb.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/healthcare-thumb.png": {
+		"ft": 32768,
+		"iS": 310850,
+		"oA": 0,
+		"oAP": "/img/healthcare-thumb.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/IMG_2017.JPG": {
+		"ft": 16384,
+		"iS": 4299703,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/IMG_2017.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/img/kraft-logo-hr.svg": {
 		"ft": 2097152,
@@ -7036,6 +7186,47 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/img/lsb-hero.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/img/lsb-hero.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/lsb-thumb": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/lsb-thumb",
+		"oF": 0
+		},
+	"/img/lsb-thumb.jpg": {
+		"ft": 16384,
+		"iS": 28221,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/lsb-thumb.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/lsb-thumb.png": {
+		"ft": 32768,
+		"iS": 325334,
+		"oA": 0,
+		"oAP": "/img/lsb-thumb.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/img/mstile-144x144.png": {
 		"ft": 32768,
@@ -7092,9 +7283,91 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/natepaul.jpg": {
+		"ft": 16384,
+		"iS": 26170,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/natepaul.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/service-planning-propers.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/service-planning-propers.mp4",
+		"oF": 0
+		},
+	"/img/styleguide-hero.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/img/styleguide-hero.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/styleguide-thumb.png": {
+		"ft": 32768,
+		"iS": 278164,
+		"oA": 0,
+		"oAP": "/img/styleguide-thumb.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/timeline-hero.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/img/timeline-hero.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/timeline-thumb.jpg": {
+		"ft": 16384,
+		"iS": 69277,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/timeline-thumb.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/timeline-thumb.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/img/timeline-thumb.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/index.html",
+		"oF": 0
+		},
+	"/index.kit": {
+		"cB": 0,
+		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/index.html",
@@ -7143,6 +7416,46 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"/partials/footer.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/partials/footer.html",
+		"oF": 0
+		},
+	"/partials/header.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/partials/header.html",
+		"oF": 0
+		},
+	"/partials/headtag.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/partials/headtag.html",
+		"oF": 0
+		},
+	"/partials/scripts.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/partials/scripts.html",
+		"oF": 0
+		},
+	"/partials/work-intros.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/partials/work-intros.html",
+		"oF": 0
 		},
 	"/robots.txt": {
 		"cB": 0,
@@ -8136,6 +8449,126 @@
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
+		},
+	"/site.webmanifest": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/site.webmanifest",
+		"oF": 0
+		},
+	"/work/catechism/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/catechism/index.html",
+		"oF": 0
+		},
+	"/work/catechism/index.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/catechism/index.html",
+		"oF": 0
+		},
+	"/work/faithcourses/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/faithcourses/index.html",
+		"oF": 0
+		},
+	"/work/faithcourses/index.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/faithcourses/index.html",
+		"oF": 0
+		},
+	"/work/healthcare/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/healthcare/index.html",
+		"oF": 0
+		},
+	"/work/healthcare/index.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/healthcare/index.html",
+		"oF": 0
+		},
+	"/work/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/index.html",
+		"oF": 0
+		},
+	"/work/index.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/index.html",
+		"oF": 0
+		},
+	"/work/lsb/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/lsb/index.html",
+		"oF": 0
+		},
+	"/work/lsb/index.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/lsb/index.html",
+		"oF": 0
+		},
+	"/work/styleguide/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/styleguide/index.html",
+		"oF": 0
+		},
+	"/work/styleguide/index.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/styleguide/index.html",
+		"oF": 0
+		},
+	"/work/timeline/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/timeline/index.html",
+		"oF": 0
+		},
+	"/work/timeline/index.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/timeline/index.html",
+		"oF": 0
 		}
 	},
 "hooks": [

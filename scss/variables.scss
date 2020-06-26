@@ -1,16 +1,18 @@
 
-$sans-serif: 'Archivo Black', sans-serif;
-$sans-serif-2: 'Archivo Black', sans-serif;
+$sans-serif: 'Heebo', sans-serif;
+$sans-serif-2: 'Heebo', sans-serif;
 
 $kraft-blue: rgb(64, 75, 107);
 
 $grey: #3A3842;
 $grey-purple: #2f2b3b;
-
+$purple: #A74482;
 $light-green: #61E786;
 $honeydew: #EDFFEC;
 $lilac: #9792E3;
-
+$magenta: #F84AA7;
+$light-blue: #606AA9;
+$light-yellow: #FFD166;
 
 $base-border-radius: 3px !default;
 $base-line-height: 1.5em !default;
@@ -34,5 +36,5 @@ $base-font-color: $dark-gray !default;
 
 $neat-grid: (
   columns: 12,
-  gutter: 20px,
+  gutter:  60px,
 );

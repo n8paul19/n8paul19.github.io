@@ -24,6 +24,15 @@ body {
 	body {
 		background: #e7e7e7;
 		color: $grey-purple;
+		font-weight: 350;
+	}
+
+	h1, h2, h3 {
+		font-weight: 650;
+	}
+	
+	p {
+		font-weight: 350;
 	}
 
 	.btn {
@@ -41,12 +50,22 @@ body {
 	body {
 		background-color: $grey-purple;
 		color: #ddd;
+		font-weight: 300;
+	}
+	h1, h2, h3 {
+		font-weight: 600;
+	}
+	
+	p {
+		font-weight: 300;
 	}
 }
 
 body {
 	margin: 0;
+	@media (min-width:768px) {
 	padding-top: 80px;
+	}
 }
 a {
 	text-decoration: none;
@@ -65,32 +84,35 @@ footer {
 	// float:left;
 }
 section {
-	min-height: 100vh;
+	display: inline-block;
+	// min-height: 100vh;
 	padding: ($base-spacing) 0;
-	text-align: center;
+	// text-align: center;
 }
 
 .wrapper {
-	max-width: 1380px;
+	max-width: 1280px;
+	padding: 0 ($base-spacing);
 	margin: auto;
 }
 header {
 	background: $grey-purple;
 	// width: 100%;
 	// height: 100%;
-	padding: $base-spacing;
-	padding-bottom: $base-spacing * 2;
-	@media (min-width: 550px) {
-		padding: $base-spacing;	
-	}
-	
-	margin: 0;
-	bottom: 0;
-	@media (min-width:550px) {
-		top: 0;
+	padding: ($base-spacing / 2) $base-spacing ; 
+	// padding-bottom: $base-spacing * 2;
+	// @media (min-width: 550px) {
+	// 	padding: $base-spacing;	
+	// }
+	top: 0;
+	z-index: 100;;
+	// margin: 0;
+	// bottom: 0;
+	@media (min-width:768px) {
+		position: fixed;
 		bottom: inherit;
 	}
-	position: fixed;
+	
 	
 	// text-shadow: 0 0 5px $grey-purple;
 	// @include transition(all 500ms ease);
@@ -125,10 +147,12 @@ section#hero {
 	// background: $light-green;
 	// color: white;
 	display: table;
-	margin-top: -25vh;
+	margin-top: -95px;
+	min-height: 100vh;
 
 	@media (min-width: 550px) {
-		margin-top: -75px;
+		margin-top: 0;
+		
 	}
 
 	.center-middle {
@@ -137,11 +161,77 @@ section#hero {
 	}
 }
 
-.thumb {
+.work-example {
+	width: 100%;
+	margin-bottom: 40px;
+	border-radius: 8px;
+	background: rgba(0, 0, 0, 0.25);
+	display: inline-block;
+	transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s 
+}
+.work-thumb {
 	// @include grid-column(4);
-	background: white;
-	min-height: 75vh;
-	margin-bottom: 20px;
+	background: $grey;
+
+	// min-height: 400px;
+	// margin-bottom: 20px;
+	border-top-left-radius: 8px;
+	@media (min-width: 768px) {
+	border-bottom-left-radius: 8px;
+	}
+		@media (min-width: 550px) {
+		min-height: 300px;
+		}
+		overflow: hidden;
+	img {
+		@media screen and (min-width: 768px) {
+		opacity: 0.5;
+		}
+		
+		display: block;
+		width: 100%;
+		height: auto;
+		@media screen and (min-width: 768px) and (max-width: 989px) {
+			height: 100%;
+			width: auto;
+		}
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		@media (min-width: 768px) {
+		border-top-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+		border-top-right-radius: 0px;
+		transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s 
+		
+		}
+		
+	}
+}
+
+.work-example:hover .work-thumb > img { opacity: 1;}
+
+.work-intro {
+	padding: ($base-spacing * 2);
+
+	span {
+		opacity: 1;
+	}
+}
+
+@media (min-width: 768px) {
+	.work-thumb  {
+		@include grid-column(7);
+		margin-left:0;
+	}
+
+	.work-intro  {
+		@include grid-column(6);
+		padding: ($base-spacing * 2) 0;
+	}
 }
 
 // 	.thumb::nth-child(4) {
@@ -158,13 +248,14 @@ section#hero {
 }
 @media (min-width: 550px) {
 	.photo {
-		@include grid-column(5);
+		@include grid-column(7);
+		margin-left:0;
 		
 	}
 
 	.text-about-me {
 		@include grid-column(6); 
-		@include grid-push(1);
+		// @include grid-push(1);
 		text-align: left;
 	}
 }
@@ -175,10 +266,9 @@ footer {
 	// border-top: 1px solid rgba(0, 0, 0, 0.1);
 	// colo	r: #ddd;
 	// background: $grey;
-	text-align: center;
+	// text-align: center;
 
 	article {
-		@include grid-container;
 		padding: 25px 0;
 	}
 }
@@ -195,3 +285,198 @@ footer {
 @media screen and (max-width: 620px) {
 	// @import "sliding-menu.scss";
 }
+.work-content { 
+	padding: $base-spacing;
+}
+@media (min-width: 550px) {
+	
+.browser-left, .browser-right {
+	@include grid-column(7);
+	// margin-left: -15%;
+}
+.browser-right {
+	float: right;
+}
+.work-content {
+	@include grid-column(4);
+	padding-top: $base-spacing * 3;
+}
+}
+
+.browser-left img, .browser-right img,
+.browser-left video, .browser-right video {
+	max-width: 100%;
+	height: auto;
+}
+// .role {
+// 	margin-bottom: ($base-spacing / 2);
+// }
+
+.badge {
+	font-size: 14px;
+	padding: ($base-spacing / 4) ($base-spacing / 2);
+	border-radius: 3px;
+	line-height: 14px;
+	font-weight: 450;
+	background: white;
+	display: inline-block;
+	margin-bottom: ($base-spacing / 2);
+}
+
+.ux-badge {
+	background: $light-green;
+	color: $grey;
+}
+
+.ui-badge {
+	background: $lilac;
+	color: $grey;
+}
+
+.dev-badge {
+	background: $honeydew;
+	color: $grey;
+}
+
+.design-system-badge {
+	background: $light-yellow;
+	color: $grey;
+}
+
+
+.work-landing {
+	header {
+		background: transparent;
+	}
+	#hero {
+		background-color: transparent;
+		margin-top: -100px;
+		@media (min-width: 550px) {
+		margin-top: -80px;
+		}
+	}
+
+	.hero.timeline {
+		background-image: linear-gradient(to bottom, rgba(9, 11, 13, .7), rgba(9, 11, 13, .4)), url('/img/timeline-hero.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.hero.healthcare {
+		background-image: linear-gradient(to bottom, rgba(9, 11, 13, .7), rgba(9, 11, 13, .4)), url('/img/healthcare-hero.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.hero.lsb {
+		background-image: linear-gradient(to bottom, rgba(9, 11, 13, .7), rgba(9, 11, 13, .5)), url('/img/lsb-hero.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.hero.catechism {
+		background-image: linear-gradient(to bottom, rgba(9, 11, 13, .6), rgba(9, 11, 13, .2)), url('/img/catechism-hero.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.hero.styleguide {
+		background-image: linear-gradient(to bottom, rgba(9, 11, 13, .6), rgba(9, 11, 13, .2)), url('/img/styleguide-hero.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.hero.faithcourses {
+		background-image: linear-gradient(to bottom, rgba(9, 11, 13, .7), rgba(9, 11, 13, .5)), url('/img/faithcourses-hero.png');
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+
+.work-overview {
+	background: $grey;
+	@media (min-width: 768px) {
+		padding: 100px 0;
+	}
+}
+@media (min-width: 768px) {
+.overview {
+	@include grid-column(8)
+}
+
+.my-role {
+	@include grid-column(3);
+	float: right;
+}
+}
+
+.my-role ul {
+	padding: 0;
+}
+.my-role li {
+	list-style: none;;
+	padding-bottom: ($base-spacing / 2);
+}
+
+
+#instafeed {
+	max-width:1080px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	
+	a {
+	  display: flex;
+	  align-items: center;
+	  position: relative;
+	  width: 50%;
+	  background: white;
+	  
+	  @media only screen and (min-width: 768px) {
+		width: 25%;
+	  }
+	  
+	  img {
+		display: block;
+		width: 100%;
+	  }
+	}
+  }
+
+
+  .footer-links {
+	  padding-bottom: $base-spacing;
+		text-align: center;
+	  a {
+		  margin-right: $base-spacing / 2;
+		  color: white;
+		  border-bottom: 1px solid white;
+		  padding: 8px 5px;
+		  transition: all 300ms ease;
+
+    &:hover {
+      padding-bottom: 4px;
+    }
+
+		  &:focus {
+			outline: none;
+			border: 1px dashed;
+		}
+	  }
+	  @media only screen and (min-width: 768px) {
+		@include grid-column(8);
+		margin-left: 0;
+		text-align: left;
+	  }
+  }
+
+  .copyright {
+	text-align: center;
+	padding-bottom: $base-spacing;
+	@media only screen and (min-width: 768px) {
+		float: right;
+		text-align: right;
+	  }
+  }
