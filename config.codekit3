@@ -6871,6 +6871,28 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/img/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 5796,
+		"oA": 0,
+		"oAP": "/img/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/android-chrome-512x512.png": {
+		"ft": 32768,
+		"iS": 18074,
+		"oA": 0,
+		"oAP": "/img/android-chrome-512x512.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/apple-touch-icon-114x114.png": {
 		"ft": 32768,
 		"iS": 7536,
@@ -6953,6 +6975,17 @@
 		"iS": 3116,
 		"oA": 0,
 		"oAP": "/img/apple-touch-icon-76x76.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 5370,
+		"oA": 0,
+		"oAP": "/img/apple-touch-icon.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -7085,11 +7118,33 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 412,
+		"oA": 0,
+		"oAP": "/img/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/favicon-196x196.png": {
 		"ft": 32768,
 		"iS": 20409,
 		"oA": 0,
 		"oAP": "/img/favicon-196x196.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 730,
+		"oA": 0,
+		"oAP": "/img/favicon-32x32.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -7106,6 +7161,14 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/img/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/favicon.ico",
+		"oF": 0
 		},
 	"/img/healthcare-hero.png": {
 		"ft": 32768,
