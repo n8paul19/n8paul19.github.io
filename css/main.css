@@ -1798,6 +1798,20 @@ nav {
     float: right;
   }
 }
+a {
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 8px 5px;
+  transition: all 300ms ease;
+}
+a:hover {
+  padding-bottom: 4px;
+}
+a:focus {
+  outline: none;
+  border: 1px dashed;
+}
+
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -1827,10 +1841,65 @@ nav {
   color: #2f2b3b;
   background-color: #fff;
   border-color: #fff;
+  padding: 0.75em 1.5em;
 }
 .btn:focus {
   outline: none;
   border: 2px dashed #9792E3;
+}
+
+a[target=_blank]:after {
+  content: "";
+  background: url(/img/icon-exit@2x.png);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.medium-zoom-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 300ms;
+  will-change: opacity;
+}
+
+.medium-zoom--opened .medium-zoom-overlay {
+  cursor: pointer;
+  cursor: zoom-out;
+  opacity: 1;
+}
+
+.medium-zoom-image {
+  cursor: pointer;
+  cursor: zoom-in;
+  /*
+    The `transition` is marked as "!important" for the animation to happen
+    even though it's overriden by another inline `transition` style attribute.
+
+    This is problematic with frameworks that generate inline styles on their
+    images (e.g. Gatsby).
+
+    See https://github.com/francoischalifour/medium-zoom/issues/110
+   */
+  transition: transform 300ms cubic-bezier(0.2, 0, 0.2, 1) !important;
+}
+
+.medium-zoom-image--hidden {
+  visibility: hidden;
+}
+
+.medium-zoom-image--opened {
+  position: relative;
+  cursor: pointer;
+  cursor: zoom-out;
+  will-change: transform;
 }
 
 html {
@@ -1962,9 +2031,16 @@ section#hero {
   margin-top: -95px;
   min-height: 100vh;
 }
+section#hero h2 {
+  line-height: 1.2;
+  margin: 0 0 0.375em 0;
+}
+section#hero h2 + .btn {
+  margin-top: 1.5em;
+}
 @media (min-width: 550px) {
   section#hero {
-    margin-top: 0;
+    margin-top: -55px;
   }
 }
 section#hero .center-middle {
@@ -2121,6 +2197,9 @@ footer article {
 .browser-left video, .browser-right video {
   max-width: 100%;
   height: auto;
+  display: block;
+  position: relative;
+  cursor: zoom-in;
 }
 
 .badge {
@@ -2290,4 +2369,32 @@ footer article {
     float: right;
     text-align: right;
   }
+}
+
+#detail-modal {
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+#detail-modal img {
+  display: block;
+  position: relative;
+  z-index: 100;
+  cursor: zoom-out;
+}
+
+.bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  opacity: 0;
+  display: block;
+  transition: opacity 0.3s;
 }

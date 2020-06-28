@@ -7074,6 +7074,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/faithcourses-01.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/img/faithcourses-01.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/faithcourses-02.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/img/faithcourses-02.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/faithcourses-hero.png": {
 		"ft": 32768,
 		"iS": 0,
@@ -7104,6 +7126,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/family-photo-2020.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/img/family-photo-2020.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -7170,6 +7203,28 @@
 		"oAP": "/img/favicon.ico",
 		"oF": 0
 		},
+	"/img/healthcare-01.jpg": {
+		"ft": 16384,
+		"iS": 1150222,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/healthcare-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/healthcare-01.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/img/healthcare-01.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/healthcare-hero.png": {
 		"ft": 32768,
 		"iS": 0,
@@ -7216,6 +7271,27 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/icon-exit.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/icon-exit.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/icon-exit@2x.png": {
+		"ft": 32768,
+		"iS": 502,
+		"oA": 0,
+		"oAP": "/img/icon-exit@2x.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -8379,6 +8455,19 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/css/main.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/scss/medium-zoom.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/medium-zoom.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

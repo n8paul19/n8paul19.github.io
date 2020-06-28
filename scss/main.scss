@@ -5,6 +5,8 @@
 @import "nav.scss";
 @import "buttons.scss";
 
+@import "medium-zoom.scss";
+
 html {
 	box-sizing: border-box;
 	height: 100%
@@ -151,8 +153,16 @@ section#hero {
 	margin-top: -95px;
 	min-height: 100vh;
 
+	h2 {
+		line-height: 1.2;
+		margin: 0 0 ($base-spacing / 4) 0;
+	}
+
+	h2 + .btn {
+		margin-top: $base-spacing;
+	}
 	@media (min-width: 550px) {
-		margin-top: 0;
+		margin-top: -55px;
 		
 	}
 
@@ -308,6 +318,9 @@ footer {
 .browser-left video, .browser-right video {
 	max-width: 100%;
 	height: auto;
+	display: block;
+		position: relative;
+		cursor:  zoom-in;
 }
 // .role {
 // 	margin-bottom: ($base-spacing / 2);
@@ -481,3 +494,33 @@ footer {
 		text-align: right;
 	  }
   }
+
+
+  #detail-modal {
+	justify-content: center;
+	align-items: center;
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+  }
+  
+  #detail-modal img {
+	display: block;
+	position: relative;
+	z-index: 100;
+	cursor: zoom-out;
+  }
+  
+  .bg {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	background-color: #ffffff;
+	opacity: 0;
+	display: block;
+	transition: opacity .3s;
+  }
+  

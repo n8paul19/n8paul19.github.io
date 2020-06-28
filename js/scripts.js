@@ -77,15 +77,18 @@ $(document).ready(function(){
 // https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js
 // https://matthewelsom.com/assets/js/libs/instafeed.min.js
 
-var userFeed = new Instafeed({
-  get: 'user',
-  userId: '17841401315710122',
-  clientId: '1387915041394109',
-  accessToken: 'IGQVJVejViNFpyNTQwZAFdaWVl0TjhTdHNKaWRwcW8tNUNEOURDeS03Q1F2cDBxOGNtdjBkSEkxYURfdWJLR3AyeFBRWjlsaG9KcEt3Q1R0OVVuNnJrbzVLVS1sQThKN0R0RXpTWVhDVWhCVkEwYmNVUAZDZD',
-  resolution: 'standard_resolution',
-  template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
-  sortBy: 'most-recent',
-  limit: 4,
-  links: false
-});
-userFeed.run();
+// var userFeed = new Instafeed({
+//   get: 'user',
+//   userId: '17841401315710122',
+//   clientId: '1387915041394109',
+//   accessToken: 'IGQVJVejViNFpyNTQwZAFdaWVl0TjhTdHNKaWRwcW8tNUNEOURDeS03Q1F2cDBxOGNtdjBkSEkxYURfdWJLR3AyeFBRWjlsaG9KcEt3Q1R0OVVuNnJrbzVLVS1sQThKN0R0RXpTWVhDVWhCVkEwYmNVUAZDZD',
+//   resolution: 'standard_resolution',
+//   template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+//   sortBy: 'most-recent',
+//   limit: 4,
+//   links: false
+// });
+// userFeed.run();
+
+
+

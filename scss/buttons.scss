@@ -1,3 +1,19 @@
+a {
+	color: white;
+	border-bottom: 1px solid white;
+		  padding: 8px 5px;
+		  transition: all 300ms ease;
+
+    &:hover {
+      padding-bottom: 4px;
+    }
+
+		  &:focus {
+			outline: none;
+			border: 1px dashed;
+		}
+	  }
+
 .btn {
 	display: inline-block;
 	margin-bottom: 0;
@@ -29,10 +45,23 @@
 		color: $grey-purple;
 		background-color: #fff;
 		border-color: #fff;
+		padding: ($base-spacing / 2) $base-spacing;
 	}
 
 	&:focus {
 		outline: none;
 		border: 2px dashed $lilac;
 	}
+}
+
+
+a[target="_blank"]:after {
+	content: '';
+	background: url(/img/icon-exit@2x.png);
+	background-size: 15px;
+	background-repeat: no-repeat;
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+	margin-left: 4px;
 }
