@@ -524,3 +524,21 @@ footer {
 	transition: opacity .3s;
   }
   
+
+  .breadcrumb {
+	  border:0;
+  }
+
+  #zooom-overlay {
+	  z-index: 150;
+  }
+
+  img[data-zoomed="true"] {
+	  z-index: 200;
+  }
+
+  .work-footer img {
+	  padding: 50px 0; 
+	  max-width: 100%;
+	  height: auto;
+  }

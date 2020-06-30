@@ -7052,11 +7052,22 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/img/design-system-01.png": {
+	"/img/cphfaithcourses-01.png": {
 		"ft": 32768,
-		"iS": 0,
+		"iS": 340295,
 		"oA": 0,
-		"oAP": "/img/design-system-01.png",
+		"oAP": "/img/cphfaithcourses-01.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/cphfaithcourses-footer.png": {
+		"ft": 32768,
+		"iS": 1163688,
+		"oA": 0,
+		"oAP": "/img/cphfaithcourses-footer.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
@@ -7225,11 +7236,66 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/healthcare-02.png": {
+		"ft": 32768,
+		"iS": 822759,
+		"oA": 0,
+		"oAP": "/img/healthcare-02.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/healthcare-footer.png": {
+		"ft": 32768,
+		"iS": 748774,
+		"oA": 0,
+		"oAP": "/img/healthcare-footer.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/healthcare-hero.png": {
 		"ft": 32768,
 		"iS": 0,
 		"oA": 0,
 		"oAP": "/img/healthcare-hero.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/healthcare-mobile-01.png": {
+		"ft": 32768,
+		"iS": 71844,
+		"oA": 0,
+		"oAP": "/img/healthcare-mobile-01.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/healthcare-mobile-02.png": {
+		"ft": 32768,
+		"iS": 44551,
+		"oA": 0,
+		"oAP": "/img/healthcare-mobile-02.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/healthcare-mobile.png": {
+		"ft": 32768,
+		"iS": 212699,
+		"oA": 0,
+		"oAP": "/img/healthcare-mobile.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
@@ -7325,6 +7391,17 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/img/lsb-footer.png": {
+		"ft": 32768,
+		"iS": 582049,
+		"oA": 0,
+		"oAP": "/img/lsb-footer.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"/img/lsb-hero.png": {
 		"ft": 32768,
@@ -7441,6 +7518,50 @@
 		"oAP": "/img/service-planning-propers.mp4",
 		"oF": 0
 		},
+	"/img/style-guide-01.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "/img/style-guide-01.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/styleguide-01.png": {
+		"ft": 32768,
+		"iS": 263247,
+		"oA": 0,
+		"oAP": "/img/styleguide-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/styleguide-02.png": {
+		"ft": 32768,
+		"iS": 79458,
+		"oA": 0,
+		"oAP": "/img/styleguide-02.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/styleguide-footer.png": {
+		"ft": 32768,
+		"iS": 673887,
+		"oA": 0,
+		"oAP": "/img/styleguide-footer.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/styleguide-hero.png": {
 		"ft": 32768,
 		"iS": 0,
@@ -7556,6 +7677,17 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"/js/zooom.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/min/zooom.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/partials/footer.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -7575,6 +7707,14 @@
 	"/partials/headtag.html": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/partials/headtag.html",
+		"oF": 0
+		},
+	"/partials/headtag.kit": {
+		"cB": 0,
+		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/partials/headtag.html",
