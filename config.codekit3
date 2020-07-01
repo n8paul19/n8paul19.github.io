@@ -7008,6 +7008,39 @@
 		"oAP": "/img/bulletins-prepare-bulletin.mp4",
 		"oF": 0
 		},
+	"/img/catechism-01.png": {
+		"ft": 32768,
+		"iS": 282688,
+		"oA": 0,
+		"oAP": "/img/catechism-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/catechism-02.png": {
+		"ft": 32768,
+		"iS": 196287,
+		"oA": 0,
+		"oAP": "/img/catechism-02.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/catechism-03.png": {
+		"ft": 32768,
+		"iS": 102700,
+		"oA": 0,
+		"oAP": "/img/catechism-03.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/catechism-footer.png": {
 		"ft": 32768,
 		"iS": 1168787,
@@ -7781,7 +7814,7 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/partials/headtag.html",
 		"oF": 0
 		},

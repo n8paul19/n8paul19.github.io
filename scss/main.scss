@@ -88,12 +88,12 @@ footer {
 section {
 	display: inline-block;
 	// min-height: 100vh;
-	padding: ($base-spacing) 0;
+	padding: ($base-spacing * 3) 0;
 	// text-align: center;
 }
 
 .wrapper {
-	max-width: 1280px;
+	max-width: 1480px;
 	padding: 0 ($base-spacing);
 	margin: auto;
 }
@@ -311,9 +311,10 @@ footer {
 }
 .browser-right {
 	float: right;
+	margin-left: 0;
 }
 .work-content {
-	@include grid-column(4);
+	@include grid-column(5);
 	padding-top: $base-spacing * 3;
 }
 }
