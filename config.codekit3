@@ -7008,6 +7008,17 @@
 		"oAP": "/img/bulletins-prepare-bulletin.mp4",
 		"oF": 0
 		},
+	"/img/catechism-footer.png": {
+		"ft": 32768,
+		"iS": 1168787,
+		"oA": 0,
+		"oAP": "/img/catechism-footer.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/catechism-hero.png": {
 		"ft": 32768,
 		"iS": 0,
@@ -7340,6 +7351,27 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/icon-exit-purple.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/icon-exit-purple.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/img/icon-exit-purple@2x.png": {
+		"ft": 32768,
+		"iS": 515,
+		"oA": 0,
+		"oAP": "/img/icon-exit-purple@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/icon-exit.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -7584,6 +7616,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/timeline-01.png": {
+		"ft": 32768,
+		"iS": 851998,
+		"oA": 0,
+		"oAP": "/img/timeline-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/timeline-02.png": {
+		"ft": 32768,
+		"iS": 771655,
+		"oA": 0,
+		"oAP": "/img/timeline-02.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/timeline-hero.png": {
 		"ft": 32768,
 		"iS": 0,
@@ -7594,6 +7648,14 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 100
+		},
+	"/img/timeline-sea.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/img/timeline-sea.mp4",
+		"oF": 0
 		},
 	"/img/timeline-thumb.jpg": {
 		"ft": 16384,
@@ -7651,6 +7713,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/min/jquery.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/js/medium-lightbox.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/min/medium-lightbox-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -8586,6 +8659,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/scss/lightbox.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/lightbox.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/scss/main.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -8606,7 +8692,7 @@
 		"ec": 1,
 		"ft": 4,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/css/medium-zoom.css",
 		"oF": 0,
 		"oS": 0,

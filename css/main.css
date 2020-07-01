@@ -1712,6 +1712,8 @@ sup {
   display: block;
   text-align: center;
   outline: none;
+  position: relative;
+  z-index: 300;
   margin-bottom: 0.75em;
 }
 .logo img {
@@ -1801,11 +1803,17 @@ nav {
 a {
   color: white;
   border-bottom: 1px solid white;
-  padding: 8px 5px;
+  padding: 4px 5px;
   transition: all 300ms ease;
 }
+@media (prefers-color-scheme: light) {
+  a {
+    color: #2f2b3b;
+    border-bottom: 1px solid #2f2b3b;
+  }
+}
 a:hover {
-  padding-bottom: 4px;
+  padding-bottom: 2px;
 }
 a:focus {
   outline: none;
@@ -1837,6 +1845,11 @@ a:focus {
   user-select: none;
   border-radius: 0.75em;
 }
+@media (prefers-color-scheme: light) {
+  .btn {
+    background-color: transparent;
+  }
+}
 .btn:hover {
   color: #2f2b3b;
   background-color: #fff;
@@ -1858,48 +1871,117 @@ a[target=_blank]:after {
   display: inline-block;
   margin-left: 4px;
 }
-
-.medium-zoom-overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 300ms;
-  will-change: opacity;
+@media (prefers-color-scheme: light) {
+  a[target=_blank]:after {
+    background: url(/img/icon-exit-purple.svg);
+  }
 }
 
-.medium-zoom--opened .medium-zoom-overlay {
+figure {
+  margin: 0px;
+  position: relative;
+  clear: both;
+  margin: 20px;
+}
+
+figure.left {
+  margin-left: 0;
+}
+
+figure.right {
+  margin-right: 0;
+}
+
+figure.full {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.one-third {
+  width: calc(100%/3);
+}
+
+.half {
+  width: 50%;
+}
+
+.full {
+  width: 100%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.scrollbar-measure {
+  width: 100px;
+  height: 100px;
+  overflow: scroll;
+  position: absolute;
+  top: -9999px;
+}
+
+.img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+.aspectRatioPlaceholder .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.zoom-effect .img {
   cursor: pointer;
-  cursor: zoom-out;
+  cursor: -webkit-zoom-in;
+  backface-visibility: hidden;
+}
+
+.zoom-effect .zoomImg,
+.zoom-effect .zoomImg-wrap {
+  position: relative;
+  z-index: 900;
+  transition: all 300ms;
+}
+
+.zoom-effect .zoomImg-wrap--absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.zoom-effect .zoomImg {
+  cursor: pointer;
+  cursor: -webkit-zoom-out;
+}
+
+.zoom-effect .zoomOverlay.show {
   opacity: 1;
 }
 
-.medium-zoom-image {
+.zoom-effect .zoomOverlay {
+  z-index: 800;
+  background: #2f2b3b;
+  position: absolute;
+  transition: opacity 100ms;
+  opacity: 0;
   cursor: pointer;
-  cursor: zoom-in;
-  /*
-    The `transition` is marked as "!important" for the animation to happen
-    even though it's overriden by another inline `transition` style attribute.
-
-    This is problematic with frameworks that generate inline styles on their
-    images (e.g. Gatsby).
-
-    See https://github.com/francoischalifour/medium-zoom/issues/110
-   */
-  transition: transform 300ms cubic-bezier(0.2, 0, 0.2, 1) !important;
+  cursor: -webkit-zoom-out;
 }
-
-.medium-zoom-image--hidden {
-  visibility: hidden;
-}
-
-.medium-zoom-image--opened {
-  position: relative;
-  cursor: pointer;
-  cursor: zoom-out;
-  will-change: transform;
+@media (prefers-color-scheme: light) {
+  .zoom-effect .zoomOverlay {
+    background: #e7e7e7;
+  }
 }
 
 html {
@@ -1960,11 +2042,6 @@ body {
 body {
   margin: 0;
 }
-@media (min-width: 768px) {
-  body {
-    padding-top: 80px;
-  }
-}
 
 a {
   text-decoration: none;
@@ -2002,7 +2079,7 @@ header {
 }
 @media (min-width: 768px) {
   header {
-    position: fixed;
+    position: relative;
     bottom: inherit;
   }
 }
@@ -2028,8 +2105,8 @@ header {
 }
 section#hero {
   display: table;
-  margin-top: -95px;
   min-height: 100vh;
+  position: relative;
 }
 section#hero h2 {
   line-height: 1.2;
@@ -2057,6 +2134,11 @@ section#hero .center-middle {
   transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s;
+}
+@media (prefers-color-scheme: light) {
+  .work-example {
+    background: white;
+  }
 }
 
 .work-thumb {
@@ -2233,17 +2315,19 @@ footer article {
   color: #3A3842;
 }
 
-.work-landing header {
-  background: transparent;
-}
 .work-landing #hero {
-  background-color: transparent;
-  margin-top: -100px;
+  margin-top: -5px;
 }
-@media (min-width: 550px) {
-  .work-landing #hero {
-    margin-top: -80px;
-  }
+.work-landing #hero h1 {
+  color: white;
+}
+.work-landing #hero a {
+  color: white;
+  border-color: white;
+}
+.work-landing #hero .btn {
+  color: #2f2b3b;
+  background-color: white;
 }
 .work-landing .hero.timeline {
   background-image: linear-gradient(to bottom, rgba(9, 11, 13, 0.7), rgba(9, 11, 13, 0.4)), url("/img/timeline-hero.png");
@@ -2278,6 +2362,11 @@ footer article {
 
 .work-overview {
   background: #3A3842;
+}
+@media (prefers-color-scheme: light) {
+  .work-overview {
+    background: #DDD;
+  }
 }
 @media (min-width: 768px) {
   .work-overview {
@@ -2342,6 +2431,16 @@ footer article {
   border-bottom: 1px solid white;
   padding: 8px 5px;
   transition: all 300ms ease;
+}
+@media (prefers-color-scheme: light) {
+  .footer-links a {
+    color: #2f2b3b;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .footer-links a {
+    border-bottom: 1px solid #2f2b3b;
+  }
 }
 .footer-links a:hover {
   padding-bottom: 4px;

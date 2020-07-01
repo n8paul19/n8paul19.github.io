@@ -62,7 +62,9 @@
     <section>
       <div class="">
           <div class="browser-left">
-            <img src="/img/timeline-01.png" alt="">
+      
+            <div class="plyr__video-wrapper"><video controls autoplay width="1028" height="603" class="js-player" playsinline="playsinline">
+              <source src="/img/timeline-sea.mp4" type="video/mp4" ></video><div class="plyr__poster"></div></div>
         </div>
         <div class="work-content">
             <h3>Getting into The Mood</h3>
@@ -74,7 +76,12 @@
     <section>
       <div class="">
           <div class="browser-right">
-            <img src="/img/timeline-02.png" alt="">
+          <figure class="full right zoom-effect">
+              <div class="aspectRatioPlaceholder" >
+                  <div class="aspect-ratio-fill" style="padding-bottom: 75%;"></div>
+                  <img class="img" data-width="1600" data-height="1200" src="/img/timeline-02.png">
+              </div>
+            </figure>
         </div>
         <div class="work-content">
             <h3>A Little Extra</h3>
@@ -110,24 +117,10 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.4.0/rxjs.umd.min.js"></script> -->
     <script type="text/javascript" src="/js/min/scripts-min.js"></script>
-    <!-- <script type="text/javascript" src="/js/zooom.min.js"></script> -->
+    <script type="text/javascript" src="/js/medium-lightbox.js"></script>
   
     <script>
-      // window.addEventListener('DOMContentLoaded', function () {
-          new Zooom('img-zoom', {
-            padding: 80,
-            zIndex: 9,
-            animationTime: 300, // animation time in number
-            cursor: {
-              cursorIn: 'zoom-in',
-              cursorOut: 'zoom-out'
-            },
-            overlay: {
-              color: '#1a191d', // hex or color-name
-              opacity: 90, // [10, 20, 34, ..., 100] maximum number 100
-            },
-          });
-        // });
+      MediumLightbox('figure.zoom-effect');
     </script>
   
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

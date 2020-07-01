@@ -29,6 +29,8 @@
     outline: none;
     // line-height: 14px;;
     // padding: ($base-spacing / 2) $base-spacing ;
+    position: relative;
+    z-index: 300;
 
     img {
       width: 50px;
