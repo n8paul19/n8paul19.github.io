@@ -31,6 +31,8 @@
     // padding: ($base-spacing / 2) $base-spacing ;
     position: relative;
     z-index: 300;
+    font-weight: 900;
+    color: $light-blue;
 
     img {
       width: 50px;
@@ -41,10 +43,10 @@
     }
     a {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.25em;
     letter-spacing: -0.025em;
     border: 1px dashed transparent;
-    padding: 5px;
+    padding: 5px 0px 5px;
     
     // border-radius: 6px;
     // @media (min-width: 550px) {
@@ -95,22 +97,22 @@
       }
     }
   }
-  .logo {
-    float: left;
-    width: 45%;
-    text-align: left;
-  }
+  // .logo {
+  //   float: left;
+  //   width: 45%;
+  //   text-align: left;
+  // }
 
-  nav { float: right;}
-  @media (min-width: 768px) {
+  // nav { float: right;}
+  @media (min-width: 605px) {
     .logo {
-      @include grid-column(4);
+      @include grid-column(6);
       text-align: left;
       margin-left: 0;
     }
   
   nav {
-    @include grid-column(8);
+    @include grid-column(6);
     padding-top:$base-spacing / 2.5;
     float: right;
     margin-top: -10px;

@@ -1713,6 +1713,8 @@ sup {
   outline: none;
   position: relative;
   z-index: 300;
+  font-weight: 900;
+  color: #606AA9;
   margin-bottom: 0.75em;
 }
 .logo img {
@@ -1724,10 +1726,10 @@ sup {
 }
 .logo a {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.25em;
   letter-spacing: -0.025em;
   border: 1px dashed transparent;
-  padding: 5px;
+  padding: 5px 0px 5px;
 }
 .logo a:focus {
   outline: none;
@@ -1768,19 +1770,9 @@ nav ul > li a:focus {
   border: 1px dashed;
 }
 
-.logo {
-  float: left;
-  width: 45%;
-  text-align: left;
-}
-
-nav {
-  float: right;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 605px) {
   .logo {
-    width: calc(33.3333333333% - 80px);
+    width: calc(50% - 90px);
     float: left;
     margin-left: 60px;
     text-align: left;
@@ -1788,7 +1780,7 @@ nav {
   }
 
   nav {
-    width: calc(66.6666666667% - 100px);
+    width: calc(50% - 90px);
     float: left;
     margin-left: 60px;
     padding-top: 0.6em;
