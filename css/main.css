@@ -1661,13 +1661,6 @@ p {
   margin-bottom: 1.5em;
   font-size: 1em;
 }
-p span {
-  font-family: "Heebo", sans-serif;
-  font-size: 0.8em;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
 hr {
   width: 3em;
 }
@@ -2088,14 +2081,14 @@ section#hero {
   min-height: 100vh;
   position: relative;
 }
-section#hero h2 {
+section#hero h1 {
   line-height: 1.2;
   margin: 0 0 0.375em 0;
 }
 section#hero h2 + .btn {
   margin-top: 1.5em;
 }
-@media (min-width: 550px) {
+@media (min-width: 767px) {
   section#hero {
     margin-top: -55px;
   }
@@ -2131,7 +2124,7 @@ section#hero .center-middle {
     border-bottom-left-radius: 8px;
   }
 }
-@media (min-width: 550px) {
+@media (min-width: 767px) {
   .work-thumb {
     min-height: 300px;
   }
@@ -2198,7 +2191,7 @@ section#hero .center-middle {
   height: auto;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 767px) {
   .photo {
     width: calc(58.3333333333% - 95px);
     float: left;
@@ -2231,11 +2224,7 @@ footer article {
   margin: 0 auto 1.5em;
 }
 
-.work-content {
-  padding: 1.5em;
-}
-
-@media (min-width: 550px) {
+@media (min-width: 767px) {
   .browser-left, .browser-right {
     width: calc(58.3333333333% - 95px);
     float: left;
@@ -2249,7 +2238,7 @@ footer article {
     width: calc(41.6666666667% - 85px);
     float: left;
     margin-left: 60px;
-    padding-top: 4.5em;
+    padding-top: 1.5em;
   }
 }
 .browser-left img, .browser-right img,
@@ -2259,6 +2248,48 @@ footer article {
   display: block;
   position: relative;
   cursor: zoom-in;
+}
+
+@media (min-width: 768px) {
+  .case-study-content {
+    width: calc(50% - 90px);
+    float: left;
+    margin-left: 60px;
+  }
+  .case-study-video {
+    width: calc(50% - 90px);
+    float: left;
+    margin-left: 60px;
+  }
+  .case-study-video video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+}
+.case-study-hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.case-study-content {
+  padding: 1.5em;
+}
+
+.case-study-performance .case-study-content {
+  padding: 1.5em;
+}
+
+.case-study-video video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.case-study-overview h5 span {
+  color: #9792E3;
 }
 
 .badge {
@@ -2338,7 +2369,7 @@ footer article {
 }
 
 .work-overview {
-  background: #3A3842;
+  border-bottom: 1px solid #3A3842;
 }
 @media (prefers-color-scheme: light) {
   .work-overview {
@@ -2356,6 +2387,7 @@ footer article {
     width: calc(66.6666666667% - 100px);
     float: left;
     margin-left: 60px;
+    margin-left: 0;
   }
   .my-role {
     width: calc(25% - 75px);
@@ -2371,6 +2403,11 @@ footer article {
 .my-role li {
   list-style: none;
   padding-bottom: 0.75em;
+}
+
+ul li {
+  padding-bottom: 0.75em;
+  font-size: 1em;
 }
 
 #instafeed {
@@ -2490,4 +2527,8 @@ img[data-zoomed=true] {
   padding: 50px 0;
   max-width: 100%;
   height: auto;
+}
+
+code {
+  color: #3A3842;
 }

@@ -267,6 +267,38 @@
       "oS" : 1,
       "pg" : 0
     },
+    "\/case-studies\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/case-studies\/index.html",
+      "oF" : 0
+    },
+    "\/case-studies\/index.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/case-studies\/index.html",
+      "oF" : 0
+    },
+    "\/case-studies\/nate-paul-design\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/case-studies\/nate-paul-design\/index.html",
+      "oF" : 0
+    },
+    "\/case-studies\/nate-paul-design\/index.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/case-studies\/nate-paul-design\/index.html",
+      "oF" : 0
+    },
     "\/clients\/invelopnow-production\/about.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -8120,6 +8152,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/nate-paul-design-case-study.jpg" : {
+      "ft" : 16384,
+      "iS" : 144267,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/nate-paul-design-case-study.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/nate-paul-design-code.jpg" : {
+      "ft" : 16384,
+      "iS" : 905773,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/nate-paul-design-code.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/nate-paul-design-phone.jpg" : {
+      "ft" : 16384,
+      "iS" : 529994,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/nate-paul-design-phone.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/natepaul.jpg" : {
       "ft" : 16384,
       "iS" : 26170,
@@ -8292,6 +8363,35 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/web-performance-audit.jpg" : {
+      "ft" : 16384,
+      "iS" : 355896,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/web-performance-audit.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/web-performance-audit.mov" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/web-performance-audit.mov",
+      "oF" : 0
+    },
+    "\/img\/web-performance-audit.mp4" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/web-performance-audit.mp4",
+      "oF" : 0
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -8380,6 +8480,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/Nate-Paul-Design-Resume.pdf",
+      "oF" : 0
+    },
+    "\/partials\/case-studies-intros.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/case-studies-intros.html",
       "oF" : 0
     },
     "\/partials\/footer.html" : {

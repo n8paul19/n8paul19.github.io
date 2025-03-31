@@ -104,7 +104,7 @@ header {
 	// height: 100%;
 	padding: ($base-spacing / 2) $base-spacing ; 
 	// padding-bottom: $base-spacing * 2;
-	// @media (min-width: 550px) {
+	// @media (min-width: 767px) {
 	// 	padding: $base-spacing;	
 	// }
 	top: 0;
@@ -154,7 +154,7 @@ section#hero {
 	min-height: 100vh;
 	position: relative;
 
-	h2 {
+	h1 {
 		line-height: 1.2;
 		margin: 0 0 ($base-spacing / 4) 0;
 	}
@@ -162,7 +162,7 @@ section#hero {
 	h2 + .btn {
 		margin-top: $base-spacing;
 	}
-	@media (min-width: 550px) {
+	@media (min-width: 767px) {
 		margin-top: -55px;
 		
 	}
@@ -171,6 +171,10 @@ section#hero {
 		display: table-cell;
 		vertical-align: middle;
 	}
+
+	// .wrapper {
+	// 	max-width: 1200px;
+	// }
 }
 
 .work-example {
@@ -196,7 +200,7 @@ section#hero {
 	@media (min-width: 768px) {
 	border-bottom-left-radius: 8px;
 	}
-		@media (min-width: 550px) {
+		@media (min-width: 767px) {
 		min-height: 300px;
 		}
 		overflow: hidden;
@@ -261,7 +265,7 @@ section#hero {
 	height: auto;
 }
 }
-@media (min-width: 550px) {
+@media (min-width: 767px) {
 	.photo {
 		@include grid-column(7);
 		margin-left:0;
@@ -300,10 +304,8 @@ footer {
 @media screen and (max-width: 620px) {
 	// @import "sliding-menu.scss";
 }
-.work-content { 
-	padding: $base-spacing;
-}
-@media (min-width: 550px) {
+
+@media (min-width: 767px) {
 	
 .browser-left, .browser-right {
 	@include grid-column(7);
@@ -315,7 +317,7 @@ footer {
 }
 .work-content {
 	@include grid-column(5);
-	padding-top: $base-spacing * 3;
+	padding-top: $base-spacing;
 }
 }
 
@@ -330,7 +332,52 @@ footer {
 // .role {
 // 	margin-bottom: ($base-spacing / 2);
 // }
+@media (min-width: 768px) { 
+	.case-study-content {
+		@include grid-column(6);
+	}
 
+	
+
+	.case-study-video {
+		@include grid-column(6);
+
+		video {
+			max-width: 100%;
+			height: auto;
+			display: block;
+			position: relative;
+			
+		}
+	}
+}
+
+.case-study-hero-image {
+	width: 100%;
+	height: auto;
+}
+
+.case-study-content {
+	padding: $base-spacing;
+}
+
+.case-study-performance .case-study-content {
+	padding: $base-spacing;
+	// padding-top: $base-spacing * 3;
+}
+.case-study-video {
+	video {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		position: relative;
+		
+	}
+}
+
+.case-study-overview h5 span {
+	color: $lilac;
+}
 .badge {
 	font-size: 14px;
 	padding: ($base-spacing / 4) ($base-spacing / 2);
@@ -384,7 +431,7 @@ footer {
 			color: $grey-purple;
 			background-color: white;
 		}
-		@media (min-width: 550px) {
+		@media (min-width: 767px) {
 		// margin-top: -80px;
 		// z-index: 190;
 			
@@ -432,7 +479,8 @@ footer {
 
 
 .work-overview {
-	background: $grey;
+	// background: $grey;
+	border-bottom: 1px solid $grey;
 	@media (prefers-color-scheme: light) {
 	background: $light-gray; 
 	}
@@ -442,7 +490,8 @@ footer {
 }
 @media (min-width: 768px) {
 .overview {
-	@include grid-column(8)
+	@include grid-column(8);
+	margin-left:0;
 }
 
 .my-role {
@@ -457,6 +506,11 @@ footer {
 .my-role li {
 	list-style: none;;
 	padding-bottom: ($base-spacing / 2);
+}
+
+ul li {
+	padding-bottom: ($base-spacing / 2);
+	font-size: 1em;
 }
 
 
@@ -573,4 +627,8 @@ footer {
 	  padding: 50px 0; 
 	  max-width: 100%;
 	  height: auto;
+  }
+
+  code {
+	color: $grey;
   }
