@@ -92,6 +92,7 @@ section {
 	// text-align: center;
 }
 
+
 .wrapper {
 	max-width: 1480px;
 	padding: 0 ($base-spacing);
@@ -111,6 +112,11 @@ header {
 	z-index: 100;;
 	// margin: 0;
 	// bottom: 0;
+
+	&+section {
+		padding-top: $base-spacing;
+	}
+
 	@media (min-width:768px) {
 		position: relative;
 		bottom: inherit;
