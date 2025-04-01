@@ -299,6 +299,22 @@
       "oAP" : "\/case-studies\/nate-paul-design\/index.html",
       "oF" : 0
     },
+    "\/case-studies\/youthesource\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/case-studies\/youthesource\/index.html",
+      "oF" : 0
+    },
+    "\/case-studies\/youthesource\/index.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/case-studies\/youthesource\/index.html",
+      "oF" : 0
+    },
     "\/clients\/invelopnow-production\/about.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -7729,6 +7745,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/family-photo-2024.png" : {
+      "ft" : 32768,
+      "iS" : 2313700,
+      "oA" : 0,
+      "oAP" : "\/img\/family-photo-2024.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/favicon-16x16.png" : {
       "ft" : 32768,
       "iS" : 412,
@@ -8392,6 +8421,58 @@
       "oAP" : "\/img\/web-performance-audit.mp4",
       "oF" : 0
     },
+    "\/img\/www.youthesource.com_(iPhone-14-Pro-Max)-(2).png" : {
+      "ft" : 32768,
+      "iS" : 167849,
+      "oA" : 0,
+      "oAP" : "\/img\/www.youthesource.com_(iPhone-14-Pro-Max)-(2).png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/youthesource-before-after.png" : {
+      "ft" : 32768,
+      "iS" : 1330821,
+      "oA" : 0,
+      "oAP" : "\/img\/youthesource-before-after.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/youthesource-case-study.png" : {
+      "ft" : 32768,
+      "iS" : 915675,
+      "oA" : 0,
+      "oAP" : "\/img\/youthesource-case-study.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/youthesource-phone.png" : {
+      "ft" : 32768,
+      "iS" : 452807,
+      "oA" : 0,
+      "oAP" : "\/img\/youthesource-phone.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -8480,6 +8561,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/Nate-Paul-Design-Resume.pdf",
+      "oF" : 0
+    },
+    "\/nate-paul-resume.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/nate-paul-resume.pdf",
       "oF" : 0
     },
     "\/partials\/case-studies-intros.html" : {

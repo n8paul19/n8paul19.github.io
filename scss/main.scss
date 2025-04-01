@@ -375,6 +375,31 @@ footer {
 	}
 }
 
+
+
+.key-features, .key-wins {
+	@media (min-width: 768px) {
+		@include grid-column(6);
+	}
+
+	ul li {
+		list-style: none;
+		padding-bottom: ($base-spacing);
+	}
+}
+
+.key-wins {
+	padding-top: $base-spacing * 4;
+}
+
+#case-studies article {
+	@include grid-column(6);
+
+	.work-intro {
+		@include grid-column(12);
+	}
+}
+
 .case-study-overview h5 span {
 	color: $lilac;
 }
@@ -631,4 +656,34 @@ ul li {
 
   code {
 	color: $grey;
+  }
+
+  table {
+	@include border-style(solid);
+	@include border-width(1px);
+	@include border-color($grey);
+	@include margin($base-spacing 0);
+	border-collapse: collapse;
+	@include border-top-radius(4px);
+
+	thead {
+		@include border-top-radius(4px);
+	}
+
+	th, td {
+		@include padding($base-spacing / 2);
+		@include border-style(solid);
+	@include border-width(1px);
+	@include border-color($grey);
+	@include margin($base-spacing 0);
+
+	&:last-child {
+		background-color: $dark-green;
+	
+		@media (prefers-color-scheme: light) {
+		background-color: $light-green;
+		}
+
+	}
+	}
   }

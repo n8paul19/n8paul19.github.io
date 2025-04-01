@@ -2288,6 +2288,33 @@ footer article {
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .key-features, .key-wins {
+    width: calc(50% - 90px);
+    float: left;
+    margin-left: 60px;
+  }
+}
+.key-features ul li, .key-wins ul li {
+  list-style: none;
+  padding-bottom: 1.5em;
+}
+
+.key-wins {
+  padding-top: 6em;
+}
+
+#case-studies article {
+  width: calc(50% - 90px);
+  float: left;
+  margin-left: 60px;
+}
+#case-studies article .work-intro {
+  width: calc(100% - 120px);
+  float: left;
+  margin-left: 60px;
+}
+
 .case-study-overview h5 span {
   color: #9792E3;
 }
@@ -2531,4 +2558,33 @@ img[data-zoomed=true] {
 
 code {
   color: #3A3842;
+}
+
+table {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3A3842;
+  margin: 1.5em 0;
+  border-collapse: collapse;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+table thead {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+table th, table td {
+  padding: 0.75em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3A3842;
+  margin: 1.5em 0;
+}
+table th:last-child, table td:last-child {
+  background-color: #1E7E34;
+}
+@media (prefers-color-scheme: light) {
+  table th:last-child, table td:last-child {
+    background-color: #61E786;
+  }
 }
