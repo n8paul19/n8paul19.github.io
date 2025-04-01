@@ -399,10 +399,16 @@ footer {
 }
 
 #case-studies article {
+	@media (min-width: 768px) {
 	@include grid-column(6);
-
+	}
+	
 	.work-intro {
+		@media (min-width: 768px) {
 		@include grid-column(12);
+		}
+		width: 100%;
+		
 	}
 }
 

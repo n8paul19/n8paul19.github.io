@@ -2307,15 +2307,22 @@ footer article {
   padding-top: 6em;
 }
 
-#case-studies article {
-  width: calc(50% - 90px);
-  float: left;
-  margin-left: 60px;
+@media (min-width: 768px) {
+  #case-studies article {
+    width: calc(50% - 90px);
+    float: left;
+    margin-left: 60px;
+  }
 }
 #case-studies article .work-intro {
-  width: calc(100% - 120px);
-  float: left;
-  margin-left: 60px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #case-studies article .work-intro {
+    width: calc(100% - 120px);
+    float: left;
+    margin-left: 60px;
+  }
 }
 
 .case-study-overview h5 span {
