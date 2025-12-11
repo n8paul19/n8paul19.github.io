@@ -1601,6 +1601,10 @@ a {
   text-decoration: none;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .type {
   border-bottom: 1px solid;
   display: inline-block;
@@ -1837,6 +1841,40 @@ a:focus {
 .btn:focus {
   outline: none;
   border: 2px dashed #9792E3;
+}
+
+.btn-primary {
+  color: #1f1d28;
+  background-color: #9792E3;
+  border-color: #9792E3;
+}
+.btn-primary:hover {
+  background-color: rgb(189.7153284672, 186.5766423358, 237.4233576642);
+  border-color: rgb(189.7153284672, 186.5766423358, 237.4233576642);
+}
+
+.btn-secondary {
+  color: #9792E3;
+  background-color: transparent;
+  border: 2px solid rgb(65.3695652174, 61.152173913, 84.347826087);
+}
+@media (prefers-color-scheme: light) {
+  .btn-secondary {
+    color: #1f1d28;
+    border: 2px solid #1f1d28;
+  }
+}
+.btn-secondary:hover {
+  color: white;
+  background-color: rgb(53.9130434783, 50.4347826087, 69.5652173913);
+  border-color: rgb(53.9130434783, 50.4347826087, 69.5652173913);
+}
+@media (prefers-color-scheme: light) {
+  .btn-secondary:hover {
+    color: #1f1d28;
+    background-color: #1f1d28;
+    border-color: #1f1d28;
+  }
 }
 
 a[target=_blank]:after {
@@ -2081,12 +2119,13 @@ header + section {
 }
 section#hero {
   display: table;
-  min-height: 100vh;
+  padding-top: 5em;
   position: relative;
 }
 section#hero h1 {
   line-height: 1.2;
   margin: 0 0 0.375em 0;
+  font-size: 2rem;
 }
 section#hero h2 + .btn {
   margin-top: 1.5em;
@@ -2097,8 +2136,20 @@ section#hero h2 + .btn {
   }
 }
 section#hero .center-middle {
-  display: table-cell;
   vertical-align: middle;
+  max-width: 1060px;
+  margin: auto;
+}
+
+#work {
+  padding-top: 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 1.5em;
 }
 
 .work-example {
@@ -2365,6 +2416,7 @@ footer article {
 }
 .work-landing #hero h1 {
   color: white;
+  font-size: 3rem;
 }
 .work-landing #hero a {
   color: white;

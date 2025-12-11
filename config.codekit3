@@ -8233,6 +8233,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/img\/photo-of-nate-paul.png" : {
+      "ft" : 32768,
+      "iS" : 94535,
+      "oA" : 0,
+      "oAP" : "\/img\/photo-of-nate-paul.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/service-planning-propers.mp4" : {
       "cB" : 0,
       "ft" : 8192,

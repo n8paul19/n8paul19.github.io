@@ -61,7 +61,37 @@ a {
 	}
 }
 
+.btn-primary {
+	color: $grey-purple;
+	background-color: $lilac;
+	border-color: $lilac;
 
+	&:hover {
+		background-color: lighten($lilac, 10%);
+		border-color: lighten($lilac, 10%);
+	}
+}
+
+.btn-secondary {
+	color: $lilac;
+	background-color: transparent;
+	border: 2px solid lighten($grey-purple, 15%);
+	@media (prefers-color-scheme: light) {
+		color: $grey-purple;
+		border: 2px solid $grey-purple;
+	}
+
+	&:hover {
+		color: white;
+		background-color: lighten($grey-purple, 10%);
+		border-color: lighten($grey-purple, 10%);
+		@media (prefers-color-scheme: light) {
+			color: $grey-purple;
+			background-color: $grey-purple;
+			border-color: $grey-purple;
+		}
+	}
+}
 a[target="_blank"]:after {
 	content: '';
 	background: url(/img/icon-exit@2x.png);

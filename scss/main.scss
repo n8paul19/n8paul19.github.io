@@ -157,12 +157,14 @@ section#hero {
 	// color: white;
 	display: table;
 	// margin-top: -95px;
-	min-height: 100vh;
+	// min-height: 100vh;
+	padding-top: 5em;
 	position: relative;
 
 	h1 {
 		line-height: 1.2;
 		margin: 0 0 ($base-spacing / 4) 0;
+		font-size: 2rem;
 	}
 
 	h2 + .btn {
@@ -174,13 +176,26 @@ section#hero {
 	}
 
 	.center-middle {
-		display: table-cell;
+		// display: table-cell;
 		vertical-align: middle;
+		max-width: 1060px;
+		margin: auto
 	}
 
 	// .wrapper {
 	// 	max-width: 1200px;
 	// }
+}
+
+#work {
+	padding-top: 0;
+}
+
+.avatar {
+	border-radius: 50%;
+	max-width: 150px;
+	height: auto;
+	margin-bottom: $base-spacing;
 }
 
 .work-example {
@@ -457,6 +472,7 @@ footer {
 		margin-top: -5px;
 		h1 {
 			color: white;
+			font-size: 3rem;
 		}
 
 		a {
