@@ -144,7 +144,7 @@
     </div>
     </section>
 
-    <footer id="contact" name="contact">
+    <footer id="contact" name="contact" role="contentinfo">
         <div class="wrapper">
           <div class="footer-links"><a href="mailto:npauldesign@gmail.com">Email</a>  <a href="https://www.linkedin.com/in/n8paul/" target="_blank" rel="noopener">Linkedin</a> </div>
         
@@ -157,15 +157,26 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
   
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-3.1.0.min.js"><\/script>')</script>
+  <script defer src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+      if (!window.jQuery) {
+        var s = document.createElement('script');
+        s.src = '/js/jquery-3.1.0.min.js';
+        s.defer = true;
+        document.head.appendChild(s);
+      }
+    </script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.4.0/rxjs.umd.min.js"></script> -->
-    <script type="text/javascript" src="/js/min/scripts-min.js"></script>
-    <script type="text/javascript" src="/js/medium-lightbox.js"></script>
+    <script defer type="text/javascript" src="/js/min/scripts-min.js"></script>
+    <script defer type="text/javascript" src="/js/medium-lightbox.js"></script>
   
     <script>
-      MediumLightbox('figure.zoom-effect');
+      window.addEventListener('DOMContentLoaded', function () {
+        if (typeof MediumLightbox === 'function') {
+          MediumLightbox('figure.zoom-effect');
+        }
+      });
     </script>
   
    

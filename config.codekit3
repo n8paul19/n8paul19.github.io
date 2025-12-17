@@ -7,7 +7,7 @@
       "uuidString" : "1AB7EE14-CB91-4DA7-97A4-83C592CCEABA"
     }
   ],
-  "creatorBuild" : "34689",
+  "creatorBuild" : "34892",
   "files" : {
     "\/_bourbon-deprecated-upcoming.scss" : {
       "aP" : 0,
@@ -7596,10 +7596,21 @@
       "oAP" : "\/img\/catechism-thumb.png",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "oT" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-default",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/catechism-thumb.webp" : {
+      "ft" : 8388608,
+      "iS" : 20470,
+      "oA" : 0,
+      "oAP" : "\/img\/catechism-thumb.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/catechismapp-thumb.jpg" : {
@@ -7726,10 +7737,21 @@
       "oAP" : "\/img\/faithcourses-thumb.png",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "oT" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-default",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/faithcourses-thumb.webp" : {
+      "ft" : 8388608,
+      "iS" : 53084,
+      "oA" : 0,
+      "oAP" : "\/img\/faithcourses-thumb.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/family-photo-2020.png" : {
@@ -7751,11 +7773,22 @@
       "oA" : 0,
       "oAP" : "\/img\/family-photo-2024.png",
       "oF" : 0,
-      "oIPL" : 1,
+      "oIPL" : 0,
       "opt" : 1,
       "oT" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-photo",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/family-photo-2024.webp" : {
+      "ft" : 8388608,
+      "iS" : 441226,
+      "oA" : 0,
+      "oAP" : "\/img\/family-photo-2024.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/favicon-16x16.png" : {
@@ -7840,7 +7873,7 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-photo",
       "q" : 100,
       "rq" : 75
     },
@@ -7855,6 +7888,17 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/healthcare-01.webp" : {
+      "ft" : 8388608,
+      "iS" : 122330,
+      "oA" : 0,
+      "oAP" : "\/img\/healthcare-01.webp",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/healthcare-02.png" : {
@@ -7971,10 +8015,21 @@
       "oAP" : "\/img\/healthcare-thumb.png",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "oT" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-default",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/healthcare-thumb.webp" : {
+      "ft" : 8388608,
+      "iS" : 23122,
+      "oA" : 0,
+      "oAP" : "\/img\/healthcare-thumb.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/icon-exit-purple.svg" : {
@@ -8110,10 +8165,21 @@
       "oAP" : "\/img\/lsb-thumb.png",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "oT" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-default",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/lsb-thumb.webp" : {
+      "ft" : 8388608,
+      "iS" : 39598,
+      "oA" : 0,
+      "oAP" : "\/img\/lsb-thumb.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/mstile-70x70.png" : {
@@ -8242,8 +8308,19 @@
       "oIPL" : 1,
       "opt" : 1,
       "oT" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-photo",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/photo-of-nate-paul.webp" : {
+      "ft" : 8388608,
+      "iS" : 5360,
+      "oA" : 0,
+      "oAP" : "\/img\/photo-of-nate-paul.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/service-planning-propers.mp4" : {
@@ -8326,10 +8403,21 @@
       "oAP" : "\/img\/styleguide-thumb.png",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "oT" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-default",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/styleguide-thumb.webp" : {
+      "ft" : 8388608,
+      "iS" : 23826,
+      "oA" : 0,
+      "oAP" : "\/img\/styleguide-thumb.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/timeline-01.png" : {
@@ -8398,11 +8486,22 @@
       "oA" : 0,
       "oAP" : "\/img\/timeline-thumb.png",
       "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-default",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/timeline-thumb.webp" : {
+      "ft" : 8388608,
+      "iS" : 18274,
+      "oA" : 0,
+      "oAP" : "\/img\/timeline-thumb.webp",
+      "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/web-performance-audit.jpg" : {
@@ -8414,7 +8513,7 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 75
     },
@@ -8433,6 +8532,17 @@
       "oA" : 0,
       "oAP" : "\/img\/web-performance-audit.mp4",
       "oF" : 0
+    },
+    "\/img\/web-performance-audit.webp" : {
+      "ft" : 8388608,
+      "iS" : 57304,
+      "oA" : 0,
+      "oAP" : "\/img\/web-performance-audit.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
     },
     "\/img\/www.youthesource.com_(iPhone-14-Pro-Max)-(2).png" : {
       "ft" : 32768,
@@ -10738,6 +10848,9 @@
         "active" : 0,
         "optionString" : "{'skipBlankLines': false, 'ignoreComments': false}"
       },
+      "no-unassigned-vars" : {
+        "active" : 0
+      },
       "no-undef" : {
         "active" : 1,
         "optionString" : "{'typeof': false}"
@@ -10818,7 +10931,8 @@
         "active" : 0
       },
       "no-useless-escape" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'allowRegexCharacters': []}"
       },
       "no-useless-rename" : {
         "active" : 0,

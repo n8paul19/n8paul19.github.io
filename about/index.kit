@@ -9,21 +9,24 @@
 <body>
   <div class="scroll-on-page">
     <!-- @import "/partials/header.html" -->
-    
+    <main role="main">
     <section id="about" name="about">
       <div class="wrapper">
         <h2>About Me</h2>
         <div class="photo">
-          <img src="/img/family-photo-2024.png" alt="Paul Family Photo 2024" >           
+        <picture>
+          <source srcset="/img/family-photo-2024.webp" type="image/webp" />
+          <img src="/img/family-photo-2024.png" alt="Paul Family Photo 2024" >  
+        </picture>
         </div>
         <div class="text-about-me">
           <p>I am a frontend developer and design lead with over 20 years of experience creating clean, user-first digital experiences. I currently lead an agile development team, managing an enterprise ecommerce platform while overseeing the UX across multiple websites. My focus is on building intuitive, accessible interfaces and executing enhancements that drive KPI performance. </p>
-          Whether developing custom solutions in HTML, CSS, and Javascript or optimizing Wordpress and ecommerce platforms, I ensure that design and functionality work seamlessly together.</p>
+          <p>Whether developing custom solutions in HTML, CSS, and Javascript or optimizing Wordpress and ecommerce platforms, I ensure that design and functionality work seamlessly together.</p>
           <a href="/nate-paul-resume.pdf" class="btn">Download my resume</a>
         </div>
       </div>
     </section>
-   
+    </main>
     <!-- @import "/partials/footer.html" -->
   </div>
   <!-- @import "/partials/scripts.html" -->

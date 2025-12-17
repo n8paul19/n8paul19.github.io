@@ -8,11 +8,11 @@
 <!-- @import "partials/headtag" -->
 <body>
   <div class="scroll-on-page">
-    <header class="dark-header">
+    <header class="dark-header" role="banner">
       <div class="logo">
       <a href="#hero" class="scroll-on-page-link" alt="Nate Paul Design">Nate Paul</a>
     </div>
-      <nav id="scroll-on-page-top">
+      <nav id="scroll-on-page-top" role="navigation">
         
         <ul>
           <li><a href="/case-studies/">Case Studies</a></li>
@@ -22,10 +22,15 @@
         </ul>
       </nav>
     </header>
+    <main role="main">
     <section id="hero" name="hero">
       <div class="center-middle">
         <div class="wrapper text-center">
-          <img src="img/photo-of-nate-paul.png" alt="Nate Paul - Senior Designer" class="avatar">
+          <picture>
+            <source srcset="/img/photo-of-nate-paul.webp" type="image/webp" class="avatar" />
+            <img src="/img/photo-of-nate-paul.png" alt="Nate Paul - Senior Designer" class="avatar">  
+          </picture>
+          
           <h1>Senior Designer focused on clarity, systems thinking, and meaningful outcomes.</h1>
           <p>I help teams turn complex problems into intuitive, human-centered digital experiences. My work blends product strategy, UX research, interaction design, and front-end execution to ship products that are accessible, scalable, and grounded in real user needs.</p>
           <a href="/case-studies/" class="btn btn-primary">View My Case Studies </a> <a href="#work" class="btn btn-secondary scroll-on-page-link">View My Work</a>
@@ -38,7 +43,7 @@
         <!-- @import "/partials/work-intros.html" -->
       </div>
     </section>
-    
+    </main>
    
     <!-- @import "partials/footer.html" -->
   </div>
