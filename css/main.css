@@ -1573,6 +1573,10 @@
     font-size: 24px;
   }
 }
+strong {
+  font-weight: 700;
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   font-weight: 300;
@@ -2137,7 +2141,7 @@ section#hero h2 + .btn {
 }
 section#hero .center-middle {
   vertical-align: middle;
-  max-width: 1060px;
+  max-width: 1480px;
   margin: auto;
 }
 
@@ -2497,6 +2501,7 @@ footer article {
 ul li {
   padding-bottom: 0.75em;
   font-size: 1em;
+  line-height: 1.5em;
 }
 
 #instafeed {

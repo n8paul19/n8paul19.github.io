@@ -7,7 +7,7 @@
       "uuidString" : "1AB7EE14-CB91-4DA7-97A4-83C592CCEABA"
     }
   ],
-  "creatorBuild" : "34892",
+  "creatorBuild" : "34689",
   "files" : {
     "\/_bourbon-deprecated-upcoming.scss" : {
       "aP" : 0,
@@ -9788,6 +9788,22 @@
       "oAP" : "\/site.webmanifest",
       "oF" : 0
     },
+    "\/work\/360designsystem\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/work\/360designsystem\/index.html",
+      "oF" : 0
+    },
+    "\/work\/360designsystem\/index.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/work\/360designsystem\/index.html",
+      "oF" : 0
+    },
     "\/work\/catechism\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -10859,9 +10875,6 @@
         "active" : 0,
         "optionString" : "{'skipBlankLines': false, 'ignoreComments': false}"
       },
-      "no-unassigned-vars" : {
-        "active" : 0
-      },
       "no-undef" : {
         "active" : 1,
         "optionString" : "{'typeof': false}"
@@ -10942,8 +10955,7 @@
         "active" : 0
       },
       "no-useless-escape" : {
-        "active" : 0,
-        "optionString" : "{'allowRegexCharacters': []}"
+        "active" : 0
       },
       "no-useless-rename" : {
         "active" : 0,
