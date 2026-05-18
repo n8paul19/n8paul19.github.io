@@ -2150,8 +2150,8 @@ section#hero .center-middle {
 }
 
 .avatar {
-  border-radius: 50%;
-  max-width: 150px;
+  border-radius: 10%;
+  max-width: 175px;
   height: auto;
   margin-bottom: 1.5em;
 }
@@ -2362,11 +2362,15 @@ footer article {
   padding-top: 6em;
 }
 
-@media (min-width: 768px) {
+#case-studies article {
+  width: 100%;
+}
+@media (min-width: 1024px) {
   #case-studies article {
     width: calc(50% - 90px);
     float: left;
     margin-left: 60px;
+    min-height: 560px;
   }
 }
 #case-studies article .work-intro {
@@ -2654,4 +2658,184 @@ table th:last-child, table td:last-child {
   table th:last-child, table td:last-child {
     background-color: #61E786;
   }
+}
+
+.card-components {
+  align-items: center;
+}
+.card-components div {
+  display: inline-block;
+  width: 30%;
+  max-width: 450px;
+  vertical-align: top;
+  padding: 1.5em;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .card-components div {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .card-components div {
+    background: white;
+  }
+}
+.card-components div span {
+  color: #9792E3;
+  font-size: 1.85rem;
+  font-weight: 500;
+  display: block;
+}
+
+.design-system-overview {
+  align-items: center;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .design-system-overview {
+    display: block;
+  }
+}
+.design-system-overview > div {
+  flex: 1;
+  padding: 1.5em;
+}
+@media screen and (max-width: 767px) {
+  .design-system-overview > div {
+    display: block;
+    width: 100%;
+    margin-bottom: 3em;
+  }
+}
+
+.process-step {
+  margin-bottom: 3em;
+  display: block;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  border: 1px solid zinc;
+  border-radius: 10px;
+  padding: 3em;
+}
+@media (prefers-color-scheme: light) {
+  .process-step {
+    background: white;
+    color: #3A3842;
+  }
+}
+.process-step .title, .process-step .list {
+  display: inline-block;
+  width: 30%;
+  max-width: 450px;
+  vertical-align: top;
+  padding: 1.5em;
+}
+@media screen and (max-width: 767px) {
+  .process-step .title, .process-step .list {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+.process-step .list {
+  width: 70%;
+  max-width: 850px;
+}
+@media screen and (max-width: 767px) {
+  .process-step .list {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.process-step .title div {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #9792E3;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  margin-bottom: 0.75em;
+}
+.process-step ul {
+  padding: 0;
+}
+.process-step li {
+  list-style: none;
+  gap: 1rem;
+  display: flex;
+}
+.process-step li span {
+  color: #9792E3;
+  width: 1.5rem;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 3em;
+}
+@media screen and (max-width: 767px) {
+  .principles-grid {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+  }
+}
+.principles-grid .principle {
+  display: flex;
+  gap: 1.5em;
+  padding: 1.5em;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+@media (prefers-color-scheme: light) {
+  .principles-grid .principle {
+    background: white;
+    color: #3A3842;
+  }
+}
+.principles-grid .principle p {
+  line-height: 1.5em;
+}
+.principles-grid .principle-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  background: #61E786;
+  color: #3A3842;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.principles-grid .principle-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.conclusion {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+.conclusion .conclusion-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 1rem auto 0;
+  background: #61E786;
+  color: #3A3842;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.conclusion .conclusion-icon svg {
+  width: 30px;
+  height: 30px;
 }
